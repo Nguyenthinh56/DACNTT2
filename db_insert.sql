@@ -1,4 +1,7 @@
--- Bắp cải --
+-- --------------------------------------
+-- 1. Bắp cải (class_index: 0)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -115,7 +118,10 @@ VALUES
 (4, 3, 'Trộn salad: Cho bắp cải và cà rốt vào bát lớn, đổ sốt mayonnaise lên, dùng tay hoặc muỗng trộn đều để sốt bám đều từng sợi rau. Nêm nếm lại, điều chỉnh muối hoặc giấm nếu cần.'),
 (4, 4, 'Làm lạnh và hoàn thiện: Đậy kín bát salad, để trong ngăn mát tủ lạnh 10 phút để rau thấm sốt và giòn hơn. Trước khi dùng, rắc thêm 1/4 muỗng cà phê hạt tiêu cho thơm. Dọn ra đĩa, ăn kèm thịt nướng hoặc gà chiên.');
 
--- Bí đỏ --
+-- -------------------------------------
+-- 2. Bí đỏ (class_index: 1)
+-- -------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -231,7 +237,10 @@ VALUES
 (8, 3, 'Đổ khuôn: Đổ hỗn hợp bột vào khuôn, dàn đều, không đổ đầy để bánh nở. Đặt khuôn vào xửng hấp, đảm bảo nước trong nồi đã sôi trước khi hấp.'),
 (8, 4, 'Hấp và hoàn thiện: Hấp bánh trên lửa vừa trong 15-20 phút, dùng tăm xiên kiểm tra, nếu không dính là chín. Lấy bánh ra, để nguội, cắt miếng vừa ăn. Dùng như món tráng miệng hoặc ăn nhẹ.');
 
--- Bông cải trắng
+-- --------------------------------------
+-- 3. Bông cải trắng (class_index: 2)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -347,7 +356,10 @@ VALUES
 (12, 3, 'Luộc bông cải: Cho bông cải vào nồi nước sôi, luộc 5-7 phút đến khi mềm nhưng vẫn giòn. Vớt ra, ngâm ngay vào nước lạnh 1 phút để giữ độ giòn, sau đó để ráo.'),
 (12, 4, 'Hoàn thiện món luộc: Xếp bông cải lên đĩa, dọn kèm bát kho quẹt. Chấm bông cải vào kho quẹt, dùng nóng với cơm trắng để thưởng thức vị dân dã.');
 
--- Bông cải xanh
+-- --------------------------------------
+-- 4. Bông cải xanh (class_index: 3)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -463,7 +475,10 @@ VALUES
 (16, 3, 'Xào bông cải: Thêm 1 muỗng canh dầu ăn vào chảo, phi thơm tỏi còn lại. Cho bông cải xanh vào, xào 3-4 phút, thêm 2 muỗng canh nước để bông cải mềm. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường.'),
 (16, 4, 'Hoàn thiện món xào: Cho thịt bò vào chảo, đảo đều 1 phút để thấm gia vị. Rắc 1/4 muỗng cà phê hạt tiêu, tắt bếp, chuyển ra đĩa. Dùng nóng với cơm trắng để thưởng thức vị đậm đà.');
 
--- Cà chua
+-- --------------------------------------
+-- 5. Cà chua (class_index: 4)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -580,7 +595,9 @@ VALUES
 (20, 3, 'Xào cà chua: Thêm 1 muỗng canh dầu ăn vào chảo, phi thơm tỏi còn lại. Cho cà chua vào, xào 2-3 phút đến khi mềm. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường.'),
 (20, 4, 'Hoàn thiện món xào: Cho thịt bò vào chảo, đảo đều 1 phút để thấm gia vị. Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, tắt bếp, chuyển ra đĩa. Dùng nóng với cơm trắng để thưởng thức vị chua ngọt.');
 
--- Cà rốt
+-- --------------------------------------
+-- 6. Cà rốt (class_index: 5)
+-- --------------------------------------
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -697,7 +714,10 @@ VALUES
 (24, 3, 'Kho thịt và cà rốt: Thêm 2 muỗng canh nước mắm, 1 muỗng canh đường, đảo đều để thịt thấm. Đổ 300ml nước, cho cà rốt vào, đun sôi, sau đó giảm lửa nhỏ, kho 30 phút đến khi thịt mềm và nước sệt.'),
 (24, 4, 'Hoàn thiện món kho: Rắc 1/4 muỗng cà phê hạt tiêu, đảo nhẹ. Tắt bếp, múc ra đĩa, dùng nóng với cơm trắng để thưởng thức vị đậm đà thấm đều.');
 
--- Cà tím
+-- --------------------------------------
+-- 7. Cà tím (class_index: 6)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -814,7 +834,9 @@ VALUES
 (28, 3, 'Xào cà tím: Cho cà tím vào chảo, xào trên lửa vừa 5-7 phút đến khi cà tím mềm và thấm dầu. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường, đảo đều.'),
 (28, 4, 'Hoàn thiện món xào: Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, đảo lần cuối trong 10 giây. Tắt bếp, chuyển ra đĩa, dùng nóng như món phụ với cơm trắng.');
 
--- Cải thìa
+-- --------------------------------------
+-- 8. Cải thìa (class_index: 7)
+-- --------------------------------------
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -930,7 +952,10 @@ VALUES
 (32, 3, 'Xào cải thìa: Thêm cải thìa vào chảo, đảo đều trên lửa vừa 3-4 phút đến khi cải thìa chín nhưng vẫn giòn. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường.'),
 (32, 4, 'Hoàn thiện món xào: Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, đảo lần cuối trong 10 giây. Tắt bếp, chuyển ra đĩa, dùng nóng như món phụ hoặc món chính với cơm trắng.');
 
--- Cần Tây
+-- --------------------------------------
+-- 9. Cần tây (class_index: 8)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1048,7 +1073,10 @@ VALUES
 (36, 3, 'Xào cần tây: Thêm cần tây vào chảo, đảo đều trên lửa vừa 2-3 phút đến khi cần tây chín nhưng vẫn giòn. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường.'),
 (36, 4, 'Hoàn thiện món xào: Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, đảo lần cuối trong 10 giây. Tắt bếp, chuyển ra đĩa, dùng nóng như món phụ hoặc món chính với cơm trắng.');
 
--- Củ cải đỏ
+-- --------------------------------------
+-- 10. Củ cải đỏ (class_index: 9)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1165,7 +1193,10 @@ VALUES
 (40, 3, 'Kho củ cải: Thêm 2 muỗng canh nước mắm, 1 muỗng canh đường, và 200ml nước vào nồi. Đun sôi, giảm lửa nhỏ, kho 20-25 phút đến khi củ cải mềm và nước sệt, thịt thấm gia vị.'),
 (40, 4, 'Hoàn thiện món kho: Rắc 1/4 muỗng cà phê hạt tiêu, đảo nhẹ. Tắt bếp, múc ra bát, dùng nóng với cơm trắng để thưởng thức vị đậm đà và giòn ngọt.');
 
--- Củ cải trắng
+-- --------------------------------------
+-- 11. Củ cải trắng (class_index: 10)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1282,7 +1313,10 @@ VALUES
 (44, 3, 'Trộn salad: Cho củ cải trắng bào sợi vào bát lớn, đổ nước mắm pha vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (44, 4, 'Hoàn thiện salad: Rắc rau mùi lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm thịt nướng, cá chiên để thưởng thức vị giòn chua ngọt.');
 
--- Củ dền
+-- --------------------------------------
+-- 12. Củ dền (class_index: 11)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1399,7 +1433,10 @@ VALUES
 (48, 3, 'Kho củ dền: Thêm 2 muỗng canh nước mắm, 1 muỗng canh đường, và 200ml nước vào nồi. Đun sôi, giảm lửa nhỏ, kho 20-25 phút đến khi củ dền mềm và nước sệt, thịt thấm gia vị.'),
 (48, 4, 'Hoàn thiện món kho: Rắc 1/4 muỗng cà phê hạt tiêu, đảo nhẹ. Tắt bếp, múc ra bát, dùng nóng với cơm trắng để thưởng thức vị đậm đà và ngọt thơm.');
 
--- Gừng 
+-- --------------------------------------
+-- 13. Gừng (class_index: 12)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1514,7 +1551,10 @@ VALUES
 (52, 3, 'Xào gừng và hành tây: Thêm 1 muỗng canh dầu ăn vào chảo, phi thơm gừng sợi. Cho hành tây vào, xào 2 phút đến khi hành tây mềm. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê đường.'),
 (52, 4, 'Hoàn thiện món xào: Cho thịt bò vào chảo, đảo đều 1 phút để thấm gia vị. Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, tắt bếp, chuyển ra đĩa. Dùng nóng với cơm trắng để thưởng thức vị cay thơm.');
 
--- Hành tím
+-- --------------------------------------
+-- 14. Hành tím (class_index: 13)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1628,7 +1668,10 @@ VALUES
 (56, 3, 'Trộn gỏi: Cho gà xé sợi và hành tím vào bát lớn, đổ nước mắm pha vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (56, 4, 'Hoàn thiện gỏi: Rắc rau răm lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm cơm để thưởng thức vị giòn cay của hành tím và gà thơm.');
 
--- Củ sen 
+-- --------------------------------------
+-- 15. Củ sen (class_index: 14)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1747,7 +1790,10 @@ VALUES
 (60, 3, 'Kho củ sen: Thêm 2 muỗng canh nước mắm, 1 muỗng canh đường, và 200ml nước vào nồi. Đun sôi, giảm lửa nhỏ, kho 20-25 phút đến khi củ sen mềm và nước sệt, thịt thấm gia vị.'),
 (60, 4, 'Hoàn thiện món kho: Rắc 1/4 muỗng cà phê hạt tiêu, đảo nhẹ. Tắt bếp, múc ra bát, dùng nóng với cơm trắng để thưởng thức vị đậm đà và giòn ngọt.');
 
--- Đậu Bắp
+-- --------------------------------------
+-- 16. Đậu Bắp (class_index: 15)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1861,7 +1907,10 @@ VALUES
 (64, 3, 'Nướng đậu bắp: Làm nóng lò nướng ở 200°C hoặc dùng vỉ nướng than. Nướng đậu bắp 10-12 phút, lật đều để chín vàng. Nếu dùng than, nướng 5-7 phút đến khi hơi cháy xém.'),
 (64, 4, 'Hoàn thiện món nướng: Xếp đậu bắp lên đĩa, rưới mỡ hành lên trên, rắc 1/4 muỗng cà phê hạt tiêu. Dọn kèm nước mắm nguyên chất, dùng nóng để thưởng thức vị giòn thơm.');
 
--- Đậu Hà lan
+-- --------------------------------------
+-- 17. Đậu Hà Lan (class_index: 16)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -1977,7 +2026,10 @@ VALUES
 (68, 3, 'Luộc đậu Hà Lan: Cho đậu Hà Lan vào nồi nước sôi, luộc 2-3 phút đến khi đậu chín nhưng vẫn giòn. Vớt ra, ngâm ngay vào nước lạnh 1 phút để giữ độ giòn, để ráo.'),
 (68, 4, 'Hoàn thiện món luộc: Xếp đậu Hà Lan lên đĩa, dọn kèm bát nước mắm pha. Chấm đậu vào nước mắm, dùng nóng như món phụ để thưởng thức vị ngọt tự nhiên.');
 
--- Đậu que
+-- --------------------------------------
+-- 18. Đậu que (class_index: 17)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2093,7 +2145,10 @@ VALUES
 (72, 3, 'Trộn salad: Cho đậu que vào bát lớn, đổ nước mắm pha vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (72, 4, 'Hoàn thiện salad: Rắc rau mùi lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm thịt nướng, cá chiên để thưởng thức vị giòn ngọt và chua cay.');
 
--- Đậu rồng
+-- --------------------------------------
+-- 19. Đậu rồng (class_index: 18)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2208,7 +2263,10 @@ VALUES
 (76, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Thêm đậu rồng, nấu 5-7 phút đến khi đậu mềm. Cho tôm vào, nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê muối.'),
 (76, 4, 'Hoàn thiện canh: Đun thêm 2 phút để gia vị thấm, rắc hành lá và 1/4 muỗng cà phê hạt tiêu. Tắt bếp, múc ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh.');
 
--- Đu đủ
+-- --------------------------------------
+-- 20. Đu đủ (class_index: 19)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2325,7 +2383,10 @@ VALUES
 (80, 3, 'Ngâm đu đủ: Xếp đu đủ, tỏi, và ớt vào lọ thủy tinh sạch. Đổ nước muối vào, đảm bảo ngập đu đủ. Đậy kín, để ở nhiệt độ phòng 1-2 ngày cho lên men nhẹ.'),
 (80, 4, 'Hoàn thiện món muối: Sau khi muối chua, bảo quản lọ trong tủ lạnh, dùng trong 1-2 tuần. Dọn ra đĩa, ăn kèm thịt kho hoặc cá chiên để thưởng thức vị giòn chua ngọt.');
 
--- Dưa leo 
+-- --------------------------------------
+-- 21. Dưa leo (class_index: 20)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2442,7 +2503,10 @@ VALUES
 (84, 3, 'Nấu canh: Đun sôi 1 lít nước lọc, cho dưa leo nhồi thịt vào, nấu trên lửa vừa 10-12 phút đến khi dưa leo mềm và thịt chín. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê muối.'),
 (84, 4, 'Hoàn thiện canh: Rắc hành lá và 1/4 muỗng cà phê hạt tiêu, đun thêm 1 phút. Tắt bếp, múc ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh và giòn.');
 
--- Giá đỗ
+-- --------------------------------------
+-- 22. Giá đỗ (class_index: 21)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2560,7 +2624,10 @@ VALUES
 (88, 3, 'Trộn giá đỗ: Cho giá đỗ vào bát lớn, đổ nước mắm pha vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (88, 4, 'Hoàn thiện món trộn: Rắc rau mùi lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm thịt nướng, cá chiên để thưởng thức vị giòn ngọt và chua cay.');
 
--- Hành lá
+-- --------------------------------------
+-- 23. Hành lá (class_index: 22)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2671,7 +2738,10 @@ VALUES
 (92, 3, 'Trộn gỏi: Cho hành lá và thịt gà vào bát lớn, đổ nước mắm pha vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (92, 4, 'Hoàn thiện gỏi: Rắc rau răm lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm cơm để thưởng thức vị thơm giòn và chua cay.');
 
--- Hành tây
+-- --------------------------------------
+-- 24. Hành tây (class_index: 23)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2787,7 +2857,10 @@ VALUES
 (96, 3, 'Nướng hành tây: Làm nóng lò nướng ở 200°C. Đặt hành tây nhồi thịt lên khay, nướng 15-20 phút đến khi hành mềm và thịt chín vàng. Nếu dùng vỉ than, nướng 10-12 phút, lật đều.'),
 (96, 4, 'Hoàn thiện món nướng: Rắc 1/4 muỗng cà phê hạt tiêu và 1 muỗng canh nước mắm lên hành tây. Dọn ra đĩa, dùng nóng như món chính hoặc món phụ với cơm trắng.');
 
--- Khổ qua
+-- --------------------------------------
+-- 25. Khổ qua (class_index: 24)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -2901,7 +2974,10 @@ VALUES
 (100, 3, 'Trộn gỏi: Cho khổ qua vào bát lớn, đổ nước mắm chay vào, trộn đều để thấm gia vị. Để 5 phút cho ngấm, thỉnh thoảng trộn lại.'),
 (100, 4, 'Hoàn thiện gỏi: Rắc rau mùi lên trên, trộn nhẹ. Dọn ra đĩa, dùng làm món khai vị hoặc ăn kèm cơm để thưởng thức vị giòn đắng và chua cay.');
 
--- Khoai lang
+-- --------------------------------------
+-- 26. Khoai lang (class_index: 25)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -3005,7 +3081,10 @@ VALUES
 (104, 3, 'Nướng bánh: Làm nóng lò nướng ở 180°C. Phết dầu ăn lên khay, xếp bánh lên, nướng 20-25 phút đến khi bánh vàng nhẹ, lật mặt giữa chừng để chín đều.'),
 (104, 4, 'Hoàn thiện bánh: Lấy bánh ra, để nguội nhẹ. Dọn ra đĩa, dùng như món ăn nhẹ hoặc ăn sáng để thưởng thức vị ngọt bùi và dẻo thơm.');
 
--- Khoai tây
+-- --------------------------------------
+-- 27. Khoai tây (class_index: 26)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -3114,7 +3193,10 @@ VALUES
 (108, 3, 'Chiên bánh: Đun nóng 200ml dầu ăn trong chảo, chiên bánh trên lửa vừa 3-4 phút mỗi mặt đến khi vàng giòn, vớt ra để ráo dầu trên giấy thấm.'),
 (108, 4, 'Hoàn thiện bánh: Dọn bánh ra đĩa, dùng nóng như món ăn vặt hoặc ăn sáng với nước chấm mắm ớt để thưởng thức vị giòn bùi.');
 
--- Nấm rơm
+-- --------------------------------------
+-- 28. Nấm rơm (class_index: 27)
+-- --------------------------------------
+
 -- Chèn vào bảng vegetables
 INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
 VALUES (
@@ -3227,3 +3309,2003 @@ VALUES
 (112, 2, 'Pha nước mắm: Trộn 2 muỗng canh nước mắm, 1 muỗng cà phê đường, tỏi băm, và ớt trong bát nhỏ. Khuấy đều để đường tan.'),
 (112, 3, 'Hấp nấm: Xếp nấm rơm vào đĩa sâu lòng, rưới hỗn hợp nước mắm lên trên. Đặt đĩa vào xửng hấp, hấp trên nước sôi 10-12 phút đến khi nấm chín mềm.'),
 (112, 4, 'Hoàn thiện món hấp: Rắc hành lá lên trên, hấp thêm 1 phút. Tắt bếp, dọn ra đĩa, dùng nóng như món phụ với cơm trắng để thưởng thức vị thơm ngon và ngấm mắm.');
+
+-- --------------------------------------
+-- 29. Ngò gai (class_index: 28)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    28, 
+    'Ngò gai', 
+    'Eryngium foetidum', 
+    'Ngò gai, hay còn gọi là rau mùi tàu, là một loại rau gia vị thuộc họ Hoa tán (Apiaceae), phổ biến ở Việt Nam, đặc biệt trong các món ăn miền Nam. Lá có hình răng cưa, mùi thơm nồng, vị cay nhẹ. Ngò gai được dùng để trang trí, tăng hương vị trong các món canh, lẩu, bún nước lèo, hoặc phở, là nguyên liệu quen thuộc trong ẩm thực Việt Nam nhờ hương thơm đặc trưng.',
+    'Ngò gai giàu vitamin A, vitamin C, và chất chống oxy hóa. Rau này hỗ trợ tiêu hóa, tăng cường miễn dịch, và có đặc tính kháng viêm. Ngò gai cũng chứa sắt và canxi, giúp duy trì sức khỏe máu và xương. Với lượng calo thấp, ngò gai là lựa chọn tuyệt vời để tăng hương vị món ăn.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(29, 'Vitamin A (50% DV trong 100g): Hỗ trợ thị lực, sức khỏe da, và tăng cường miễn dịch.', 1),
+(29, 'Vitamin C (45% DV trong 100g): Tăng cường miễn dịch, hỗ trợ sản xuất collagen, và bảo vệ tế bào.', 2),
+(29, 'Sắt (2mg trong 100g): Hỗ trợ tạo hồng cầu, ngăn ngừa thiếu máu.', 3),
+(29, 'Canxi (60mg trong 100g): Giúp duy trì sức khỏe xương và răng.', 4),
+(29, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương oxy hóa.', 5),
+(29, 'Ít calo (23 kcal trong 100g): Phù hợp để tăng hương vị món ăn mà không tăng calo.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(29, 'Lá xanh tươi, không úa: Chọn ngò gai có lá xanh đậm, bóng, không vàng hoặc héo.', 1),
+(29, 'Mùi thơm nồng: Ngò gai tươi có mùi thơm đặc trưng, tránh loại mùi yếu hoặc hắc.', 2),
+(29, 'Thân mềm, không cứng: Rau tươi có thân mềm, dễ bẻ, không xơ hoặc cứng.', 3),
+(29, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc dấu hiệu hư hỏng.', 4),
+(29, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(29, 'Bọc kín trong ngăn mát: Bọc ngò gai trong khăn giấy ẩm, cho vào túi nhựa, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(29, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc, chỉ rửa trước khi chế biến.', 2),
+(29, 'Đông lạnh để bảo quản lâu: Rửa sạch, thái nhỏ, để ráo, cho vào túi zip, đông lạnh ở -18°C, dùng trong 3-4 tháng.', 3),
+(29, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(29, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm ngò gai nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Ngò gai trộn gỏi gà', 'Món gỏi tươi mát, phổ biến trong ẩm thực Việt Nam, với ngò gai thơm nồng trộn thịt gà, là món khai vị hoặc ăn kèm.', '15 phút', '10 phút', '4 người'),
+('Canh ngò gai nấu tôm', 'Món canh thanh nhẹ, quen thuộc trong ẩm thực Việt Nam, với ngò gai thơm và tôm ngọt, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Bún nước lèo ngò gai', 'Món bún đặc trưng miền Tây Việt Nam, với ngò gai làm điểm nhấn thơm, là món chính hấp dẫn.', '20 phút', '30 phút', '4 người'),
+('Ngò gai xào thịt bò', 'Món xào thơm ngon, phổ biến trong ẩm thực Việt Nam, với ngò gai kết hợp thịt bò mềm, là món chính trong bữa cơm.', '10 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(113, 29),
+(114, 29),
+(115, 29),
+(116, 29);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Ngò gai trộn gỏi gà
+(113, 'Ngò gai', '100g', 'Rửa sạch, thái nhỏ', 1),
+(113, 'Thịt gà', '200g', 'Luộc chín, xé sợi', 2),
+(113, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(113, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(113, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(113, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+(113, 'Ớt', '1 quả (5g)', 'Thái lát', 7),
+-- Canh ngò gai nấu tôm
+(114, 'Ngò gai', '50g', 'Rửa sạch, thái nhỏ', 1),
+(114, 'Tôm tươi', '200g', 'Bóc vỏ, bỏ đầu, rút chỉ đen', 2),
+(114, 'Hành lá', '2 nhánh (10g)', 'Rửa sạch, thái nhỏ', 3),
+(114, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 4),
+(114, 'Muối', '1/2 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+(114, 'Nước', '1 lít', 'Nước lọc', 6),
+-- Bún nước lèo ngò gai
+(115, 'Ngò gai', '50g', 'Rửa sạch, thái nhỏ, trang trí', 1),
+(115, 'Bún tươi', '400g', 'Chần sơ, để ráo', 2),
+(115, 'Cá lóc', '300g', 'Làm sạch, luộc lấy nước', 3),
+(115, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 4),
+(115, 'Sả', '2 cây (20g)', 'Băm nhỏ', 5),
+(115, 'Nước', '1.5 lít', 'Nước lọc', 6),
+(115, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 7),
+-- Ngò gai xào thịt bò
+(116, 'Ngò gai', '150g', 'Rửa sạch, cắt khúc 5cm', 1),
+(116, 'Thịt bò', '200g', 'Thái lát mỏng, ướp muối, tiêu', 2),
+(116, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 3),
+(116, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(116, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(116, 'Hạt tiêu', '1/4 muỗng cà phê', 'Rắc khi hoàn thiện', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Ngò gai trộn gỏi gà
+(113, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò gai dưới vòi nước, ngâm nước muối loãng 5 phút để khử khuẩn, để ráo, thái nhỏ. Luộc thịt gà trong nước sôi có chút muối khoảng 10 phút, vớt ra, để nguội, xé sợi nhỏ. Tỏi băm nhuyễn, ớt thái lát mỏng để tăng vị cay.'),
+(113, 2, 'Pha nước mắm trộn gỏi: Trong bát nhỏ, trộn 2 muỗng canh nước mắm ngon, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát. Khuấy đều cho đường tan hoàn toàn, nếm thử để đảm bảo vị chua ngọt cân bằng. Có thể thêm chút nước lọc nếu nước mắm quá mặn.'),
+(113, 3, 'Trộn gỏi: Cho ngò gai và thịt gà xé sợi vào tô lớn, rưới hỗn hợp nước mắm lên trên. Dùng tay hoặc đũa trộn đều để ngò gai và gà thấm gia vị. Để gỏi nghỉ 5-7 phút trong tủ lạnh để vị ngấm sâu và giữ độ giòn của ngò gai.'),
+(113, 4, 'Hoàn thiện món gỏi: Lấy gỏi ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn gỏi ra đĩa, trang trí thêm vài lá ngò gai nguyên hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng, bánh tráng để thưởng thức vị thơm cay đặc trưng của ngò gai.'),
+-- Canh ngò gai nấu tôm
+(114, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò gai, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ vừa ăn. Tôm tươi bóc vỏ, bỏ đầu, rút chỉ đen ở lưng, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(114, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, sau đó thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng và săn lại. Vớt tôm ra bát, để riêng, tránh xào quá lâu khiến tôm dai.'),
+(114, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho tôm đã xào và ngò gai vào, nấu trên lửa vừa 3-4 phút để ngò gai mềm và tiết hương thơm. Nêm 1 muỗng canh nước mắm và 1/2 muỗng cà phê muối, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ.'),
+(114, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng hoặc bún tươi để thưởng thức vị ngọt tự nhiên của tôm và thơm nồng của ngò gai.'),
+-- Bún nước lèo ngò gai
+(115, 1, 'Chuẩn bị nguyên liệu: Làm sạch cá lóc, luộc trong 1.5 lít nước sôi có chút muối khoảng 10 phút, vớt ra, gỡ lấy thịt, giữ lại nước luộc làm nước dùng. Ngò gai và hành lá rửa sạch, thái nhỏ để trang trí. Sả băm nhuyễn để tăng hương vị nước dùng.'),
+(115, 2, 'Nấu nước dùng: Lọc nước luộc cá qua rây để loại bỏ cặn, đun sôi lại. Thêm sả băm và 2 muỗng canh nước mắm, nấu trên lửa nhỏ 10 phút để nước dùng dậy mùi thơm. Nếm thử, có thể thêm chút muối nếu nhạt. Vớt bọt thường xuyên để nước trong.'),
+(115, 3, 'Chuẩn bị bún: Chần bún tươi trong nước sôi 30 giây, để ráo, chia đều vào 4 bát. Xếp thịt cá lóc gỡ nhỏ lên trên bún. Chuẩn bị thêm giá đỗ, rau muống bào, và chanh, mắm ớt để ăn kèm, tùy sở thích.'),
+(115, 4, 'Hoàn thiện món bún: Chan nước dùng nóng vào bát bún, rắc ngò gai và hành lá thái nhỏ lên trên để tăng hương vị. Dọn bún ra bàn, dùng nóng kèm rau sống và mắm ớt để thưởng thức vị ngọt thanh của nước dùng và thơm nồng của ngò gai.'),
+-- Ngò gai xào thịt bò
+(116, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò gai, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm để dễ xào. Thịt bò thái lát mỏng, ướp với 1/4 muỗng cà phê muối, 1/4 muỗng cà phê tiêu, và 1 muỗng cà phê dầu ăn trong 10 phút. Tỏi băm nhuyễn.'),
+(116, 2, 'Xào thịt bò: Đun nóng 1 muỗng canh dầu ăn trong chảo, phi tỏi 20 giây đến khi thơm, cho thịt bò vào xào nhanh trên lửa lớn 1-2 phút đến khi thịt tái, vớt ra để tránh thịt bị dai.'),
+(116, 3, 'Xào ngò gai: Thêm 1 muỗng canh dầu ăn vào chảo, cho ngò gai vào xào trên lửa vừa 2 phút đến khi rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm, đảo đều để ngò gai thấm vị.'),
+(116, 4, 'Hoàn thiện món xào: Cho thịt bò trở lại chảo, đảo nhanh 30 giây để thịt chín đều và hòa quyện với ngò gai. Rắc 1/4 muỗng cà phê hạt tiêu, tắt bếp, dọn ra đĩa. Dùng nóng với cơm trắng để thưởng thức vị thơm cay của ngò gai và thịt bò mềm.');
+
+-- --------------------------------------
+-- 30. Ngò rí (class_index: 29)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    29, 
+    'Ngò rí', 
+    'Coriandrum sativum', 
+    'Ngò rí, hay còn gọi là rau mùi, là một loại rau gia vị thuộc họ Hoa tán (Apiaceae), phổ biến trong ẩm thực Việt Nam. Lá nhỏ, màu xanh đậm, mùi thơm nhẹ, vị tươi mát. Ngò rí được dùng để trang trí, tăng hương vị trong các món phở, bún, canh, hoặc gỏi, là nguyên liệu không thể thiếu nhờ mùi thơm đặc trưng.',
+    'Ngò rí giàu vitamin K, vitamin A, và chất chống oxy hóa. Rau này hỗ trợ đông máu, cải thiện thị lực, và có đặc tính kháng viêm. Ngò rí cũng chứa sắt và vitamin C, giúp tăng cường miễn dịch và sức khỏe máu. Với lượng calo thấp, ngò rí là lựa chọn tuyệt vời để tăng hương vị món ăn.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(30, 'Vitamin K (310% DV trong 100g): Hỗ trợ đông máu và sức khỏe xương.', 1),
+(30, 'Vitamin A (135% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 2),
+(30, 'Vitamin C (27% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 3),
+(30, 'Sắt (1.8mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 4),
+(30, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 5),
+(30, 'Ít calo (23 kcal trong 100g): Tăng hương vị món ăn mà không tăng calo.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(30, 'Lá xanh tươi, không úa: Chọn ngò rí có lá xanh đậm, không vàng hoặc héo.', 1),
+(30, 'Mùi thơm nhẹ: Ngò rí tươi có mùi thơm đặc trưng, tránh loại mùi yếu.', 2),
+(30, 'Thân mềm, không xơ: Rau tươi có thân mềm, dễ bẻ, không cứng.', 3),
+(30, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(30, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(30, 'Bọc kín trong ngăn mát: Bọc ngò rí trong khăn giấy ẩm, cho vào túi nhựa, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(30, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(30, 'Đông lạnh để bảo quản lâu: Rửa sạch, thái nhỏ, để ráo, đông lạnh ở -18°C, dùng trong 3-4 tháng.', 3),
+(30, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(30, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm ngò rí nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Phở bò ngò rí', 'Món phở truyền thống Việt Nam, với ngò rí làm điểm nhấn thơm, là món chính hấp dẫn.', '20 phút', '60 phút', '4 người'),
+('Gỏi tôm ngò rí', 'Món gỏi tươi mát, với ngò rí thơm trộn tôm, là món khai vị hoặc ăn kèm.', '15 phút', '10 phút', '4 người'),
+('Canh chua cá lóc ngò rí', 'Món canh chua đặc trưng, với ngò rí tăng hương vị, là món phụ bổ dưỡng.', '15 phút', '20 phút', '4 người'),
+('Ngò rí trộn trứng chiên', 'Món chiên đơn giản, với ngò rí thơm kết hợp trứng, là món phụ dễ làm.', '10 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(117, 30),
+(118, 30),
+(119, 30),
+(120, 30);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Phở bò ngò rí
+(117, 'Ngò rí', '50g', 'Rửa sạch, thái nhỏ, trang trí', 1),
+(117, 'Bún phở', '400g', 'Chần sơ, để ráo', 2),
+(117, 'Thịt bò', '300g', 'Thái lát mỏng', 3),
+(117, 'Xương bò', '500g', 'Hầm lấy nước dùng', 4),
+(117, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 5),
+(117, 'Hành tây', '1 củ (100g)', 'Thái lát mỏng', 6),
+(117, 'Nước', '2 lít', 'Nước lọc', 7),
+-- Gỏi tôm ngò rí
+(118, 'Ngò rí', '100g', 'Rửa sạch, thái nhỏ', 1),
+(118, 'Tôm tươi', '200g', 'Luộc chín, bóc vỏ', 2),
+(118, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(118, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(118, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(118, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+-- Canh chua cá lóc ngò rí
+(119, 'Ngò rí', '50g', 'Rửa sạch, thái nhỏ', 1),
+(119, 'Cá lóc', '300g', 'Làm sạch, cắt khúc', 2),
+(119, 'Me chua', '20g', 'Ngâm nước, lấy nước cốt', 3),
+(119, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 4),
+(119, 'Nước', '1 lít', 'Nước lọc', 5),
+(119, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 6),
+-- Ngò rí trộn trứng chiên
+(120, 'Ngò rí', '100g', 'Rửa sạch, thái nhỏ', 1),
+(120, 'Trứng gà', '3 quả', 'Đánh tan', 2),
+(120, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 3),
+(120, 'Dầu ăn', '2 muỗng canh', 'Dùng để chiên', 4),
+(120, 'Hạt tiêu', '1/4 muỗng cà phê', 'Rắc khi hoàn thiện', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Phở bò ngò rí
+(117, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò rí, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ để trang trí. Hầm xương bò với 2 lít nước trong nồi áp suất 30 phút hoặc nồi thường 1 giờ, thêm chút muối, vớt bọt để nước trong. Hành tây thái lát mỏng, ngâm nước đá để giòn.'),
+(117, 2, 'Nấu nước dùng: Lọc nước hầm xương qua rây, đun sôi lại, thêm 2 muỗng canh nước mắm và hành tây thái lát, nấu trên lửa nhỏ 10 phút để nước dùng ngọt và thơm. Nêm nếm lại, có thể thêm muối hoặc nước mắm nếu nhạt. Chuẩn bị túi gia vị phở (quế, hồi, thảo quả) để tăng hương vị nếu muốn.'),
+(117, 3, 'Chuẩn bị bún và thịt: Chần bún phở trong nước sôi 30 giây, để ráo, chia đều vào 4 bát. Thịt bò thái lát mỏng, xếp lên bún. Chuẩn bị thêm giá đỗ, chanh, ớt, và rau thơm khác (húng quế, ngò gai) để ăn kèm, tùy sở thích.'),
+(117, 4, 'Hoàn thiện món phở: Chan nước dùng nóng vào bát, đảm bảo ngập bún và thịt bò để thịt chín tái. Rắc ngò rí và hành tây thái lát lên trên để tăng hương vị. Dọn phở ra bàn, dùng nóng kèm rau sống, tương ớt, và mắm nêm để thưởng thức vị ngọt thanh của nước dùng và thơm nhẹ của ngò rí.'),
+-- Gỏi tôm ngò rí
+(118, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò rí, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Tôm tươi luộc trong nước sôi có chút muối khoảng 2-3 phút đến khi chín, vớt ra, ngâm nước đá 1 phút để tôm giòn, bóc vỏ. Tỏi băm nhuyễn để pha nước mắm.'),
+(118, 2, 'Pha nước mắm trộn gỏi: Trong bát nhỏ, trộn 2 muỗng canh nước mắm ngon, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, và tỏi băm. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt hài hòa. Có thể thêm ớt băm nếu thích cay.'),
+(118, 3, 'Trộn gỏi: Cho ngò rí và tôm vào tô lớn, rưới nước mắm lên trên. Dùng tay hoặc đũa trộn đều để ngò rí và tôm thấm gia vị. Để gỏi nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn của ngò rí. Trộn nhẹ tay để tránh làm nát ngò rí.'),
+(118, 4, 'Hoàn thiện món gỏi: Lấy gỏi ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn gỏi ra đĩa, trang trí thêm vài lá ngò rí nguyên hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng, bánh tráng để thưởng thức vị tươi mát và thơm của ngò rí.'),
+-- Canh chua cá lóc ngò rí
+(119, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò rí, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Cá lóc làm sạch, cắt khúc 3cm, ướp với 1/4 muỗng cà phê muối trong 10 phút. Ngâm me chua trong 100ml nước ấm, dầm lấy nước cốt. Hành lá thái nhỏ.'),
+(119, 2, 'Nấu canh: Đun sôi 1 lít nước lọc, cho cá lóc vào, nấu trên lửa vừa 5 phút đến khi cá chín sơ. Thêm nước cốt me vào nồi, khuấy nhẹ để tạo vị chua. Vớt bọt để nước canh trong.'),
+(119, 3, 'Nêm gia vị: Thêm 1 muỗng canh nước mắm và ngò rí vào nồi, nấu thêm 2 phút để ngò rí tiết hương thơm. Nếm thử, có thể thêm chút đường nếu muốn vị chua dịu hơn. Điều chỉnh vị chua ngọt thanh theo khẩu vị.'),
+(119, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng hoặc bún tươi để thưởng thức vị chua thanh của me và thơm nhẹ của ngò rí.'),
+-- Ngò rí trộn trứng chiên
+(120, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngò rí, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Đập 3 quả trứng gà vào bát, đánh tan, thêm ngò rí thái nhỏ vào, trộn đều để ngò rí phân bố đều trong trứng.'),
+(120, 2, 'Nêm gia vị: Thêm 1 muỗng canh nước mắm vào hỗn hợp trứng và ngò rí, khuấy đều. Có thể thêm chút tiêu để tăng hương vị. Đảm bảo hỗn hợp có vị mặn nhẹ, tránh nêm quá nhiều vì trứng sẽ bị mặn khi chiên.'),
+(120, 3, 'Chiên trứng: Đun nóng 2 muỗng canh dầu ăn trong chảo chống dính, đổ hỗn hợp trứng vào, dàn đều. Chiên trên lửa vừa 2-3 phút mỗi mặt đến khi trứng chín vàng, lật nhẹ để tránh làm vỡ. Có thể dùng nắp đậy để trứng chín đều mà không cần lật.'),
+(120, 4, 'Hoàn thiện món chiên: Rắc 1/4 muỗng cà phê hạt tiêu lên trứng, cắt trứng thành miếng vừa ăn. Dọn ra đĩa, dùng nóng với cơm trắng hoặc làm món ăn kèm để thưởng thức vị béo của trứng và thơm nhẹ của ngò rí.');
+
+-- --------------------------------------
+-- 31. Ớt chuông (class_index: 30)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    30, 
+    'Ớt chuông', 
+    'Capsicum annuum', 
+    'Ớt chuông là một loại quả thuộc họ Cà (Solanaceae), phổ biến trong ẩm thực Việt Nam. Quả có màu xanh, đỏ, vàng, hoặc cam, hình dạng vuông hoặc tròn, vị ngọt nhẹ, giòn. Ớt chuông được dùng trong các món xào, salad, nướng, hoặc nhồi thịt, là nguyên liệu quen thuộc nhờ màu sắc bắt mắt và độ giòn.',
+    'Ớt chuông giàu vitamin C, vitamin A, và chất xơ. Quả này hỗ trợ tiêu hóa, tăng cường miễn dịch, và cải thiện thị lực nhờ beta-carotene. Ớt chuông cũng chứa chất chống oxy hóa như capsanthin, giúp giảm viêm và bảo vệ tim mạch. Với lượng calo thấp, ớt chuông là lựa chọn tốt cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(31, 'Vitamin C (190% DV trong 100g): Tăng cường miễn dịch, hỗ trợ sản xuất collagen.', 1),
+(31, 'Vitamin A (23% DV trong 100g): Hỗ trợ thị lực và sức khỏe da.', 2),
+(31, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 3),
+(31, 'Capsanthin: Chất chống oxy hóa giúp giảm viêm, bảo vệ tim mạch.', 4),
+(31, 'Kali (211mg trong 100g): Cân bằng huyết áp, hỗ trợ chức năng cơ bắp.', 5),
+(31, 'Ít calo (31 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(31, 'Vỏ bóng, không nhăn: Chọn ớt chuông có vỏ mịn, bóng, không nhăn hoặc mềm.', 1),
+(31, 'Màu sắc tươi sáng: Ớt đỏ, vàng, xanh có màu đậm, không xỉn.', 2),
+(31, 'Quả cứng, chắc: Ớt tươi có độ cứng khi ấn, không mềm.', 3),
+(31, 'Cuống xanh, tươi: Chọn ớt có cuống xanh, không khô héo.', 4),
+(31, 'Tránh quả dập: Kiểm tra không có vết thâm hoặc hư hỏng.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(31, 'Bọc kín trong ngăn mát: Đặt ớt chuông trong túi nhựa, bảo quản ở 4-7°C, giữ tươi 2-3 tuần.', 1),
+(31, 'Giữ khô trước khi bảo quản: Không rửa ớt trước khi cất, tránh ẩm mốc.', 2),
+(31, 'Đông lạnh để bảo quản lâu: Cắt lát, để vào túi zip, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(31, 'Kiểm tra định kỳ: Loại bỏ quả mềm hoặc thâm để tránh lây lan hư hỏng.', 4),
+(31, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm ớt chuông nhanh hỏng.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Ớt chuông xào thịt bò', 'Món xào thơm ngon, với ớt chuông giòn ngọt và thịt bò mềm, là món chính trong bữa cơm.', '10 phút', '10 phút', '4 người'),
+('Salad ớt chuông', 'Món salad tươi mát, với ớt chuông nhiều màu trộn mắm, là món khai vị hoặc ăn kèm.', '10 phút', '0 phút', '4 người'),
+('Ớt chuông nhồi thịt', 'Món nhồi hấp hoặc nướng, với ớt chuông chứa thịt heo thơm, là món chính bổ dưỡng.', '15 phút', '20 phút', '4 người'),
+('Canh ớt chuông nấu tôm', 'Món canh thanh nhẹ, với ớt chuông ngọt và tôm tươi, là món phụ hấp dẫn.', '10 phút', '15 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(121, 31),
+(122, 31),
+(123, 31),
+(124, 31);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Ớt chuông xào thịt bò
+(121, 'Ớt chuông', '200g', 'Cắt miếng vuông', 1),
+(121, 'Thịt bò', '200g', 'Thái lát mỏng, ướp muối, tiêu', 2),
+(121, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 3),
+(121, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(121, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(121, 'Hạt tiêu', '1/4 muỗng cà phê', 'Rắc khi hoàn thiện', 6),
+-- Salad ớt chuông
+(122, 'Ớt chuông', '200g', 'Cắt sợi mỏng, ngâm nước lạnh', 1),
+(122, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(122, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(122, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(122, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(122, 'Rau mùi', '10g', 'Thái nhỏ', 6),
+-- Ớt chuông nhồi thịt
+(123, 'Ớt chuông', '4 quả (400g)', 'Bỏ hạt, giữ nguyên hình', 1),
+(123, 'Thịt heo băm', '200g', 'Ướp muối, tiêu', 2),
+(123, 'Nấm mèo', '10g', 'Ngâm mềm, thái nhỏ', 3),
+(123, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(123, 'Hành lá', '1 nhánh (5g)', 'Thái nhỏ', 5),
+-- Canh ớt chuông nấu tôm
+(124, 'Ớt chuông', '150g', 'Cắt miếng vuông', 1),
+(124, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(124, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(124, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(124, 'Nước', '1 lít', 'Nước lọc', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Ớt chuông xào thịt bò
+(121, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ớt chuông, bỏ hạt, cắt miếng vuông 2cm để dễ xào và giữ độ giòn. Thịt bò thái lát mỏng, ướp với 1/4 muỗng cà phê muối, 1/4 muỗng cà phê tiêu, và 1 muỗng cà phê dầu ăn trong 10 phút để thịt thấm gia vị và mềm. Tỏi băm nhuyễn để phi thơm.'),
+(121, 2, 'Xào thịt bò: Đun nóng 1 muỗng canh dầu ăn trong chảo, phi tỏi 20 giây đến khi vàng nhẹ và dậy mùi. Cho thịt bò vào xào nhanh trên lửa lớn 1-2 phút đến khi thịt tái, đảo đều để thịt chín đều mà không bị dai. Vớt thịt ra bát, để riêng.'),
+(121, 3, 'Xào ớt chuông: Thêm 1 muỗng canh dầu ăn vào chảo, cho ớt chuông vào xào trên lửa vừa 2-3 phút đến khi ớt mềm nhưng vẫn giòn. Nêm 1 muỗng canh nước mắm, đảo đều để ớt thấm vị. Có thể thêm chút nước nếu chảo quá khô, nhưng không quá nhiều để giữ độ giòn.'),
+(121, 4, 'Hoàn thiện món xào: Cho thịt bò trở lại chảo, đảo nhanh 1 phút để thịt chín hoàn toàn và hòa quyện với ớt chuông. Rắc 1/4 muỗng cà phê hạt tiêu, tắt bếp, dọn ra đĩa. Dùng nóng với cơm trắng để thưởng thức vị ngọt giòn của ớt chuông và thịt bò mềm thơm.'),
+-- Salad ớt chuông
+(122, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ớt chuông, bỏ hạt, cắt sợi mỏng, ngâm trong nước đá 10 phút để ớt giòn hơn, sau đó để ráo. Tỏi băm nhuyễn, rau mùi rửa sạch, thái nhỏ để trang trí. Chọn ớt chuông nhiều màu (đỏ, vàng, xanh) để món salad thêm bắt mắt.'),
+(122, 2, 'Pha nước mắm trộn: Trong bát nhỏ, trộn 2 muỗng canh nước mắm ngon, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, và tỏi băm. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cân bằng. Có thể thêm ớt băm nếu thích cay.'),
+(122, 3, 'Trộn salad: Cho ớt chuông sợi vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để ớt thấm gia vị. Để salad nghỉ 5 phút trong tủ lạnh để vị ngấm và ớt giữ độ giòn. Trộn nhẹ tay để tránh làm ớt nát.'),
+(122, 4, 'Hoàn thiện món salad: Lấy salad ra, rắc rau mùi thái nhỏ lên trên để tăng hương vị. Dọn salad ra đĩa, dùng làm món khai vị hoặc ăn kèm thịt nướng, cá chiên để thưởng thức vị giòn ngọt của ớt chuông và nước mắm thơm.'),
+-- Ớt chuông nhồi thịt
+(123, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ớt chuông, cắt phần đầu, bỏ hạt, giữ nguyên hình quả để nhồi. Trộn thịt heo băm với nấm mèo ngâm mềm thái nhỏ, hành lá thái nhỏ, 1/4 muỗng cà phê muối, và 1/4 muỗng cà phê tiêu. Ướp hỗn hợp thịt 10 phút để thấm gia vị.'),
+(123, 2, 'Nhồi thịt: Dùng muỗng nhồi hỗn hợp thịt vào bên trong ớt chuông, ấn chặt để thịt đầy và không bị rời ra khi hấp. Có thể dùng tăm ghim phần đầu ớt lại nếu muốn giữ nguyên hình dáng.'),
+(123, 3, 'Hấp ớt: Xếp ớt nhồi thịt vào xửng, hấp trên nước sôi 15-20 phút đến khi thịt chín và ớt mềm. Rưới 1 muỗng canh nước mắm lên ớt trong 2 phút cuối để tăng hương vị. Có thể nướng ở 180°C trong 20 phút nếu thích ớt có vỏ hơi cháy xém.'),
+(123, 4, 'Hoàn thiện món nhồi: Lấy ớt ra, kiểm tra thịt đã chín bằng cách dùng tăm xiên nhẹ. Dọn ớt ra đĩa, cắt đôi hoặc để nguyên quả, dùng nóng với cơm trắng để thưởng thức vị ngọt của ớt chuông và thơm béo của thịt.'),
+-- Canh ớt chuông nấu tôm
+(124, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ớt chuông, bỏ hạt, cắt miếng vuông 2cm. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(124, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát, để riêng, tránh xào quá lâu khiến tôm dai.'),
+(124, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho ớt chuông và tôm vào, nấu trên lửa vừa 5 phút để ớt mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ.'),
+(124, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt giòn của ớt chuông và tươi ngon của tôm.');
+
+-- --------------------------------------
+-- 32. Ớt hiểm (class_index: 31)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    31, 
+    'Ớt hiểm', 
+    'Capsicum frutescens', 
+    'Ớt hiểm là một loại ớt cay nhỏ thuộc họ Cà (Solanaceae), phổ biến trong ẩm thực Việt Nam. Quả nhỏ, màu xanh hoặc đỏ, vị cay nồng. Ớt hiểm được dùng làm gia vị, nước chấm, hoặc trang trí trong các món xào, canh, gỏi, là nguyên liệu quan trọng nhờ vị cay đặc trưng và khả năng kích thích vị giác.',
+    'Ớt hiểm giàu vitamin C, vitamin A, và capsaicin. Ớt hỗ trợ tiêu hóa, tăng cường miễn dịch, và có đặc tính kháng viêm nhờ capsaicin. Ớt cũng chứa chất chống oxy hóa, giúp giảm viêm và bảo vệ tế bào. Với lượng calo thấp, ớt hiểm là lựa chọn tuyệt vời để tăng hương vị món ăn.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(32, 'Vitamin C (144% DV trong 100g): Tăng cường miễn dịch, hỗ trợ sản xuất collagen.', 1),
+(32, 'Vitamin A (20% DV trong 100g): Hỗ trợ thị lực và sức khỏe da.', 2),
+(32, 'Capsaicin: Tăng cường trao đổi chất, hỗ trợ giảm cân, và giảm đau.', 3),
+(32, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 4),
+(32, 'Kali (322mg trong 100g): Cân bằng huyết áp, hỗ trợ chức năng cơ bắp.', 5),
+(32, 'Ít calo (40 kcal trong 100g): Tăng hương vị món ăn mà không tăng calo.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(32, 'Quả bóng, không nhăn: Chọn ớt hiểm có vỏ mịn, bóng, không nhăn hoặc mềm.', 1),
+(32, 'Màu sắc tươi: Ớt xanh hoặc đỏ có màu đậm, không xỉn.', 2),
+(32, 'Quả cứng, chắc: Ớt tươi có độ cứng, không mềm.', 3),
+(32, 'Cuống xanh, tươi: Chọn ớt có cuống xanh, không khô héo.', 4),
+(32, 'Tránh quả dập: Kiểm tra không có vết thâm hoặc hư hỏng.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(32, 'Bọc kín trong ngăn mát: Đặt ớt hiểm trong túi nhựa, bảo quản ở 4-7°C, giữ tươi 2-3 tuần.', 1),
+(32, 'Giữ khô trước khi bảo quản: Không rửa ớt trước khi cất, tránh ẩm mốc.', 2),
+(32, 'Đông lạnh để bảo quản lâu: Để nguyên quả hoặc băm nhỏ, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(32, 'Kiểm tra định kỳ: Loại bỏ quả mềm hoặc thâm để tránh lây lan hư hỏng.', 4),
+(32, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm ớt hiểm nhanh hỏng.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Nước mắm ớt hiểm', 'Nước chấm cay nồng, phổ biến trong ẩm thực Việt Nam, với ớt hiểm làm điểm nhấn, dùng kèm nhiều món.', '5 phút', '0 phút', '4 người'),
+('Gỏi gà ớt hiểm', 'Món gỏi tươi mát, với ớt hiểm cay nồng trộn thịt gà, là món khai vị hoặc ăn kèm.', '15 phút', '10 phút', '4 người'),
+('Thịt heo xào ớt hiểm', 'Món xào đậm đà, với ớt hiểm cay kết hợp thịt heo, là món chính trong bữa cơm.', '10 phút', '10 phút', '4 người'),
+('Canh cá nấu ớt hiểm', 'Món canh cay nhẹ, với ớt hiểm tăng hương vị, là món phụ hấp dẫn.', '10 phút', '15 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(125, 32),
+(126, 32),
+(127, 32),
+(128, 32);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Nước mắm ớt hiểm
+(125, 'Ớt hiểm', '20g', 'Băm nhỏ hoặc giã nhuyễn', 1),
+(125, 'Nước mắm', '3 muỗng canh', 'Chọn loại ngon', 2),
+(125, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(125, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(125, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+-- Gỏi gà ớt hiểm
+(126, 'Ớt hiểm', '10g', 'Thái lát mỏng', 1),
+(126, 'Thịt gà', '200g', 'Luộc chín, xé sợi', 2),
+(126, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(126, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(126, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(126, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+-- Thịt heo xào ớt hiểm
+(127, 'Ớt hiểm', '15g', 'Thái lát', 1),
+(127, 'Thịt heo', '200g', 'Thái lát mỏng, ướp muối, tiêu', 2),
+(127, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 3),
+(127, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(127, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(127, 'Hành lá', '1 nhánh (5g)', 'Thái nhỏ', 6),
+-- Canh cá nấu ớt hiểm
+(128, 'Ớt hiểm', '10g', 'Thái lát', 1),
+(128, 'Cá lóc', '300g', 'Làm sạch, cắt khúc', 2),
+(128, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(128, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(128, 'Nước', '1 lít', 'Nước lọc', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Nước mắm ớt hiểm
+(125, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ớt hiểm, bỏ cuống, băm nhỏ hoặc giã nhuyễn tùy sở thích. Tỏi bóc vỏ, băm nhuyễn. Chọn ớt hiểm đỏ để nước chấm có màu sắc đẹp, hoặc xanh nếu thích vị cay tươi.'),
+(125, 2, 'Pha nước mắm: Trong bát nhỏ, trộn 3 muỗng canh nước mắm ngon, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt hiểm. Khuấy đều cho đường tan hoàn toàn. Có thể thêm 1-2 muỗng canh nước lọc nếu muốn vị dịu hơn.'),
+(125, 3, 'Kiểm tra vị: Nếm thử nước chấm, điều chỉnh vị chua, ngọt, cay theo khẩu vị. Nếu quá cay, thêm đường hoặc nước lọc. Nếu thiếu vị, thêm chút nước mắm hoặc ớt. Đảm bảo nước chấm có vị hài hòa, cay nồng vừa miệng.'),
+(125, 4, 'Hoàn thiện nước chấm: Đổ nước mắm vào chén nhỏ, trang trí thêm vài lát ớt tươi nếu muốn. Dùng kèm các món luộc (thịt heo, rau củ), chiên, hoặc nướng để thưởng thức vị cay nồng đặc trưng của ớt hiểm.'),
+-- Gỏi gà ớt hiểm
+(126, 1, 'Chuẩn bị nguyên liệu: Luộc thịt gà trong nước sôi có chút muối khoảng 10 phút, vớt ra, ngâm nước đá 1 phút để gà giòn, xé sợi nhỏ. Rửa sạch ớt hiểm, thái lát mỏng, giữ vài quả nguyên để trang trí. Tỏi băm nhuyễn để pha nước mắm.'),
+(126, 2, 'Pha nước mắm trộn gỏi: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt hiểm thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(126, 3, 'Trộn gỏi: Cho thịt gà xé sợi vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để gà thấm gia vị. Để gỏi nghỉ 5 phút trong tủ lạnh để vị ngấm sâu và giữ độ giòn của gà. Trộn nhẹ để tránh làm nát gà.'),
+(126, 4, 'Hoàn thiện món gỏi: Lấy gỏi ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn gỏi ra đĩa, trang trí thêm vài lát ớt hiểm hoặc rau mùi. Dùng làm món khai vị hoặc ăn kèm cơm trắng, bánh tráng để thưởng thức vị cay nồng và tươi ngon.'),
+-- Thịt heo xào ớt hiểm
+(127, 1, 'Chuẩn bị nguyên liệu: Thịt heo thái lát mỏng, ướp với 1/4 muỗng cà phê muối, 1/4 muỗng cà phê tiêu, và 1 muỗng cà phê dầu ăn trong 10 phút. Rửa sạch ớt hiểm, thái lát, giữ vài quả nguyên để tăng màu sắc. Tỏi băm nhuyễn, hành lá thái nhỏ.'),
+(127, 2, 'Xào thịt heo: Đun nóng 1 muỗng canh dầu ăn trong chảo, phi tỏi 20 giây đến khi thơm, cho thịt heo vào xào trên lửa lớn 2-3 phút đến khi thịt chín sơ, đảo đều để thịt không bị dai. Vớt thịt ra bát, để riêng.'),
+(127, 3, 'Xào ớt hiểm: Thêm 1 muỗng canh dầu ăn vào chảo, cho ớt hiểm vào xào 30 giây để tiết vị cay, sau đó cho thịt heo trở lại. Nêm 1 muỗng canh nước mắm, đảo đều 1 phút để thịt thấm vị cay và mặn.'),
+(127, 4, 'Hoàn thiện món xào: Rắc hành lá thái nhỏ, đảo nhanh 10 giây để hành chín sơ. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị cay nồng của ớt hiểm và thịt heo mềm thơm.'),
+-- Canh cá nấu ớt hiểm
+(128, 1, 'Chuẩn bị nguyên liệu: Cá lóc làm sạch, cắt khúc 3cm, ướp với 1/4 muỗng cà phê muối trong 10 phút. Rửa sạch ớt hiểm, thái lát, giữ vài quả nguyên để trang trí. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(128, 2, 'Nấu canh: Đun sôi 1 lít nước lọc, cho cá lóc vào, nấu trên lửa vừa 5 phút đến khi cá chín sơ. Vớt bọt thường xuyên để nước canh trong. Có thể thêm 1 lát gừng để khử mùi tanh của cá nếu muốn.'),
+(128, 3, 'Nêm gia vị: Thêm ớt hiểm và 1 muỗng canh nước mắm vào nồi, nấu thêm 3 phút để ớt tiết vị cay và cá thấm gia vị. Nếm thử, điều chỉnh vị bằng muối hoặc nước mắm nếu cần, giữ vị canh thanh nhẹ và cay vừa.'),
+(128, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, trang trí thêm vài lát ớt hiểm. Dùng nóng với cơm trắng để thưởng thức vị ngọt của cá và cay nhẹ của ớt hiểm.');
+
+-- --------------------------------------
+-- 33. Rau cải xanh (class_index: 32)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    32, 
+    'Rau cải xanh', 
+    'Brassica juncea', 
+    'Rau cải xanh là một loại rau lá thuộc họ Cải (Brassicaceae), phổ biến trong ẩm thực Việt Nam. Lá màu xanh đậm, vị hơi cay, giòn. Rau cải xanh được dùng trong xào, canh, hoặc luộc, là nguyên liệu bổ dưỡng, giàu vitamin và khoáng chất.',
+    'Rau cải xanh giàu vitamin A, C, K và chất xơ. Rau hỗ trợ thị lực, tăng cường miễn dịch, và cải thiện tiêu hóa. Rau cải xanh cũng chứa glucosinolate, có đặc tính chống ung thư. Với lượng calo thấp, rau cải xanh là lựa chọn lý tưởng cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(33, 'Vitamin A (93% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(33, 'Vitamin C (70% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(33, 'Vitamin K (257% DV trong 100g): Tăng cường sức khỏe xương, đông máu.', 3),
+(33, 'Chất xơ (2.7g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 4),
+(33, 'Glucosinolate: Hỗ trợ chống ung thư, bảo vệ tế bào.', 5),
+(33, 'Ít calo (27 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(33, 'Lá xanh đậm, tươi: Chọn rau cải xanh có lá không vàng, không héo.', 1),
+(33, 'Thân giòn, không xơ: Rau tươi có thân chắc, dễ bẻ.', 2),
+(33, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 3),
+(33, 'Mùi thơm nhẹ: Rau cải xanh tươi có mùi dịu, tránh mùi chua.', 4),
+(33, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(33, 'Bọc kín trong ngăn mát: Bọc rau cải xanh trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(33, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(33, 'Đông lạnh để bảo quản lâu: Chần qua nước sôi 1 phút, đông lạnh ở -18°C, dùng trong 3 tháng.', 3),
+(33, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(33, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau cải xanh nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Rau cải xanh xào tỏi', 'Món xào đơn giản, với rau cải xanh giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '5 phút', '4 người'),
+('Canh rau cải xanh nấu tôm', 'Món canh thanh nhẹ, với rau cải xanh và tôm tươi, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Rau cải xanh luộc', 'Món luộc đơn giản, với rau cải xanh giòn, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người'),
+('Rau cải xanh xào nấm', 'Món xào thơm ngon, với rau cải xanh và nấm, là món phụ hấp dẫn.', '10 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(129, 33),
+(130, 33),
+(131, 33),
+(132, 33);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Rau cải xanh xào tỏi
+(129, 'Rau cải xanh', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(129, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(129, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(129, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(129, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Canh rau cải xanh nấu tôm
+(130, 'Rau cải xanh', '200g', 'Rửa sạch, cắt khúc 5cm', 1),
+(130, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(130, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(130, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(130, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Rau cải xanh luộc
+(131, 'Rau cải xanh', '300g', 'Rửa sạch, để nguyên cây hoặc cắt đôi', 1),
+(131, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(131, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(131, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+-- Rau cải xanh xào nấm
+(132, 'Rau cải xanh', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(132, 'Nấm (nấm rơm hoặc nấm mỡ)', '150g', 'Rửa sạch, thái lát', 2),
+(132, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 3),
+(132, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(132, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(132, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Rau cải xanh xào tỏi
+(129, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau cải xanh, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn rau cải xanh non để món xào giòn.'),
+(129, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(129, 3, 'Xào rau: Cho rau cải xanh vào chảo, tăng lửa lớn, xào nhanh 2-3 phút để rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(129, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau, đảm bảo vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn cay của rau cải xanh và thơm nồng của tỏi.'),
+-- Canh rau cải xanh nấu tôm
+(130, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau cải xanh, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ.'),
+(130, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(130, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho rau cải xanh và tôm vào, nấu trên lửa vừa 3-5 phút để rau mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(130, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của rau cải xanh và tôm.'),
+-- Rau cải xanh luộc
+(131, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau cải xanh, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên cây hoặc cắt đôi. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm.'),
+(131, 2, 'Luộc rau: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để rau giữ màu xanh. Cho rau cải xanh vào luộc trên lửa vừa 2-3 phút đến khi rau mềm nhưng vẫn giòn. Dùng đũa kiểm tra độ chín.'),
+(131, 3, 'Vớt rau: Vớt rau ra, ngâm ngay vào nước đá 1 phút để giữ độ giòn và màu xanh đẹp. Để ráo nước, xếp rau ra đĩa, trình bày đẹp mắt.'),
+(131, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn rau luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên.'),
+-- Rau cải xanh xào nấm
+(132, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau cải xanh, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Nấm rửa sạch, thái lát mỏng. Tỏi bóc vỏ, băm nhuyễn để phi thơm.'),
+(132, 2, 'Xào nấm: Đun nóng 1 muỗng canh dầu ăn trong chảo, phi thơm tỏi băm 20 giây, cho nấm vào xào trên lửa vừa 2-3 phút đến khi nấm mềm và tiết nước. Vớt nấm ra bát.'),
+(132, 3, 'Xào rau: Thêm 1 muỗng canh dầu ăn vào chảo, cho rau cải xanh vào xào trên lửa lớn 2-3 phút để rau mềm nhưng vẫn giòn. Cho nấm trở lại chảo, nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(132, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau và nấm, đảm bảo rau vẫn giòn và nấm mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn cay của rau cải xanh và thơm ngọt của nấm.');
+
+-- --------------------------------------
+-- 34. Rau dền (class_index: 33)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    33, 
+    'Rau dền', 
+    'Amaranthus spp.', 
+    'Rau dền là một loại rau lá phổ biến trong ẩm thực Việt Nam, thuộc họ Dền (Amaranthaceae). Rau có lá màu xanh hoặc đỏ, thân mềm, vị ngọt nhẹ, dễ ăn. Rau dền được dùng trong các món canh, xào, hoặc luộc, là nguyên liệu bổ dưỡng, đặc biệt trong bữa ăn gia đình.',
+    'Rau dền giàu vitamin A, vitamin C, và sắt. Rau hỗ trợ thị lực, tăng cường miễn dịch, và ngăn ngừa thiếu máu. Rau dền cũng chứa chất xơ và canxi, giúp cải thiện tiêu hóa và duy trì sức khỏe xương. Với lượng calo thấp, rau dền là lựa chọn tuyệt vời cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(34, 'Vitamin A (60% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(34, 'Vitamin C (50% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(34, 'Sắt (2.7mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 3),
+(34, 'Canxi (159mg trong 100g): Duy trì sức khỏe xương và răng.', 4),
+(34, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 5),
+(34, 'Ít calo (23 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(34, 'Lá xanh tươi, không úa: Chọn rau dền có lá xanh đậm hoặc đỏ tươi, không vàng.', 1),
+(34, 'Thân mềm, giòn: Rau tươi có thân mềm, không xơ hoặc cứng.', 2),
+(34, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 3),
+(34, 'Mùi thơm nhẹ: Rau dền tươi có mùi đặc trưng, tránh mùi chua.', 4),
+(34, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(34, 'Bọc kín trong ngăn mát: Bọc rau dền trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(34, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(34, 'Đông lạnh để bảo quản lâu: Chần sơ 1 phút, để ráo, đông lạnh ở -18°C, dùng trong 3 tháng.', 3),
+(34, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(34, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau dền nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Canh rau dền nấu tôm', 'Món canh thanh nhẹ, với rau dền ngọt và tôm tươi, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Rau dền xào tỏi', 'Món xào đơn giản, với rau dền giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '10 phút', '4 người'),
+('Rau dền luộc', 'Món luộc đơn giản, với rau dền giòn ngọt, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người'),
+('Nộm rau dền', 'Món nộm tươi mát, với rau dền trộn nước mắm, là món khai vị hoặc ăn kèm.', '15 phút', '5 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(133, 34),
+(134, 34),
+(135, 34),
+(136, 34);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Canh rau dền nấu tôm
+(133, 'Rau dền', '200g', 'Rửa sạch, cắt khúc 5cm', 1),
+(133, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(133, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(133, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(133, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Rau dền xào tỏi
+(134, 'Rau dền', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(134, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(134, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(134, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(134, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Rau dền luộc
+(135, 'Rau dền', '300g', 'Rửa sạch, giữ nguyên lá', 1),
+(135, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(135, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(135, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+-- Nộm rau dền
+(136, 'Rau dền', '200g', 'Rửa sạch, chần sơ', 1),
+(136, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(136, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(136, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(136, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(136, 'Ớt', '1 quả (5g)', 'Thái lát', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Canh rau dền nấu tôm
+(133, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau dền, ngâm nước muối loãng 5 phút để khử khuẩn, để ráo, cắt khúc 5cm. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(133, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng và săn lại. Vớt tôm ra bát để giữ độ giòn, tránh xào quá lâu khiến tôm dai.'),
+(133, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho rau dền và tôm vào, nấu trên lửa vừa 4-5 phút để rau dền mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ, không quá mặn.'),
+(133, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của rau dền và tôm tươi.'),
+-- Rau dền xào tỏi
+(134, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau dền, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm để dễ xào. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn rau dền tươi, thân mềm để món xào giòn và ngọt.'),
+(134, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng, làm mất hương vị món xào.'),
+(134, 3, 'Xào rau dền: Cho rau dền vào chảo, tăng lửa lớn, xào nhanh 3-4 phút để rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều. Có thể thêm 1 muỗng canh nước nếu chảo khô, nhưng không quá nhiều để rau không nhũn.'),
+(134, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau, đảm bảo rau dền vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của rau dền và thơm nồng của tỏi.'),
+-- Rau dền luộc
+(135, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau dền, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá để giữ độ giòn. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm. Chọn rau dền non để luộc sẽ ngọt và ít đắng.'),
+(135, 2, 'Luộc rau: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để rau giữ màu xanh đẹp. Cho rau dền vào luộc trên lửa vừa 2-3 phút đến khi rau mềm nhưng vẫn giòn. Dùng đũa kiểm tra, nếu xuyên qua thân dễ dàng là rau chín.'),
+(135, 3, 'Vớt rau: Vớt rau dền ra, ngâm ngay vào nước đá 1 phút để rau giòn và giữ màu xanh hoặc đỏ đẹp. Để ráo nước, xếp rau ra đĩa, giữ nguyên lá để trình bày đẹp mắt.'),
+(135, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn rau luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên của rau dền.'),
+-- Nộm rau dền
+(136, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau dền, ngâm nước muối loãng 5 phút, để ráo. Chần rau dền trong nước sôi 1 phút, vớt ra ngâm nước đá để giữ độ giòn, để ráo, cắt khúc 3cm. Tỏi băm nhuyễn, ớt thái lát mỏng.'),
+(136, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(136, 3, 'Trộn nộm: Cho rau dền vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn của rau. Trộn nhẹ để tránh làm nát rau.'),
+(136, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lát ớt hoặc rau mùi. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị giòn ngọt và chua cay của rau dền.');
+
+-- --------------------------------------
+-- 35. Rau nhiếp cá (class_index: 34)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    34, 
+    'Rau diếp cá', 
+    'Houttuynia cordata', 
+    'Rau diếp cá là một loại rau gia vị thuộc họ Diếp cá (Saururaceae), phổ biến trong ẩm thực Việt Nam. Lá hình tim, mùi tanh đặc trưng, vị chua nhẹ. Rau diếp cá được dùng trong gỏi, salad, hoặc ăn kèm lẩu, bún, có tác dụng thanh nhiệt và giải độc.',
+    'Rau diếp cá giàu vitamin C, chất chống oxy hóa, và hợp chất kháng khuẩn. Rau hỗ trợ miễn dịch, cải thiện sức khỏe da, và có tác dụng thanh nhiệt. Rau cũng chứa chất xơ, giúp tiêu hóa tốt hơn. Với lượng calo thấp, rau diếp cá là lựa chọn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(35, 'Vitamin C (44% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 1),
+(35, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 2),
+(35, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 3),
+(35, 'Hợp chất kháng khuẩn: Hỗ trợ chống nhiễm khuẩn, thanh nhiệt cơ thể.', 4),
+(35, 'Kali (300mg trong 100g): Cân bằng huyết áp, hỗ trợ cơ bắp.', 5),
+(35, 'Ít calo (20 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(35, 'Lá xanh tươi, không úa: Chọn rau diếp cá có lá xanh đậm, không vàng.', 1),
+(35, 'Mùi tanh đặc trưng: Rau tươi có mùi mạnh, tránh loại mùi yếu.', 2),
+(35, 'Thân mềm, không xơ: Rau tươi có thân mềm, dễ bẻ.', 3),
+(35, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(35, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(35, 'Bọc kín trong ngăn mát: Bọc rau diếp cá trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(35, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(35, 'Đông lạnh để bảo quản lâu: Chần sơ 30 giây, để ráo, đông lạnh ở -18°C, dùng trong 2 tháng.', 3),
+(35, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(35, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau diếp cá nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Nộm rau diếp cá', 'Món nộm tươi mát, với rau diếp cá trộn nước mắm, là món khai vị hoặc ăn kèm.', '15 phút', '0 phút', '4 người'),
+('Rau diếp cá ăn kèm lẩu', 'Rau diếp cá dùng kèm lẩu, tăng hương vị và thanh nhiệt.', '5 phút', '0 phút', '4 người'),
+('Sinh tố rau diếp cá', 'Đồ uống thanh mát, với rau diếp cá xay nhuyễn, tốt cho sức khỏe.', '10 phút', '0 phút', '4 người'),
+('Rau diếp cá trộn tôm', 'Món trộn thơm ngon, với rau diếp cá và tôm, là món khai vị hấp dẫn.', '15 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(137, 35),
+(138, 35),
+(139, 35),
+(140, 35);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Nộm rau diếp cá
+(137, 'Rau diếp cá', '200g', 'Rửa sạch, để ráo', 1),
+(137, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(137, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(137, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(137, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(137, 'Ớt', '1 quả (5g)', 'Thái lát', 6),
+-- Rau diếp cá ăn kèm lẩu
+(138, 'Rau diếp cá', '200g', 'Rửa sạch, để ráo', 1),
+(138, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 2),
+(138, 'Tỏi', '2 tép (10g)', 'Băm nhỏ, cho vào nước chấm', 3),
+-- Sinh tố rau diếp cá
+(139, 'Rau diếp cá', '100g', 'Rửa sạch, để ráo', 1),
+(139, 'Sữa đặc', '2 muỗng canh', 'Tạo vị ngọt', 2),
+(139, 'Đường', '1 muỗng canh', 'Điều chỉnh theo khẩu vị', 3),
+(139, 'Đá viên', '200g', 'Dùng để xay', 4),
+(139, 'Nước lọc', '200ml', 'Dùng để xay', 5),
+-- Rau diếp cá trộn tôm
+(140, 'Rau diếp cá', '150g', 'Rửa sạch, để ráo', 1),
+(140, 'Tôm tươi', '200g', 'Luộc chín, bóc vỏ', 2),
+(140, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(140, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(140, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(140, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Nộm rau diếp cá
+(137, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau diếp cá dưới vòi nước, ngâm nước muối loãng 5 phút để khử khuẩn và giảm mùi tanh, để ráo hoàn toàn. Tỏi băm nhuyễn, ớt thái lát mỏng để pha nước mắm. Chọn rau diếp cá tươi, lá không quá già để nộm giòn.'),
+(137, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng. Có thể thêm 1 muỗng canh nước lọc nếu mặn.'),
+(137, 3, 'Trộn nộm: Cho rau diếp cá vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn. Trộn nhẹ tay để tránh làm nát lá rau.'),
+(137, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lát ớt hoặc rau mùi. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị chua cay và mùi tanh đặc trưng của rau diếp cá.'),
+-- Rau diếp cá ăn kèm lẩu
+(138, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau diếp cá, ngâm nước muối loãng 5 phút để khử khuẩn, để ráo. Tỏi bóc vỏ, băm nhuyễn để pha nước chấm. Chuẩn bị nồi lẩu (lẩu chua, lẩu hải sản, hoặc lẩu bò) để ăn kèm rau.'),
+(138, 2, 'Pha nước chấm: Trộn 2 muỗng canh nước mắm với tỏi băm, có thể thêm ớt, chanh, hoặc đường tùy khẩu vị. Khuấy đều, nếm thử để đảm bảo vị mặn thơm, phù hợp với lẩu. Chuẩn bị thêm các loại rau khác (rau muống, cải thảo) để ăn kèm nếu muốn.'),
+(138, 3, 'Sắp xếp rau: Xếp rau diếp cá ra đĩa, trình bày đẹp mắt, đặt cạnh nồi lẩu. Đảm bảo rau khô ráo để tránh làm đục nước lẩu khi nhúng. Có thể thêm giá đỗ hoặc rau thơm để tăng hương vị.'),
+(138, 4, 'Hoàn thiện món: Khi ăn lẩu, nhúng rau diếp cá vào nước lẩu sôi 10-15 giây để rau chín sơ, giữ độ giòn và mùi thơm. Chấm rau với nước mắm tỏi, dùng kèm thịt, hải sản để thưởng thức vị thanh mát và tanh nhẹ của rau diếp cá.'),
+-- Sinh tố rau diếp cá
+(139, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau diếp cá, ngâm nước muối loãng 5 phút, để ráo. Chuẩn bị máy xay sinh tố, đá viên, và nước lọc. Chọn rau diếp cá tươi, lá non để sinh tố có vị dịu và ít tanh.'),
+(139, 2, 'Xay sinh tố: Cho rau diếp cá, 200ml nước lọc, 2 muỗng canh sữa đặc, 1 muỗng canh đường, và 200g đá viên vào máy xay. Xay nhuyễn 30-40 giây đến khi hỗn hợp mịn, không còn lợn cợn. Nếm thử, điều chỉnh độ ngọt bằng sữa đặc hoặc đường nếu cần.'),
+(139, 3, 'Lọc sinh tố: Đổ hỗn hợp qua rây để loại bỏ bã, giữ lại phần nước mịn. Lọc kỹ để sinh tố có kết cấu mượt, dễ uống. Có thể bỏ qua bước này nếu thích giữ chất xơ của rau.'),
+(139, 4, 'Hoàn thiện món: Đổ sinh tố vào ly, trang trí thêm lá rau diếp cá hoặc lát chanh. Dùng lạnh để thưởng thức vị thanh mát, ngọt dịu, và mùi thơm đặc trưng của rau diếp cá, rất tốt cho sức khỏe.'),
+-- Rau diếp cá trộn tôm
+(140, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau diếp cá, ngâm nước muối loãng 5 phút, để ráo. Tôm tươi luộc trong nước sôi có chút muối 2-3 phút, vớt ra, ngâm nước đá 1 phút để tôm giòn, bóc vỏ. Tỏi băm nhuyễn, chuẩn bị bát nhỏ để pha nước mắm.'),
+(140, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, và tỏi băm trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt hài hòa. Có thể thêm ớt băm nếu thích cay.'),
+(140, 3, 'Trộn món: Cho rau diếp cá và tôm vào tô lớn, rưới nước mắm lên trên. Trộn đều bằng tay hoặc đũa để rau và tôm thấm gia vị. Để món nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn của rau và tôm.'),
+(140, 4, 'Hoàn thiện món trộn: Lấy món ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn ra đĩa, trang trí thêm vài lá rau diếp cá hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị tanh nhẹ của rau và ngọt tươi của tôm.');
+
+-- --------------------------------------
+-- 36. Rau má (class_index: 35)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    35, 
+    'Rau má', 
+    'Centella asiatica', 
+    'Rau má là một loại rau lá thuộc họ Hoa tán (Apiaceae), phổ biến trong ẩm thực và y học cổ truyền Việt Nam. Lá tròn, nhỏ, vị hơi đắng, mát. Rau má được dùng trong sinh tố, salad, hoặc canh, có tác dụng thanh nhiệt, giải độc, và làm đẹp da.',
+    'Rau má giàu vitamin A, vitamin C, và chất chống oxy hóa. Rau hỗ trợ sức khỏe da, tăng cường miễn dịch, và có đặc tính kháng viêm. Rau má cũng chứa sắt và chất xơ, giúp ngăn ngừa thiếu máu và cải thiện tiêu hóa. Với lượng calo thấp, rau má là lựa chọn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(36, 'Vitamin A (40% DV trong 100g): Hỗ trợ thị lực và sức khỏe da.', 1),
+(36, 'Vitamin C (30% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(36, 'Sắt (1.5mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 3),
+(36, 'Chất chống oxy hóa: Giảm viêm, cải thiện sức khỏe da và tóc.', 4),
+(36, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 5),
+(36, 'Ít calo (20 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(36, 'Lá xanh tươi, không úa: Chọn rau má có lá xanh đậm, không vàng.', 1),
+(36, 'Thân mềm, không xơ: Rau tươi có thân mềm, dễ bẻ.', 2),
+(36, 'Mùi thơm nhẹ: Rau má tươi có mùi đặc trưng, tránh mùi chua.', 3),
+(36, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(36, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(36, 'Bọc kín trong ngăn mát: Bọc rau má trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(36, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(36, 'Đông lạnh để bảo quản lâu: Chần sơ 30 giây, để ráo, đông lạnh ở -18°C, dùng trong 2 tháng.', 3),
+(36, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(36, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau má nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Sinh tố rau má', 'Đồ uống thanh mát, với rau má xay nhuyễn, tốt cho sức khỏe và làm đẹp da.', '10 phút', '0 phút', '4 người'),
+('Canh rau má nấu tôm', 'Món canh thanh nhẹ, với rau má mát và tôm ngọt, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Nộm rau má', 'Món nộm tươi mát, với rau má trộn nước mắm, là món khai vị hoặc ăn kèm.', '15 phút', '0 phút', '4 người'),
+('Rau má xào tỏi', 'Món xào đơn giản, với rau má giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(141, 36),
+(142, 36),
+(143, 36),
+(144, 36);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Sinh tố rau má
+(141, 'Rau má', '200g', 'Rửa sạch, để ráo', 1),
+(141, 'Sữa đặc', '2 muỗng canh', 'Tạo vị ngọt', 2),
+(141, 'Đường', '1 muỗng canh', 'Điều chỉnh theo khẩu vị', 3),
+(141, 'Đá viên', '200g', 'Dùng để xay', 4),
+(141, 'Nước lọc', '200ml', 'Dùng để xay', 5),
+-- Canh rau má nấu tôm
+(142, 'Rau má', '200g', 'Rửa sạch, để ráo', 1),
+(142, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(142, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(142, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(142, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Nộm rau má
+(143, 'Rau má', '200g', 'Rửa sạch, để ráo', 1),
+(143, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(143, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(143, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(143, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(143, 'Ớt', '1 quả (5g)', 'Thái lát', 6),
+-- Rau má xào tỏi
+(144, 'Rau má', '300g', 'Rửa sạch, để ráo', 1),
+(144, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(144, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(144, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(144, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Sinh tố rau má
+(141, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau má, ngâm nước muối loãng 5 phút để khử khuẩn, để ráo. Chuẩn bị máy xay sinh tố, đá viên, và nước lọc. Chọn rau má tươi, lá non để sinh tố có vị dịu và ít đắng.'),
+(141, 2, 'Xay sinh tố: Cho rau má, 200ml nước lọc, 2 muỗng canh sữa đặc, 1 muỗng canh đường, và 200g đá viên vào máy xay. Xay nhuyễn 30-40 giây đến khi hỗn hợp mịn, không còn lợn cợn. Nếm thử, điều chỉnh độ ngọt bằng sữa đặc hoặc đường nếu cần.'),
+(141, 3, 'Lọc sinh tố: Đổ hỗn hợp qua rây để loại bỏ bã, giữ lại phần nước mịn. Lọc kỹ để sinh tố có kết cấu mượt, dễ uống. Có thể bỏ qua bước này nếu thích giữ chất xơ của rau.'),
+(141, 4, 'Hoàn thiện món: Đổ sinh tố vào ly, trang trí thêm lá rau má hoặc lát chanh. Dùng lạnh để thưởng thức vị thanh mát, ngọt dịu, và mùi thơm đặc trưng của rau má, rất tốt cho da và sức khỏe.'),
+-- Canh rau má nấu tôm
+(142, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau má, ngâm nước muối loãng 5 phút, để ráo. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(142, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(142, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho rau má và tôm vào, nấu trên lửa vừa 4-5 phút để rau mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ.'),
+(142, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị mát của rau má và ngọt tươi của tôm.'),
+-- Nộm rau má
+(143, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau má, ngâm nước muối loãng 5 phút, để ráo. Tỏi băm nhuyễn, ớt thái lát mỏng để pha nước mắm. Chọn rau má tươi, lá non để nộm giòn và ít đắng.'),
+(143, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(143, 3, 'Trộn nộm: Cho rau má vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn. Trộn nhẹ tay để tránh làm nát rau.'),
+(143, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lát ớt hoặc rau mùi. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị giòn mát và chua cay của rau má.'),
+-- Rau má xào tỏi
+(144, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau má, ngâm nước muối loãng 5 phút, để ráo. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn rau má tươi, thân mềm để món xào giòn và không đắng.'),
+(144, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(144, 3, 'Xào rau má: Cho rau má vào chảo, tăng lửa lớn, xào nhanh 2-3 phút để rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều. Có thể thêm 1 muỗng canh nước nếu chảo khô.'),
+(144, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau, đảm bảo rau má vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn mát của rau má và thơm nồng của tỏi.');
+
+-- --------------------------------------
+-- 37. Rau mồng tơi (class_index: 36)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    36, 
+    'Mồng tơi', 
+    'Basella alba', 
+    'Mồng tơi là một loại rau lá thuộc họ Mồng tơi (Basellaceae), phổ biến trong ẩm thực Việt Nam. Lá dày, màu xanh đậm, thân mọng nước, vị ngọt mát. Mồng tơi được dùng trong canh, xào, hoặc luộc, là nguyên liệu bổ dưỡng, giúp thanh nhiệt và dễ tiêu hóa.',
+    'Mồng tơi giàu vitamin A, vitamin C, và chất xơ. Rau hỗ trợ thị lực, tăng cường miễn dịch, và cải thiện tiêu hóa nhờ chất nhầy tự nhiên. Mồng tơi cũng chứa sắt và canxi, giúp ngăn ngừa thiếu máu và duy trì sức khỏe xương. Với lượng calo thấp, mồng tơi là lựa chọn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(37, 'Vitamin A (50% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(37, 'Vitamin C (30% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(37, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 3),
+(37, 'Sắt (1.2mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 4),
+(37, 'Canxi (109mg trong 100g): Duy trì sức khỏe xương và răng.', 5),
+(37, 'Ít calo (19 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(37, 'Lá xanh tươi, không úa: Chọn mồng tơi có lá xanh đậm, không vàng.', 1),
+(37, 'Thân mọng nước: Rau tươi có thân mềm, mọng, không xơ.', 2),
+(37, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 3),
+(37, 'Mùi thơm nhẹ: Mồng tơi tươi có mùi đặc trưng, tránh mùi chua.', 4),
+(37, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(37, 'Bọc kín trong ngăn mát: Bọc mồng tơi trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(37, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(37, 'Đông lạnh để bảo quản lâu: Chần sơ 1 phút, để ráo, đông lạnh ở -18°C, dùng trong 3 tháng.', 3),
+(37, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(37, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm mồng tơi nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Canh mồng tơi nấu tôm', 'Món canh thanh nhẹ, với mồng tơi mát và tôm ngọt, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Mồng tơi xào tỏi', 'Món xào đơn giản, với mồng tơi giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '10 phút', '4 người'),
+('Mồng tơi luộc', 'Món luộc đơn giản, với mồng tơi mát, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người'),
+('Canh mồng tơi cua', 'Món canh ngọt thanh, với mồng tơi và cua đồng, là món phụ bổ dưỡng.', '15 phút', '15 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(145, 37),
+(146, 37),
+(147, 37),
+(148, 37);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Canh mồng tơi nấu tôm
+(145, 'Mồng tơi', '200g', 'Rửa sạch, cắt khúc 5cm', 1),
+(145, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(145, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(145, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(145, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Mồng tơi xào tỏi
+(146, 'Mồng tơi', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(146, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(146, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(146, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(146, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Mồng tơi luộc
+(147, 'Mồng tơi', '300g', 'Rửa sạch, giữ nguyên lá', 1),
+(147, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(147, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(147, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+-- Canh mồng tơi cua
+(148, 'Mồng tơi', '200g', 'Rửa sạch, cắt khúc 5cm', 1),
+(148, 'Cua đồng', '200g', 'Làm sạch, giã nhuyễn', 2),
+(148, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(148, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(148, 'Nước', '1 lít', 'Nước lọc', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Canh mồng tơi nấu tôm
+(145, 1, 'Chuẩn bị nguyên liệu: Rửa sạch mồng tơi, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(145, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(145, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho mồng tơi và tôm vào, nấu trên lửa vừa 4-5 phút để rau mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ.'),
+(145, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị mát của mồng tơi và ngọt tươi của tôm.'),
+-- Mồng tơi xào tỏi
+(146, 1, 'Chuẩn bị nguyên liệu: Rửa sạch mồng tơi, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn mồng tơi tươi, thân mọng nước để món xào giòn và ngọt.'),
+(146, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(146, 3, 'Xào mồng tơi: Cho mồng tơi vào chảo, tăng lửa lớn, xào nhanh 2-3 phút để rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều. Có thể thêm 1 muỗng canh nước nếu chảo khô.'),
+(146, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau, đảm bảo mồng tơi vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn mát của mồng tơi và thơm nồng của tỏi.'),
+-- Mồng tơi luộc
+(147, 1, 'Chuẩn bị nguyên liệu: Rửa sạch mồng tơi, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá để giữ độ giòn. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm. Chọn mồng tơi non để luộc sẽ ngọt và mát.'),
+(147, 2, 'Luộc rau: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để rau giữ màu xanh đẹp. Cho mồng tơi vào luộc trên lửa vừa 2-3 phút đến khi rau mềm nhưng vẫn giòn. Dùng đũa kiểm tra, nếu xuyên qua thân dễ dàng là rau chín.'),
+(147, 3, 'Vớt rau: Vớt mồng tơi ra, ngâm ngay vào nước đá 1 phút để rau giòn và giữ màu xanh đẹp. Để ráo nước, xếp rau ra đĩa, giữ nguyên lá để trình bày đẹp mắt.'),
+(147, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn rau luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên của mồng tơi.'),
+-- Canh mồng tơi cua
+(148, 1, 'Chuẩn bị nguyên liệu: Rửa sạch mồng tơi, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Cua đồng làm sạch, giã nhuyễn, lọc lấy nước cốt, bỏ bã. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(148, 2, 'Nấu nước cốt cua: Đổ 1 lít nước lọc vào nồi, thêm nước cốt cua, đun trên lửa vừa, khuấy nhẹ để gạch cua nổi lên. Vớt gạch cua ra bát, để riêng. Lọc nước cốt qua rây để loại bỏ cặn, giữ nước trong.'),
+(148, 3, 'Nấu canh: Đun sôi nước cốt cua, cho mồng tơi vào, nấu 4-5 phút để rau mềm. Thêm gạch cua trở lại, nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị ngọt thanh.'),
+(148, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của cua và mát của mồng tơi.');
+
+-- --------------------------------------
+-- 38. Rau muống (class_index: 37)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    37, 
+    'Rau muống', 
+    'Ipomoea aquatica', 
+    'Rau muống là một loại rau lá phổ biến trong ẩm thực Việt Nam, thuộc họ Bìm bìm (Convolvulaceae). Lá thon dài, thân rỗng, vị ngọt nhẹ, giòn. Rau muống được dùng trong xào, luộc, canh, hoặc salad, là nguyên liệu quen thuộc nhờ dễ chế biến và bổ dưỡng.',
+    'Rau muống giàu vitamin A, vitamin C, và sắt. Rau hỗ trợ thị lực, tăng cường miễn dịch, và ngăn ngừa thiếu máu. Rau muống cũng chứa chất xơ và canxi, giúp cải thiện tiêu hóa và duy trì sức khỏe xương. Với lượng calo thấp, rau muống là lựa chọn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(38, 'Vitamin A (66% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(38, 'Vitamin C (55% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(38, 'Sắt (2.7mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 3),
+(38, 'Canxi (77mg trong 100g): Duy trì sức khỏe xương và răng.', 4),
+(38, 'Chất xơ (2g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 5),
+(38, 'Ít calo (19 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(38, 'Lá xanh tươi, không úa: Chọn rau muống có lá xanh đậm, không vàng.', 1),
+(38, 'Thân giòn, rỗng: Rau tươi có thân giòn, không xơ hoặc mềm.', 2),
+(38, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 3),
+(38, 'Mùi thơm nhẹ: Rau muống tươi có mùi đặc trưng, tránh mùi chua.', 4),
+(38, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(38, 'Bọc kín trong ngăn mát: Bọc rau muống trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(38, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(38, 'Đông lạnh để bảo quản lâu: Chần sơ 1 phút, để ráo, đông lạnh ở -18°C, dùng trong 3 tháng.', 3),
+(38, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(38, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau muống nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Rau muống xào tỏi', 'Món xào đơn giản, với rau muống giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '10 phút', '4 người'),
+('Rau muống luộc', 'Món luộc đơn giản, với rau muống giòn, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người'),
+('Canh rau muống nấu tôm', 'Món canh thanh nhẹ, với rau muống ngọt và tôm tươi, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Nộm rau muống', 'Món nộm tươi mát, với rau muống trộn nước mắm, là món khai vị hoặc ăn kèm.', '15 phút', '5 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(149, 38),
+(150, 38),
+(151, 38),
+(152, 38);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Rau muống xào tỏi
+(149, 'Rau muống', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(149, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(149, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(149, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(149, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Rau muống luộc
+(150, 'Rau muống', '300g', 'Rửa sạch, giữ nguyên lá', 1),
+(150, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(150, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(150, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+-- Canh rau muống nấu tôm
+(151, 'Rau muống', '200g', 'Rửa sạch, cắt khúc 5cm', 1),
+(151, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(151, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(151, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(151, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Nộm rau muống
+(152, 'Rau muống', '200g', 'Rửa sạch, chần sơ', 1),
+(152, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(152, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(152, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(152, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(152, 'Ớt', '1 quả (5g)', 'Thái lát', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Rau muống xào tỏi
+(149, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau muống, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn rau muống non, thân rỗng để món xào giòn và ngọt.'),
+(149, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(149, 3, 'Xào rau muống: Cho rau muống vào chảo, tăng lửa lớn, xào nhanh 3-4 phút để rau mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều. Có thể thêm 1 muỗng canh nước nếu chảo khô.'),
+(149, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của rau, đảm bảo rau muống vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của rau muống và thơm nồng của tỏi.'),
+-- Rau muống luộc
+(150, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau muống, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá để giữ độ giòn. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm. Chọn rau muống non để luộc sẽ ngọt và giòn.'),
+(150, 2, 'Luộc rau: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để rau giữ màu xanh đẹp. Cho rau muống vào luộc trên lửa vừa 2-3 phút đến khi rau mềm nhưng vẫn giòn. Dùng đũa kiểm tra, nếu xuyên qua thân dễ dàng là rau chín.'),
+(150, 3, 'Vớt rau: Vớt rau muống ra, ngâm ngay vào nước đá 1 phút để rau giòn và giữ màu xanh đẹp. Để ráo nước, xếp rau ra đĩa, giữ nguyên lá để trình bày đẹp mắt.'),
+(150, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn rau luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên của rau muống.'),
+-- Canh rau muống nấu tôm
+(151, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau muống, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ, giữ riêng phần đầu hành để phi thơm.'),
+(151, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho đầu hành lá vào phi thơm 10 giây, thêm tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(151, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho rau muống và tôm vào, nấu trên lửa vừa 4-5 phút để rau mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị thanh nhẹ.'),
+(151, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của rau muống và tôm tươi.'),
+-- Nộm rau muống
+(152, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau muống, ngâm nước muối loãng 5 phút, để ráo. Chần rau muống trong nước sôi 1 phút, vớt ra ngâm nước đá để giữ độ giòn, để ráo, cắt khúc 3cm. Tỏi băm nhuyễn, ớt thái lát mỏng.'),
+(152, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(152, 3, 'Trộn nộm: Cho rau muống vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn. Trộn nhẹ để tránh làm nát rau.'),
+(152, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lát ớt hoặc rau mùi. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị giòn ngọt và chua cay của rau muống.');
+
+-- --------------------------------------
+-- 39. Rau răm (class_index: 39)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    38, 
+    'Rau răm', 
+    'Persicaria odorata', 
+    'Rau răm là một loại rau gia vị thuộc họ Rau răm (Polygonaceae), phổ biến trong ẩm thực Việt Nam. Lá nhỏ, màu xanh, mùi thơm cay nồng, vị hơi chát. Rau răm được dùng trong gỏi, cháo, hoặc ăn kèm vịt luộc, trứng vịt lộn, là nguyên liệu tăng hương vị đặc trưng.',
+    'Rau răm giàu vitamin C, chất chống oxy hóa, và hợp chất kháng khuẩn. Rau hỗ trợ tiêu hóa, tăng cường miễn dịch, và có tác dụng kháng viêm. Rau răm cũng chứa sắt, giúp ngăn ngừa thiếu máu. Với lượng calo thấp, rau răm là lựa chọn tuyệt vời để tăng hương vị.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(39, 'Vitamin C (50% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 1),
+(39, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 2),
+(39, 'Sắt (2mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 3),
+(39, 'Hợp chất kháng khuẩn: Hỗ trợ tiêu hóa, chống nhiễm khuẩn.', 4),
+(39, 'Kali (300mg trong 100g): Cân bằng huyết áp, hỗ trợ cơ bắp.', 5),
+(39, 'Ít calo (24 kcal trong 100g): Phù hợp để tăng hương vị món ăn.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(39, 'Lá xanh tươi, không úa: Chọn rau răm có lá xanh đậm, không vàng.', 1),
+(39, 'Mùi thơm cay nồng: Rau tươi có mùi mạnh, tránh loại mùi yếu.', 2),
+(39, 'Thân mềm, không xơ: Rau tươi có thân mềm, dễ bẻ.', 3),
+(39, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(39, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(39, 'Bọc kín trong ngăn mát: Bọc rau răm trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(39, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(39, 'Đông lạnh để bảo quản lâu: Rửa sạch, thái nhỏ, đông lạnh ở -18°C, dùng trong 2 tháng.', 3),
+(39, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(39, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau răm nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Gỏi gà rau răm', 'Món gỏi tươi mát, với rau răm thơm cay trộn thịt gà, là món khai vị hoặc ăn kèm.', '15 phút', '10 phút', '4 người'),
+('Cháo vịt rau răm', 'Món cháo thơm ngon, với rau răm làm điểm nhấn, là món chính bổ dưỡng.', '20 phút', '30 phút', '4 người'),
+('Trứng vịt lộn rau răm', 'Món ăn vặt phổ biến, với rau răm ăn kèm trứng vịt lộn, là món ăn nhẹ hấp dẫn.', '10 phút', '20 phút', '4 người'),
+('Nộm rau răm tôm', 'Món nộm tươi mát, với rau răm trộn tôm, là món khai vị hoặc ăn kèm.', '15 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(153, 39),
+(154, 39),
+(155, 39),
+(156, 39);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Gỏi gà rau răm
+(153, 'Rau răm', '100g', 'Rửa sạch, thái nhỏ', 1),
+(153, 'Thịt gà', '300g', 'Luộc chín, xé sợi', 2),
+(153, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(153, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(153, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(153, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+(153, 'Ớt', '1 quả (5g)', 'Thái lát', 7),
+-- Cháo vịt rau răm
+(154, 'Rau răm', '50g', 'Rửa sạch, thái nhỏ', 1),
+(154, 'Thịt vịt', '300g', 'Luộc chín, thái lát', 2),
+(154, 'Gạo', '100g', 'Vo sạch', 3),
+(154, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(154, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 5),
+(154, 'Nước', '1.5 lít', 'Nước lọc', 6),
+-- Trứng vịt lộn rau răm
+(155, 'Rau răm', '50g', 'Rửa sạch, để nguyên lá', 1),
+(155, 'Trứng vịt lộn', '4 quả', 'Chọn trứng tươi', 2),
+(155, 'Muối tiêu', '1 muỗng cà phê', 'Dùng để chấm', 3),
+(155, 'Nước', '1 lít', 'Nước lọc để luộc', 4),
+-- Nộm rau răm tôm
+(156, 'Rau răm', '100g', 'Rửa sạch, thái nhỏ', 1),
+(156, 'Tôm tươi', '200g', 'Luộc chín, bóc vỏ', 2),
+(156, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(156, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(156, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(156, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+(156, 'Ớt', '1 quả (5g)', 'Thái lát', 7);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Gỏi gà rau răm
+(153, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau răm, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Luộc thịt gà trong nước có chút muối 10 phút, vớt ra, ngâm nước đá 1 phút để thịt săn, xé sợi. Tỏi băm nhuyễn, ớt thái lát mỏng.'),
+(153, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(153, 3, 'Trộn gỏi: Cho thịt gà, rau răm vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để thịt và rau thấm gia vị. Để gỏi nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ tươi của rau.'),
+(153, 4, 'Hoàn thiện món gỏi: Lấy gỏi ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn gỏi ra đĩa, trang trí thêm vài lá rau răm hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị cay nồng của rau răm và mềm ngọt của gà.'),
+-- Cháo vịt rau răm
+(154, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau răm, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Luộc thịt vịt trong nước có chút muối 15 phút, vớt ra, thái lát mỏng. Vo sạch gạo, ngâm 30 phút để cháo nhanh nhừ. Hành lá thái nhỏ.'),
+(154, 2, 'Nấu cháo: Đun sôi 1.5 lít nước, cho gạo vào, nấu trên lửa nhỏ 20-25 phút, khuấy đều để cháo không dính đáy nồi. Khi gạo nhừ, thêm thịt vịt thái lát, nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(154, 3, 'Hoàn thiện cháo: Rắc hành lá và rau răm thái nhỏ vào nồi, đun thêm 30 giây để rau chín sơ và dậy mùi thơm. Tắt bếp, múc cháo ra bát, rắc thêm tiêu nếu thích.'),
+(154, 4, 'Dọn món: Dọn cháo nóng ra bàn, dùng kèm nước mắm nguyên chất hoặc muối tiêu để thưởng thức vị mềm nhừ của cháo, ngọt của thịt vịt, và thơm cay của rau răm.'),
+-- Trứng vịt lộn rau răm
+(155, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau răm, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá để ăn kèm. Chuẩn bị trứng vịt lộn tươi, kiểm tra bằng cách lắc nhẹ, không có tiếng kêu là trứng tốt.'),
+(155, 2, 'Luộc trứng: Đun sôi 1 lít nước, cho trứng vịt lộn vào, luộc trên lửa vừa 18-20 phút để trứng chín đều. Vớt trứng ra, ngâm nước lạnh 2 phút để dễ bóc vỏ.'),
+(155, 3, 'Chuẩn bị gia vị: Trộn 1 muỗng cà phê muối với chút tiêu, để làm gia vị chấm. Xếp rau răm ra đĩa nhỏ, đặt cạnh trứng để ăn kèm. Có thể chuẩn bị thêm nước mắm ớt nếu thích.'),
+(155, 4, 'Hoàn thiện món: Bóc nhẹ vỏ trứng, để nguyên trong chén nhỏ, rắc muối tiêu lên trên, ăn kèm rau răm. Dùng nóng để thưởng thức vị béo ngậy của trứng và cay nồng của rau răm.'),
+-- Nộm rau răm tôm
+(156, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau răm, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Luộc tôm trong nước sôi có chút muối 2-3 phút, vớt ra, ngâm nước đá 1 phút để tôm giòn, bóc vỏ. Tỏi băm nhuyễn, ớt thái lát.'),
+(156, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(156, 3, 'Trộn nộm: Cho rau răm và tôm vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau và tôm thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ tươi.'),
+(156, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lá rau răm hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị cay nồng của rau răm và ngọt tươi của tôm.');
+
+-- --------------------------------------
+-- 40. Rau tía tô (class_index: 39)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    39, 
+    'Rau tía tô', 
+    'Perilla frutescens', 
+    'Rau tía tô là một loại rau gia vị thuộc họ Bạc hà (Lamiaceae), phổ biến trong ẩm thực Việt Nam. Lá màu xanh hoặc tím, mùi thơm nồng, vị cay nhẹ. Rau tía tô được dùng trong gỏi, cháo, hoặc ăn kèm phở, có tác dụng giải cảm và hỗ trợ tiêu hóa.',
+    'Rau tía tô giàu vitamin A, vitamin C, và chất chống oxy hóa. Rau hỗ trợ miễn dịch, giảm viêm, và có đặc tính kháng khuẩn. Rau tía tô cũng chứa sắt và canxi, giúp ngăn ngừa thiếu máu và duy trì sức khỏe xương. Với lượng calo thấp, rau tía tô là lựa chọn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(40, 'Vitamin A (47% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(40, 'Vitamin C (26% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(40, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 3),
+(40, 'Sắt (1.3mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 4),
+(40, 'Canxi (230mg trong 100g): Duy trì sức khỏe xương và răng.', 5),
+(40, 'Ít calo (23 kcal trong 100g): Phù hợp để tăng hương vị món ăn.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(40, 'Lá xanh hoặc tím tươi: Chọn rau tía tô có lá không vàng, không héo.', 1),
+(40, 'Mùi thơm nồng: Rau tươi có mùi cay đặc trưng, tránh loại mùi yếu.', 2),
+(40, 'Thân mềm, không xơ: Rau tươi có thân dễ bẻ, không cứng.', 3),
+(40, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(40, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(40, 'Bọc kín trong ngăn mát: Bọc rau tía tô trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(40, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(40, 'Đông lạnh để bảo quản lâu: Rửa sạch, thái nhỏ, đông lạnh ở -18°C, dùng trong 2 tháng.', 3),
+(40, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(40, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau tía tô nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Cháo tía tô', 'Món cháo thơm ngon, với rau tía tô làm điểm nhấn, là món chính giải cảm.', '15 phút', '20 phút', '4 người'),
+('Gỏi bò rau tía tô', 'Món gỏi tươi mát, với rau tía tô trộn thịt bò, là món khai vị hấp dẫn.', '15 phút', '10 phút', '4 người'),
+('Rau tía tô ăn kèm phở', 'Rau tía tô dùng kèm phở, tăng hương vị và thơm ngon.', '5 phút', '0 phút', '4 người'),
+('Nộm rau tía tô', 'Món nộm tươi mát, với rau tía tô trộn nước mắm, là món khai vị hoặc ăn kèm.', '15 phút', '0 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(157, 40),
+(158, 40),
+(159, 40),
+(160, 40);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Cháo tía tô
+(157, 'Rau tía tô', '100g', 'Rửa sạch, thái nhỏ', 1),
+(157, 'Gạo', '100g', 'Vo sạch', 2),
+(157, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 3),
+(157, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(157, 'Nước', '1.5 lít', 'Nước lọc', 5),
+-- Gỏi bò rau tía tô
+(158, 'Rau tía tô', '100g', 'Rửa sạch, thái nhỏ', 1),
+(158, 'Thịt bò', '200g', 'Thái mỏng, xào chín', 2),
+(158, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 3),
+(158, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 4),
+(158, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 5),
+(158, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 6),
+(158, 'Ớt', '1 quả (5g)', 'Thái lát', 7),
+-- Rau tía tô ăn kèm phở
+(159, 'Rau tía tô', '100g', 'Rửa sạch, để nguyên lá', 1),
+(159, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 2),
+(159, 'Tỏi', '2 tép (10g)', 'Băm nhỏ, cho vào nước chấm', 3),
+-- Nộm rau tía tô
+(160, 'Rau tía tô', '100g', 'Rửa sạch, thái nhỏ', 1),
+(160, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(160, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(160, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(160, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(160, 'Ớt', '1 quả (5g)', 'Thái lát', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Cháo tía tô
+(157, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau tía tô, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Vo sạch gạo, ngâm 30 phút để cháo nhanh nhừ. Hành lá rửa sạch, thái nhỏ để rắc lên cháo.'),
+(157, 2, 'Nấu cháo: Đun sôi 1.5 lít nước, cho gạo vào, nấu trên lửa nhỏ 20-25 phút, khuấy đều để cháo không dính đáy nồi. Khi gạo nhừ, nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(157, 3, 'Hoàn thiện cháo: Rắc hành lá và rau tía tô thái nhỏ vào nồi, đun thêm 30 giây để rau chín sơ và dậy mùi thơm. Tắt bếp, múc cháo ra bát, rắc thêm tiêu nếu thích.'),
+(157, 4, 'Dọn món: Dọn cháo nóng ra bàn, dùng kèm nước mắm nguyên chất để thưởng thức vị mềm nhừ của cháo và thơm cay của rau tía tô, rất tốt cho người bị cảm.'),
+-- Gỏi bò rau tía tô
+(158, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau tía tô, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Thịt bò thái mỏng, ướp với chút muối và tiêu 5 phút. Tỏi băm nhuyễn, ớt thái lát mỏng.'),
+(158, 2, 'Xào bò: Đun nóng 1 muỗng canh dầu ăn trong chảo, cho thịt bò vào xào trên lửa lớn 1-2 phút đến khi bò chín tái, vớt ra để nguội. Tránh xào quá lâu để bò không dai.'),
+(158, 3, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(158, 4, 'Hoàn thiện món gỏi: Cho thịt bò, rau tía tô vào tô lớn, rưới nước mắm lên trên, trộn đều. Dọn gỏi ra đĩa, trang trí thêm vài lá rau tía tô. Dùng làm món khai vị để thưởng thức vị cay nồng của rau và mềm ngọt của bò.'),
+-- Rau tía tô ăn kèm phở
+(159, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau tía tô, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá để ăn kèm. Tỏi bóc vỏ, băm nhuyễn để pha nước chấm. Chuẩn bị bát phở (phở bò hoặc gà) để dùng kèm rau.'),
+(159, 2, 'Pha nước chấm: Trộn 2 muỗng canh nước mắm với tỏi băm, có thể thêm ớt, chanh, hoặc đường tùy khẩu vị. Khuấy đều, nếm thử để đảm bảo vị mặn thơm, phù hợp với phở.'),
+(159, 3, 'Sắp xếp rau: Xếp rau tía tô ra đĩa, trình bày đẹp mắt, đặt cạnh bát phở. Đảm bảo rau khô ráo để tránh làm loãng nước phở. Có thể thêm húng quế, ngò gai để tăng hương vị.'),
+(159, 4, 'Hoàn thiện món: Khi ăn phở, thêm rau tía tô vào bát, trộn đều để rau thấm nước dùng. Dùng kèm nước mắm tỏi, thưởng thức vị thơm cay của rau tía tô hòa quyện với nước phở đậm đà.'),
+-- Nộm rau tía tô
+(160, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau tía tô, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Tỏi băm nhuyễn, ớt thái lát mỏng để pha nước mắm. Chọn rau tía tô tươi, lá non để nộm thơm và giòn.'),
+(160, 2, 'Pha nước mắm trộn: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(160, 3, 'Trộn nộm: Cho rau tía tô vào tô lớn, rưới nước mắm lên trên, trộn đều bằng tay hoặc đũa để rau thấm gia vị. Để nộm nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ tươi.'),
+(160, 4, 'Hoàn thiện món nộm: Lấy nộm ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn nộm ra đĩa, trang trí thêm vài lá rau tía tô hoặc ớt thái lát. Dùng làm món khai vị hoặc ăn kèm cơm trắng để thưởng thức vị cay nồng của rau tía tô.');
+
+-- --------------------------------------
+-- 41. Rau xà lách (class_index: 40)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    40, 
+    'Rau xà lách', 
+    'Lactuca sativa', 
+    'Rau xà lách là một loại rau lá thuộc họ Cúc (Asteraceae), phổ biến trong ẩm thực Việt Nam. Lá giòn, màu xanh nhạt, vị ngọt nhẹ. Rau xà lách được dùng trong salad, cuốn, hoặc ăn kèm lẩu, là nguyên liệu bổ dưỡng, giàu chất xơ và vitamin.',
+    'Rau xà lách giàu vitamin A, vitamin K, và folate. Rau hỗ trợ thị lực, tăng cường sức khỏe xương, và cải thiện tiêu hóa nhờ chất xơ. Rau xà lách cũng chứa nước và ít calo, là lựa chọn lý tưởng cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(41, 'Vitamin A (74% DV trong 100g): Hỗ trợ thị lực và miễn dịch.', 1),
+(41, 'Vitamin K (126% DV trong 100g): Tăng cường sức khỏe xương, đông máu.', 2),
+(41, 'Folate (38μg trong 100g): Hỗ trợ phát triển tế bào, tốt cho thai kỳ.', 3),
+(41, 'Chất xơ (1.3g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 4),
+(41, 'Nước (95%): Giữ cơ thể đủ nước, hỗ trợ trao đổi chất.', 5),
+(41, 'Ít calo (15 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(41, 'Lá xanh tươi, giòn: Chọn rau xà lách có lá xanh nhạt, không héo.', 1),
+(41, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 2),
+(41, 'Thân cứng, không mềm: Rau tươi có thân chắc, không nhũn.', 3),
+(41, 'Mùi thơm nhẹ: Rau xà lách tươi có mùi dịu, tránh mùi chua.', 4),
+(41, 'Tránh lá dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(41, 'Bọc kín trong ngăn mát: Bọc rau xà lách trong khăn giấy khô, bảo quản ở 0-4°C, giữ tươi 7-10 ngày.', 1),
+(41, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(41, 'Không đông lạnh: Rau xà lách dễ hỏng khi đông lạnh, nên dùng tươi.', 3),
+(41, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(41, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm rau xà lách nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Salad rau xà lách', 'Món salad tươi mát, với rau xà lách trộn sốt dầu giấm, là món khai vị lành mạnh.', '10 phút', '0 phút', '4 người'),
+('Rau xà lách cuốn tôm', 'Món cuốn hấp dẫn, với rau xà lách và tôm, dùng kèm nước chấm.', '15 phút', '10 phút', '4 người'),
+('Rau xà lách ăn kèm lẩu', 'Rau xà lách dùng kèm lẩu, tăng hương vị và thanh mát.', '5 phút', '0 phút', '4 người'),
+('Sandwich rau xà lách', 'Món sandwich đơn giản, với rau xà lách tươi, là món ăn nhẹ bổ dưỡng.', '10 phút', '0 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(161, 41),
+(162, 41),
+(163, 41),
+(164, 41);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Salad rau xà lách
+(161, 'Rau xà lách', '200g', 'Rửa sạch, để ráo', 1),
+(161, 'Dầu ô liu', '2 muỗng canh', 'Dùng làm sốt', 2),
+(161, 'Giấm balsamic', '1 muỗng canh', 'Tạo vị chua', 3),
+(161, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 4),
+(161, 'Tiêu', '1/4 muỗng cà phê', 'Tăng hương vị', 5),
+-- Rau xà lách cuốn tôm
+(162, 'Rau xà lách', '200g', 'Rửa sạch, để nguyên lá', 1),
+(162, 'Tôm tươi', '200g', 'Luộc chín, bóc vỏ', 2),
+(162, 'Bánh tráng', '8 miếng', 'Dùng để cuốn', 3),
+(162, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+(162, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(162, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 6),
+-- Rau xà lách ăn kèm lẩu
+(163, 'Rau xà lách', '200g', 'Rửa sạch, để nguyên lá', 1),
+(163, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 2),
+(163, 'Tỏi', '2 tép (10g)', 'Băm nhỏ, cho vào nước chấm', 3),
+-- Sandwich rau xà lách
+(164, 'Rau xà lách', '100g', 'Rửa sạch, để nguyên lá', 1),
+(164, 'Bánh mì', '4 lát', 'Chọn bánh mì sandwich', 2),
+(164, 'Thịt nguội', '100g', 'Thái mỏng', 3),
+(164, 'Mayonnaise', '2 muỗng canh', 'Tạo vị béo', 4),
+(164, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Salad rau xà lách
+(161, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau xà lách dưới vòi nước, ngâm nước muối loãng 5 phút, để ráo, xé nhỏ vừa ăn. Chuẩn bị bát nhỏ để pha sốt. Chọn rau xà lách tươi, lá giòn để salad ngon.'),
+(161, 2, 'Pha sốt: Trộn 2 muỗng canh dầu ô liu, 1 muỗng canh giấm balsamic, 1/4 muỗng cà phê muối, và 1/4 muỗng cà phê tiêu trong bát nhỏ. Khuấy đều để tạo sốt mịn, nếm thử để điều chỉnh vị.'),
+(161, 3, 'Trộn salad: Cho rau xà lách vào tô lớn, rưới sốt lên trên, trộn đều bằng tay hoặc đũa để rau thấm sốt. Trộn nhẹ để tránh làm dập lá rau. Có thể thêm cà chua bi hoặc dưa leo nếu thích.'),
+(161, 4, 'Hoàn thiện món salad: Dọn salad ra đĩa, rắc thêm chút tiêu nếu muốn. Dùng ngay để thưởng thức vị giòn tươi của rau xà lách và sốt dầu giấm thơm ngon, rất phù hợp làm món khai vị.'),
+-- Rau xà lách cuốn tôm
+(162, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau xà lách, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá. Luộc tôm trong nước sôi có chút muối 2-3 phút, vớt ra, ngâm nước đá 1 phút, bóc vỏ. Tỏi băm nhuyễn.'),
+(162, 2, 'Pha nước chấm: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước lọc, tỏi băm, và chút ớt nếu thích. Khuấy đều, nếm thử để đảm bảo vị chua ngọt mặn cân bằng.'),
+(162, 3, 'Cuốn bánh tráng: Nhúng bánh tráng vào nước ấm 5 giây để mềm, đặt lên đĩa. Xếp 1 lá xà lách, 2-3 con tôm lên bánh tráng, cuộn chặt, gấp hai đầu để kín nhân. Lặp lại cho các cuốn còn lại.'),
+(162, 4, 'Hoàn thiện món cuốn: Xếp các cuốn ra đĩa, trình bày đẹp mắt. Dọn kèm nước chấm, dùng ngay để thưởng thức vị giòn của rau xà lách, ngọt của tôm, và đậm đà của nước chấm.'),
+-- Rau xà lách ăn kèm lẩu
+(163, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau xà lách, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá. Tỏi bóc vỏ, băm nhuyễn để pha nước chấm. Chuẩn bị nồi lẩu (lẩu chua, lẩu hải sản) để ăn kèm rau.'),
+(163, 2, 'Pha nước chấm: Trộn 2 muỗng canh nước mắm với tỏi băm, có thể thêm ớt, chanh, hoặc đường tùy khẩu vị. Khuấy đều, nếm thử để đảm bảo vị mặn thơm, phù hợp với lẩu.'),
+(163, 3, 'Sắp xếp rau: Xếp rau xà lách ra đĩa, trình bày đẹp mắt, đặt cạnh nồi lẩu. Đảm bảo rau khô ráo để tránh làm đục nước lẩu khi nhúng. Có thể thêm rau muống, cải thảo nếu muốn.'),
+(163, 4, 'Hoàn thiện món: Khi ăn lẩu, nhúng rau xà lách vào nước lẩu sôi 5-10 giây để rau chín sơ, giữ độ giòn. Chấm rau với nước mắm tỏi, dùng kèm thịt, hải sản để thưởng thức vị thanh mát của rau xà lách.'),
+-- Sandwich rau xà lách
+(164, 1, 'Chuẩn bị nguyên liệu: Rửa sạch rau xà lách, ngâm nước muối loãng 5 phút, để ráo, giữ nguyên lá. Thịt nguội thái mỏng, chuẩn bị bánh mì sandwich và mayonnaise. Chọn rau xà lách tươi để sandwich giòn.'),
+(164, 2, 'Phết sốt: Phết 1 muỗng canh mayonnaise lên mỗi lát bánh mì, rắc chút muối và tiêu để tăng hương vị. Có thể thêm mù tạt hoặc sốt cà chua nếu thích.'),
+(164, 3, 'Xếp sandwich: Đặt 1-2 lá xà lách lên lát bánh mì, thêm thịt nguội thái mỏng, đậy lát bánh mì còn lại. Nhẹ nhàng ấn xuống để sandwich gọn gàng. Có thể thêm cà chua hoặc dưa leo nếu muốn.'),
+(164, 4, 'Hoàn thiện món: Cắt sandwich theo đường chéo để dễ ăn, xếp ra đĩa. Dùng ngay để thưởng thức vị giòn của rau xà lách, béo của mayonnaise, và thơm ngon của thịt nguội.');
+
+-- --------------------------------------
+-- 42. Su hào (class_index: 41)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    41, 
+    'Su hào', 
+    'Brassica oleracea var. gongylodes', 
+    'Su hào là một loại rau củ thuộc họ Cải (Brassicaceae), phổ biến trong ẩm thực Việt Nam. Củ tròn, giòn, vị ngọt nhẹ, lá cũng có thể ăn được. Su hào được dùng trong salad, xào, hoặc nấu canh, là nguyên liệu bổ dưỡng, giàu vitamin và chất xơ.',
+    'Su hào giàu vitamin C, chất xơ, và kali. Củ hỗ trợ miễn dịch, cải thiện tiêu hóa, và cân bằng huyết áp. Su hào cũng chứa glucosinolate, có đặc tính chống ung thư. Với lượng calo thấp, su hào là lựa chọn lý tưởng cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(42, 'Vitamin C (62mg trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 1),
+(42, 'Chất xơ (3.6g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 2),
+(42, 'Kali (350mg trong 100g): Cân bằng huyết áp, hỗ trợ cơ bắp.', 3),
+(42, 'Glucosinolate: Hỗ trợ chống ung thư, bảo vệ tế bào.', 4),
+(42, 'Vitamin B6 (10% DV trong 100g): Hỗ trợ trao đổi chất, sức khỏe não.', 5),
+(42, 'Ít calo (27 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(42, 'Củ chắc, không nứt: Chọn su hào có vỏ nhẵn, không vết nứt.', 1),
+(42, 'Lá xanh tươi: Lá không héo, không vàng, cho thấy củ tươi.', 2),
+(42, 'Kích thước vừa: Su hào nhỏ đến trung bình thường giòn, ít xơ.', 3),
+(42, 'Không có mùi lạ: Su hào tươi không có mùi hắc hoặc chua.', 4),
+(42, 'Tránh củ mềm: Củ không nên mềm hoặc có đốm thâm.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(42, 'Bảo quản ngăn mát: Bọc su hào trong túi nhựa, giữ ở 0-4°C, tươi 2-4 tuần.', 1),
+(42, 'Tách lá và củ: Lá bảo quản riêng trong khăn giấy ẩm, dùng trong 5-7 ngày.', 2),
+(42, 'Đông lạnh để bảo quản lâu: Thái lát, chần 2 phút, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(42, 'Kiểm tra định kỳ: Loại bỏ phần củ hỏng để tránh lây lan.', 4),
+(42, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm su hào nhanh hỏng.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Su hào xào thịt bò', 'Món xào thơm ngon, với su hào giòn và thịt bò mềm, là món chính hấp dẫn.', '15 phút', '10 phút', '4 người'),
+('Salad su hào', 'Món salad tươi mát, với su hào trộn sốt chua ngọt, là món khai vị lành mạnh.', '10 phút', '0 phút', '4 người'),
+('Canh su hào nấu xương', 'Món canh ngọt thanh, với su hào và xương heo, là món phụ bổ dưỡng.', '15 phút', '30 phút', '4 người'),
+('Su hào muối chua', 'Món muối chua giòn, với su hào ngâm nước mắm, là món ăn kèm hấp dẫn.', '15 phút', '0 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(165, 42),
+(166, 42),
+(167, 42),
+(168, 42);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Su hào xào thịt bò
+(165, 'Su hào', '300g', 'Gọt vỏ, thái sợi', 1),
+(165, 'Thịt bò', '200g', 'Thái mỏng', 2),
+(165, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 3),
+(165, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(165, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(165, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 6),
+-- Salad su hào
+(166, 'Su hào', '200g', 'Gọt vỏ, thái sợi', 1),
+(166, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(166, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(166, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(166, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 5),
+(166, 'Ớt', '1 quả (5g)', 'Thái lát', 6),
+-- Canh su hào nấu xương
+(167, 'Su hào', '200g', 'Gọt vỏ, thái miếng', 1),
+(167, 'Xương heo', '300g', 'Rửa sạch, chần sơ', 2),
+(167, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(167, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(167, 'Nước', '1.5 lít', 'Nước lọc', 5),
+-- Su hào muối chua
+(168, 'Su hào', '300g', 'Gọt vỏ, thái sợi', 1),
+(168, 'Nước mắm', '2 muỗng canh', 'Chọn loại ngon', 2),
+(168, 'Đường', '2 muỗng canh', 'Tạo vị ngọt', 3),
+(168, 'Giấm', '2 muỗng canh', 'Tạo vị chua', 4),
+(168, 'Tỏi', '2 tép (10g)', 'Thái lát', 5),
+(168, 'Ớt', '1 quả (5g)', 'Thái lát', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Su hào xào thịt bò
+(165, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su hào, rửa sạch, thái sợi mỏng. Thịt bò thái mỏng, ướp với chút muối và tiêu 5 phút. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn su hào tươi để món xào giòn.'),
+(165, 2, 'Xào bò: Đun nóng 1 muỗng canh dầu ăn trong chảo, cho thịt bò vào xào trên lửa lớn 1-2 phút đến khi bò chín tái, vớt ra để nguội. Tránh xào quá lâu để bò không dai.'),
+(165, 3, 'Xào su hào: Thêm 1 muỗng canh dầu ăn vào chảo, phi thơm tỏi băm 20 giây, cho su hào vào xào trên lửa lớn 3-4 phút đến khi su hào mềm nhưng vẫn giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(165, 4, 'Hoàn thiện món xào: Cho thịt bò trở lại chảo, xào nhanh 1 phút để bò thấm gia vị. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của su hào và mềm thơm của bò.'),
+-- Salad su hào
+(166, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su hào, rửa sạch, thái sợi mỏng. Tỏi băm nhuyễn, ớt thái lát mỏng để pha sốt. Chọn su hào non để salad giòn và ít xơ.'),
+(166, 2, 'Pha sốt: Trộn 2 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt cay cân bằng.'),
+(166, 3, 'Trộn salad: Cho su hào vào tô lớn, rưới sốt lên trên, trộn đều bằng tay hoặc đũa để su hào thấm gia vị. Để salad nghỉ 5 phút trong tủ lạnh để vị ngấm và giữ độ giòn.'),
+(166, 4, 'Hoàn thiện món salad: Lấy salad ra, kiểm tra lại vị, điều chỉnh nếu cần. Dọn salad ra đĩa, trang trí thêm vài lát ớt hoặc rau mùi. Dùng làm món khai vị để thưởng thức vị giòn ngọt và chua cay của su hào.'),
+-- Canh su hào nấu xương
+(167, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su hào, rửa sạch, thái miếng vừa ăn. Xương heo rửa sạch, chần qua nước sôi 2 phút để loại bỏ bọt bẩn, rửa lại. Hành lá rửa sạch, thái nhỏ.'),
+(167, 2, 'Nấu nước dùng: Đun sôi 1.5 lít nước, cho xương heo vào, hầm trên lửa nhỏ 20-25 phút để nước ngọt. Vớt bọt thường xuyên để nước dùng trong. Nêm 1 muỗng canh nước mắm, khuấy nhẹ.'),
+(167, 3, 'Nấu canh: Cho su hào vào nồi, nấu trên lửa vừa 5-7 phút đến khi su hào mềm nhưng vẫn giòn. Nếm thử, điều chỉnh gia vị nếu cần. Su hào non sẽ nấu nhanh hơn và ngọt hơn.'),
+(167, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của su hào và nước dùng.'),
+-- Su hào muối chua
+(168, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su hào, rửa sạch, thái sợi mỏng. Tỏi và ớt thái lát mỏng. Chuẩn bị lọ thủy tinh sạch, khử trùng bằng nước sôi để muối chua.'),
+(168, 2, 'Pha nước ngâm: Trộn 2 muỗng canh nước mắm, 2 muỗng canh đường, 2 muỗng canh giấm, và 100ml nước lọc trong bát nhỏ. Khuấy đều cho đường tan, nếm thử để đảm bảo vị chua ngọt mặn cân bằng.'),
+(168, 3, 'Ngâm su hào: Xếp su hào, tỏi, và ớt vào lọ thủy tinh, đổ nước ngâm vào sao cho ngập su hào. Đậy kín nắp, để ở nhiệt độ phòng 1-2 ngày để su hào lên men nhẹ và giòn.'),
+(168, 4, 'Hoàn thiện món: Sau khi ngâm, kiểm tra độ chua, bảo quản lọ trong tủ lạnh, dùng trong 1-2 tuần. Dọn su hào muối chua ra đĩa, dùng kèm cơm hoặc thịt luộc để thưởng thức vị giòn chua.');
+
+-- --------------------------------------
+-- 43. Su su (class_index: 42)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    42, 
+    'Su su', 
+    'Sechium edule', 
+    'Su su là một loại rau củ thuộc họ Bầu bí (Cucurbitaceae), phổ biến trong ẩm thực Việt Nam. Quả màu xanh, giòn, vị nhạt, có thể ăn cả lá và ngọn. Su su được dùng trong xào, canh, hoặc luộc, là nguyên liệu bổ dưỡng, giàu chất xơ và vitamin.',
+    'Su su giàu vitamin C, chất xơ, và folate. Củ hỗ trợ miễn dịch, cải thiện tiêu hóa, và tốt cho sức khỏe tim mạch. Su su cũng chứa nước và ít calo, là lựa chọn lý tưởng cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(43, 'Vitamin C (12mg trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 1),
+(43, 'Chất xơ (1.7g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 2),
+(43, 'Folate (93μg trong 100g): Hỗ trợ phát triển tế bào, tốt cho thai kỳ.', 3),
+(43, 'Kali (125mg trong 100g): Cân bằng huyết áp, hỗ trợ cơ bắp.', 4),
+(43, 'Nước (94%): Giữ cơ thể đủ nước, hỗ trợ trao đổi chất.', 5),
+(43, 'Ít calo (19 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(43, 'Quả xanh, chắc: Chọn su su có vỏ nhẵn, không vết thâm.', 1),
+(43, 'Lá và ngọn tươi: Lá không héo, ngọn mềm, không xơ.', 2),
+(43, 'Kích thước vừa: Su su nhỏ đến trung bình thường giòn, ít hạt.', 3),
+(43, 'Không có mùi lạ: Su su tươi không có mùi chua hoặc hắc.', 4),
+(43, 'Tránh quả mềm: Quả không nên mềm hoặc có đốm thâm.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(43, 'Bảo quản ngăn mát: Bọc su su trong túi nhựa, giữ ở 0-4°C, tươi 2-3 tuần.', 1),
+(43, 'Tách lá và quả: Lá, ngọn bảo quản riêng trong khăn giấy ẩm, dùng trong 5 ngày.', 2),
+(43, 'Đông lạnh để bảo quản lâu: Thái lát, chần 2 phút, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(43, 'Kiểm tra định kỳ: Loại bỏ phần quả hỏng để tránh lây lan.', 4),
+(43, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm su su nhanh hỏng.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Su su xào tỏi', 'Món xào đơn giản, với su su giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '10 phút', '4 người'),
+('Canh su su nấu tôm', 'Món canh thanh nhẹ, với su su ngọt và tôm tươi, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Su su luộc', 'Món luộc đơn giản, với su su giòn, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người'),
+('Ngọn su su xào thịt bò', 'Món xào thơm ngon, với ngọn su su giòn và thịt bò mềm, là món chính hấp dẫn.', '15 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(169, 43),
+(170, 43),
+(171, 43),
+(172, 43);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Su su xào tỏi
+(169, 'Su su', '300g', 'Gọt vỏ, thái lát', 1),
+(169, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(169, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(169, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(169, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Canh su su nấu tôm
+(170, 'Su su', '200g', 'Gọt vỏ, thái miếng', 1),
+(170, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(170, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(170, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(170, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Su su luộc
+(171, 'Su su', '300g', 'Gọt vỏ, thái miếng', 1),
+(171, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(171, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(171, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4),
+-- Ngọn su su xào thịt bò
+(172, 'Ngọn su su', '300g', 'Rửa sạch, cắt khúc 5cm', 1),
+(172, 'Thịt bò', '200g', 'Thái mỏng', 2),
+(172, 'Tỏi', '2 tép (10g)', 'Băm nhỏ', 3),
+(172, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 4),
+(172, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 5),
+(172, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Su su xào tỏi
+(169, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su su, rửa sạch, thái lát mỏng. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn su su non để món xào giòn và ngọt.'),
+(169, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(169, 3, 'Xào su su: Cho su su vào chảo, tăng lửa lớn, xào nhanh 3-4 phút để su su mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(169, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của su su, đảm bảo vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của su su và thơm nồng của tỏi.'),
+-- Canh su su nấu tôm
+(170, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su su, rửa sạch, thái miếng vừa ăn. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ.'),
+(170, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(170, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho su su và tôm vào, nấu trên lửa vừa 5-7 phút để su su mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(170, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của su su và tôm.'),
+-- Su su luộc
+(171, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ su su, rửa sạch, thái miếng vừa ăn. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm. Chọn su su non để luộc sẽ giòn và ngọt.'),
+(171, 2, 'Luộc su su: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để su su giữ màu xanh. Cho su su vào luộc trên lửa vừa 5-7 phút đến khi su su mềm nhưng vẫn giòn. Dùng đũa kiểm tra độ chín.'),
+(171, 3, 'Vớt su su: Vớt su su ra, ngâm ngay vào nước đá 1 phút để giữ độ giòn và màu xanh đẹp. Để ráo nước, xếp su su ra đĩa, trình bày đẹp mắt.'),
+(171, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn su su luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên.'),
+-- Ngọn su su xào thịt bò
+(172, 1, 'Chuẩn bị nguyên liệu: Rửa sạch ngọn su su, ngâm nước muối loãng 5 phút, để ráo, cắt khúc 5cm. Thịt bò thái mỏng, ướp với chút muối và tiêu 5 phút. Tỏi bóc vỏ, băm nhuyễn.'),
+(172, 2, 'Xào bò: Đun nóng 1 muỗng canh dầu ăn trong chảo, cho thịt bò vào xào trên lửa lớn 1-2 phút đến khi bò chín tái, vớt ra để nguội. Tránh xào quá lâu để bò không dai.'),
+(172, 3, 'Xào ngọn su su: Thêm 1 muỗng canh dầu ăn vào chảo, phi thơm tỏi băm 20 giây, cho ngọn su su vào xào trên lửa lớn 3-4 phút đến khi ngọn mềm nhưng vẫn giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(172, 4, 'Hoàn thiện món xào: Cho thịt bò trở lại chảo, xào nhanh 1 phút để bò thấm gia vị. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của ngọn su su và mềm thơm của bò.');
+
+-- --------------------------------------
+-- 44. Thì là (class_index: 43)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    43, 
+    'Thì là', 
+    'Anethum graveolens', 
+    'Thì là là một loại rau gia vị thuộc họ Hoa tán (Apiaceae), phổ biến trong ẩm thực Việt Nam. Lá mảnh, màu xanh, mùi thơm đặc trưng, vị cay nhẹ. Thì là được dùng trong canh, chả cá, hoặc trang trí món ăn, là nguyên liệu tăng hương vị và hỗ trợ tiêu hóa.',
+    'Thì là giàu vitamin C, chất chống oxy hóa, và sắt. Rau hỗ trợ miễn dịch, giảm viêm, và ngăn ngừa thiếu máu. Thì là cũng chứa tinh dầu, giúp cải thiện tiêu hóa và thư giãn cơ thể. Với lượng calo thấp, thì là là lựa chọn tuyệt vời để tăng hương vị.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(44, 'Vitamin C (85% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 1),
+(44, 'Sắt (6.6mg trong 100g): Ngăn ngừa thiếu máu, hỗ trợ tạo hồng cầu.', 2),
+(44, 'Chất chống oxy hóa: Giảm viêm, bảo vệ tế bào khỏi tổn thương.', 3),
+(44, 'Tinh dầu (anethole): Hỗ trợ tiêu hóa, giảm đầy hơi.', 4),
+(44, 'Canxi (208mg trong 100g): Duy trì sức khỏe xương và răng.', 5),
+(44, 'Ít calo (43 kcal trong 100g): Phù hợp để tăng hương vị món ăn.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(44, 'Lá xanh tươi, không héo: Chọn thì là có lá xanh đậm, không vàng.', 1),
+(44, 'Mùi thơm nồng: Rau tươi có mùi đặc trưng, tránh loại mùi yếu.', 2),
+(44, 'Thân mềm, không xơ: Rau tươi có thân dễ bẻ, không cứng.', 3),
+(44, 'Không có đốm nâu: Kiểm tra lá không có vết thâm hoặc hư hỏng.', 4),
+(44, 'Tránh rau dập: Chọn bó rau nguyên vẹn, không bị dập nát.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(44, 'Bọc kín trong ngăn mát: Bọc thì là trong khăn giấy ẩm, bảo quản ở 0-4°C, giữ tươi 5-7 ngày.', 1),
+(44, 'Giữ khô trước khi bảo quản: Không rửa rau trước khi cất, tránh ẩm mốc.', 2),
+(44, 'Đông lạnh để bảo quản lâu: Rửa sạch, thái nhỏ, đông lạnh ở -18°C, dùng trong 2 tháng.', 3),
+(44, 'Kiểm tra định kỳ: Loại bỏ lá úa hoặc hỏng để tránh lây lan.', 4),
+(44, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm thì là nhanh héo.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Canh cá thì là', 'Món canh thơm ngon, với thì là và cá, là món phụ bổ dưỡng.', '15 phút', '15 phút', '4 người'),
+('Chả cá thì là', 'Món chả cá thơm lừng, với thì là làm điểm nhấn, là món chính hấp dẫn.', '20 phút', '15 phút', '4 người'),
+('Trứng chiên thì là', 'Món trứng đơn giản, với thì là thơm, là món phụ dễ làm.', '10 phút', '5 phút', '4 người'),
+('Canh tôm thì là', 'Món canh thanh nhẹ, với thì là và tôm, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(173, 44),
+(174, 44),
+(175, 44),
+(176, 44);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Canh cá thì là
+(173, 'Thì là', '50g', 'Rửa sạch, thái nhỏ', 1),
+(173, 'Cá (cá lóc hoặc cá rô)', '300g', 'Làm sạch, thái lát', 2),
+(173, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(173, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(173, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Chả cá thì là
+(174, 'Thì là', '50g', 'Rửa sạch, thái nhỏ', 1),
+(174, 'Cá (cá thu hoặc cá lóc)', '300g', 'Xay nhuyễn', 2),
+(174, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 3),
+(174, 'Dầu ăn', '3 muỗng canh', 'Dùng để chiên', 4),
+(174, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Trứng chiên thì là
+(175, 'Thì là', '50g', 'Rửa sạch, thái nhỏ', 1),
+(175, 'Trứng gà', '4 quả', 'Đánh tan', 2),
+(175, 'Nước mắm', '1 muỗng cà phê', 'Tăng hương vị', 3),
+(175, 'Dầu ăn', '2 muỗng canh', 'Dùng để chiên', 4),
+(175, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Canh tôm thì là
+(176, 'Thì là', '50g', 'Rửa sạch, thái nhỏ', 1),
+(176, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(176, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(176, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(176, 'Nước', '1 lít', 'Nước lọc', 5);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Canh cá thì là
+(173, 1, 'Chuẩn bị nguyên liệu: Rửa sạch thì là, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Cá (cá lóc hoặc cá rô) làm sạch, rửa với muối để khử tanh, thái lát mỏng. Hành lá rửa sạch, thái nhỏ. Chọn cá tươi để canh ngọt.'),
+(173, 2, 'Xào cá: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho cá vào xào sơ trên lửa vừa 1-2 phút để cá săn lại và bớt tanh. Vớt cá ra bát, giữ lại dầu trong nồi để nấu canh.'),
+(173, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho cá vào, nấu trên lửa vừa 5-7 phút để cá chín và nước canh ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(173, 4, 'Hoàn thiện món canh: Rắc thì là và hành lá thái nhỏ vào nồi, đun thêm 30 giây để rau chín sơ và dậy mùi thơm. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của cá và thơm nồng của thì là.'),
+-- Chả cá thì là
+(174, 1, 'Chuẩn bị nguyên liệu: Rửa sạch thì là, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Cá (cá thu hoặc cá lóc) xay nhuyễn, ướp với 1 muỗng canh nước mắm, 1/4 muỗng cà phê muối, và thì là trong 15 phút.'),
+(174, 2, 'Tạo hình chả: Trộn đều hỗn hợp cá, dùng tay hoặc muỗng nặn thành từng miếng chả tròn hoặc dẹt, kích cỡ vừa ăn. Đặt chả lên đĩa, chuẩn bị chảo để chiên.'),
+(174, 3, 'Chiên chả: Đun nóng 3 muỗng canh dầu ăn trong chảo, cho chả cá vào chiên trên lửa vừa 3-4 phút mỗi mặt đến khi vàng giòn. Lật nhẹ để chả không vỡ, vớt ra để trên giấy thấm dầu.'),
+(174, 4, 'Hoàn thiện món chả: Dọn chả cá ra đĩa, trang trí thêm vài nhánh thì là. Dùng nóng với cơm trắng hoặc bún, chấm nước mắm ớt để thưởng thức vị giòn thơm của chả và cay nồng của thì là.'),
+-- Trứng chiên thì là
+(175, 1, 'Chuẩn bị nguyên liệu: Rửa sạch thì là, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Đập 4 quả trứng gà vào bát, thêm 1 muỗng cà phê nước mắm, 1/4 muỗng cà phê muối, và thì là, đánh tan.'),
+(175, 2, 'Chuẩn bị chảo: Đun nóng 2 muỗng canh dầu ăn trong chảo chống dính trên lửa vừa. Lắc chảo để dầu phủ đều mặt chảo, đảm bảo trứng không dính.'),
+(175, 3, 'Chiên trứng: Đổ hỗn hợp trứng vào chảo, dàn đều, chiên trên lửa vừa 2-3 phút đến khi mặt dưới vàng. Lật trứng, chiên thêm 1-2 phút để trứng chín đều. Tránh chiên quá lâu để trứng không khô.'),
+(175, 4, 'Hoàn thiện món trứng: Tắt bếp, chuyển trứng chiên ra đĩa, cắt thành miếng vừa ăn. Dùng nóng với cơm trắng để thưởng thức vị béo mềm của trứng và thơm cay của thì là.'),
+-- Canh tôm thì là
+(176, 1, 'Chuẩn bị nguyên liệu: Rửa sạch thì là, ngâm nước muối loãng 5 phút, để ráo, thái nhỏ. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ.'),
+(176, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(176, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho tôm vào, nấu trên lửa vừa 3-5 phút để tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(176, 4, 'Hoàn thiện món canh: Rắc thì là và hành lá thái nhỏ vào nồi, đun thêm 30 giây để rau chín sơ và dậy mùi thơm. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt tươi của tôm và thơm nồng của thì là.');
+
+-- --------------------------------------
+-- 45. Tỏi (class_index: 44)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    44, 
+    'Tỏi', 
+    'Allium sativum', 
+    'Tỏi là một loại gia vị thuộc họ Hành (Amaryllidaceae), phổ biến trong ẩm thực Việt Nam. Củ nhỏ, tép trắng, mùi thơm nồng, vị cay. Tỏi được dùng để phi thơm, làm nước chấm, hoặc ngâm, là nguyên liệu tăng hương vị và có lợi cho sức khỏe.',
+    'Tỏi giàu allicin, chất chống oxy hóa, và vitamin C. Tỏi hỗ trợ miễn dịch, giảm cholesterol, và có đặc tính kháng khuẩn. Tỏi cũng chứa mangan và vitamin B6, giúp tăng cường sức khỏe xương và trao đổi chất. Với lượng calo thấp, tỏi là gia vị bổ dưỡng.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(45, 'Allicin: Hỗ trợ miễn dịch, kháng khuẩn, giảm viêm.', 1),
+(45, 'Vitamin C (31% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(45, 'Mangan (23% DV trong 100g): Hỗ trợ sức khỏe xương, trao đổi chất.', 3),
+(45, 'Vitamin B6 (13% DV trong 100g): Hỗ trợ sức khỏe não, tạo hồng cầu.', 4),
+(45, 'Chất chống oxy hóa: Giảm nguy cơ bệnh tim, bảo vệ tế bào.', 5),
+(45, 'Ít calo (149 kcal trong 100g): Phù hợp làm gia vị.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(45, 'Củ chắc, tép trắng: Chọn tỏi có củ cứng, không mọc mầm.', 1),
+(45, 'Vỏ khô, dễ bóc: Tỏi tươi có vỏ mỏng, không ẩm.', 2),
+(45, 'Mùi thơm nồng: Tỏi tốt có mùi mạnh, tránh loại mùi yếu.', 3),
+(45, 'Không có đốm nâu: Kiểm tra tép không có vết thâm hoặc hư hỏng.', 4),
+(45, 'Tránh củ mềm: Tỏi không nên mềm hoặc có dấu hiệu mốc.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(45, 'Bảo quản nơi khô ráo: Để tỏi ở nơi thoáng mát, tránh ánh nắng, giữ được 2-3 tháng.', 1),
+(45, 'Không để trong tủ lạnh: Độ ẩm làm tỏi dễ mọc mầm hoặc mốc.', 2),
+(45, 'Bóc tép để đông lạnh: Bóc tép, bọc kín, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(45, 'Kiểm tra định kỳ: Loại bỏ tép mọc mầm hoặc hỏng để tránh lây lan.', 4),
+(45, 'Tránh để gần thực phẩm khác: Mùi tỏi có thể ám vào thực phẩm khác.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Tỏi phi', 'Món tỏi phi thơm lừng, dùng để rắc lên canh, phở, hoặc xào, là gia vị tăng hương vị.', '10 phút', '5 phút', '4 người'),
+('Nước mắm tỏi ớt', 'Nước chấm đậm đà, với tỏi băm, là món chấm phổ biến cho nhiều món ăn.', '5 phút', '0 phút', '4 người'),
+('Tỏi ngâm giấm', 'Món tỏi ngâm chua, dùng kèm thịt luộc hoặc bánh chưng, là món ăn kèm hấp dẫn.', '10 phút', '0 phút', '4 người'),
+('Gà chiên tỏi', 'Món gà chiên giòn, với tỏi phi thơm, là món chính thơm ngon.', '15 phút', '20 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(177, 45),
+(178, 45),
+(179, 45),
+(180, 45);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Tỏi phi
+(177, 'Tỏi', '100g', 'Bóc vỏ, thái lát mỏng', 1),
+(177, 'Dầu ăn', '100ml', 'Dùng để chiên', 2),
+(177, 'Muối', '1/4 muỗng cà phê', 'Tăng hương vị', 3),
+-- Nước mắm tỏi ớt
+(178, 'Tỏi', '20g', 'Băm nhuyễn', 1),
+(178, 'Nước mắm', '3 muỗng canh', 'Chọn loại ngon', 2),
+(178, 'Đường', '1 muỗng canh', 'Tạo vị ngọt', 3),
+(178, 'Nước cốt chanh', '1 muỗng canh', 'Tạo vị chua', 4),
+(178, 'Ớt', '1 quả (5g)', 'Thái lát', 5),
+-- Tỏi ngâm giấm
+(179, 'Tỏi', '200g', 'Bóc vỏ, để nguyên tép', 1),
+(179, 'Giấm', '200ml', 'Giấm gạo hoặc giấm táo', 2),
+(179, 'Đường', '2 muỗng canh', 'Tạo vị ngọt', 3),
+(179, 'Muối', '1 muỗng cà phê', 'Tăng hương vị', 4),
+(179, 'Nước', '100ml', 'Nước lọc', 5),
+-- Gà chiên tỏi
+(180, 'Tỏi', '50g', 'Băm nhuyễn', 1),
+(180, 'Cánh gà', '500g', 'Rửa sạch, để ráo', 2),
+(180, 'Dầu ăn', '200ml', 'Dùng để chiên', 3),
+(180, 'Nước mắm', '1 muỗng canh', 'Ướp gà', 4),
+(180, 'Muối', '1/2 muỗng cà phê', 'Ướp gà', 5),
+(180, 'Tiêu', '1/4 muỗng cà phê', 'Ướp gà', 6);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Tỏi phi
+(177, 1, 'Chuẩn bị nguyên liệu: Bóc vỏ tỏi, thái lát mỏng đều để chiên giòn. Chuẩn bị chảo sâu lòng và dầu ăn sạch. Chọn tỏi tươi, tép chắc để tỏi phi thơm và không đắng.'),
+(177, 2, 'Chiên tỏi: Đun nóng 100ml dầu ăn trong chảo trên lửa vừa, cho tỏi vào chiên 2-3 phút, đảo đều để tỏi vàng đều. Khi tỏi bắt đầu vàng nhẹ, giảm lửa nhỏ để tránh cháy.'),
+(177, 3, 'Vớt tỏi: Khi tỏi vàng giòn, vớt ra để trên giấy thấm dầu, rắc 1/4 muỗng cà phê muối, trộn nhẹ để thấm vị. Để tỏi nguội hoàn toàn, tỏi sẽ giòn hơn.'),
+(177, 4, 'Hoàn thiện món: Cho tỏi phi vào lọ kín, dùng để rắc lên canh, phở, hoặc món xào. Bảo quản nơi khô ráo, dùng trong 1-2 tuần để thưởng thức vị thơm giòn của tỏi phi.'),
+-- Nước mắm tỏi ớt
+(178, 1, 'Chuẩn bị nguyên liệu: Bóc vỏ tỏi, băm nhuyễn. Ớt tươi rửa sạch, thái lát mỏng. Chuẩn bị bát nhỏ để pha nước chấm. Chọn tỏi tươi để nước mắm thơm hơn.'),
+(178, 2, 'Pha nước chấm: Trộn 3 muỗng canh nước mắm, 1 muỗng canh đường, 1 muỗng canh nước cốt chanh, tỏi băm, và ớt thái lát trong bát nhỏ. Khuấy đều cho đường tan hoàn toàn.'),
+(178, 3, 'Điều chỉnh vị: Nếm thử nước chấm, điều chỉnh thêm chanh, đường, hoặc nước mắm nếu cần để đạt vị chua ngọt mặn cân bằng. Có thể thêm 1 muỗng canh nước lọc nếu muốn vị nhẹ hơn.'),
+(178, 4, 'Hoàn thiện món: Đổ nước mắm tỏi ớt ra bát nhỏ, dùng kèm thịt luộc, cá chiên, hoặc các món cuốn. Bảo quản trong tủ lạnh, dùng trong 1-2 ngày để giữ vị tươi ngon.'),
+-- Tỏi ngâm giấm
+(179, 1, 'Chuẩn bị nguyên liệu: Bóc vỏ tỏi, rửa sạch, để ráo. Chuẩn bị lọ thủy tinh sạch, khử trùng bằng nước sôi. Chọn tép tỏi chắc, không mọc mầm để ngâm giấm.'),
+(179, 2, 'Pha nước ngâm: Đun sôi 100ml nước với 200ml giấm, 2 muỗng canh đường, và 1 muỗng cà phê muối. Khuấy đều cho đường và muối tan, để nguội hoàn toàn.'),
+(179, 3, 'Ngâm tỏi: Xếp tép tỏi vào lọ thủy tinh, đổ nước ngâm giấm vào sao cho ngập tỏi. Đậy kín nắp, để ở nhiệt độ phòng 5-7 ngày để tỏi ngấm chua và giòn.'),
+(179, 4, 'Hoàn thiện món: Sau khi ngâm, kiểm tra độ chua, bảo quản lọ trong tủ lạnh, dùng trong 1-2 tháng. Dọn tỏi ngâm giấm ra đĩa, dùng kèm thịt luộc hoặc bánh chưng để thưởng thức vị chua giòn.'),
+-- Gà chiên tỏi
+(180, 1, 'Chuẩn bị nguyên liệu: Rửa sạch cánh gà, để ráo, ướp với 1 muỗng canh nước mắm, 1/2 muỗng cà phê muối, 1/4 muỗng cà phê tiêu, và 20g tỏi băm trong 30 phút. Tỏi còn lại băm nhuyễn để phi.'),
+(180, 2, 'Chiên gà: Đun nóng 200ml dầu ăn trong chảo sâu lòng, cho cánh gà vào chiên trên lửa vừa 10-12 phút đến khi gà vàng giòn. Vớt gà ra, để trên giấy thấm dầu.'),
+(180, 3, 'Phi tỏi: Đổ bớt dầu trong chảo, giữ lại 2 muỗng canh, phi thơm 30g tỏi băm còn lại trên lửa nhỏ 1-2 phút đến khi tỏi vàng nhẹ. Cho gà trở lại chảo, đảo đều để gà thấm mùi tỏi.'),
+(180, 4, 'Hoàn thiện món: Dọn gà chiên tỏi ra đĩa, rắc thêm tiêu nếu thích. Dùng nóng với cơm trắng hoặc làm món nhậu để thưởng thức vị giòn thơm của gà và tỏi phi.');
+
+-- --------------------------------------
+-- 46. Bầu (class_index: 45)
+-- --------------------------------------
+
+-- Chèn vào bảng vegetables
+INSERT INTO vegetables (class_index, vietnamese_name, scientific_name, description, nutritional_info)
+VALUES (
+    45, 
+    'Trái bầu', 
+    'Lagenaria siceraria', 
+    'Trái bầu là một loại rau củ thuộc họ Bầu bí (Cucurbitaceae), phổ biến trong ẩm thực Việt Nam. Quả dài, màu xanh, vị ngọt thanh, mềm. Trái bầu được dùng trong canh, xào, hoặc nhồi thịt, là nguyên liệu bổ dưỡng, giàu chất xơ và nước.',
+    'Trái bầu giàu chất xơ, vitamin C, và nước. Rau hỗ trợ tiêu hóa, giữ cơ thể đủ nước, và tăng cường miễn dịch. Trái bầu cũng chứa kali và ít calo, là lựa chọn lý tưởng cho chế độ ăn lành mạnh.'
+);
+
+-- Chèn vào bảng vegetable_nutritional_points
+INSERT INTO vegetable_nutritional_points (vegetable_id, point_text, display_order)
+VALUES 
+(46, 'Chất xơ (0.5g trong 100g): Cải thiện tiêu hóa, ngăn ngừa táo bón.', 1),
+(46, 'Vitamin C (10% DV trong 100g): Tăng cường miễn dịch, bảo vệ tế bào.', 2),
+(46, 'Kali (150mg trong 100g): Cân bằng huyết áp, hỗ trợ cơ bắp.', 3),
+(46, 'Nước (95%): Giữ cơ thể đủ nước, hỗ trợ trao đổi chất.', 4),
+(46, 'Canxi (26mg trong 100g): Duy trì sức khỏe xương và răng.', 5),
+(46, 'Ít calo (14 kcal trong 100g): Phù hợp cho chế độ ăn kiêng.', 6);
+
+-- Chèn vào bảng vegetable_select_points
+INSERT INTO vegetable_select_points (vegetable_id, point_text, display_order)
+VALUES 
+(46, 'Quả xanh, chắc: Chọn trái bầu có vỏ nhẵn, không vết thâm.', 1),
+(46, 'Kích thước vừa: Bầu nhỏ đến trung bình thường ngọt, ít hạt.', 2),
+(46, 'Không có mùi lạ: Bầu tươi không có mùi chua hoặc hắc.', 3),
+(46, 'Vỏ mỏng, dễ bóc: Bầu tươi có vỏ mềm, dễ gọt.', 4),
+(46, 'Tránh quả mềm: Bầu không nên mềm hoặc có đốm thâm.', 5);
+
+-- Chèn vào bảng vegetable_preserve_points
+INSERT INTO vegetable_preserve_points (vegetable_id, point_text, display_order)
+VALUES 
+(46, 'Bảo quản ngăn mát: Bọc trái bầu trong túi nhựa, giữ ở 0-4°C, tươi 2-3 tuần.', 1),
+(46, 'Giữ nguyên vỏ: Không gọt vỏ trước khi cất, tránh mất nước.', 2),
+(46, 'Đông lạnh để bảo quản lâu: Thái lát, chần 2 phút, đông lạnh ở -18°C, dùng trong 6 tháng.', 3),
+(46, 'Kiểm tra định kỳ: Loại bỏ phần quả hỏng để tránh lây lan.', 4),
+(46, 'Tránh để gần trái cây tiết ethylene: Táo, chuối làm bầu nhanh hỏng.', 5);
+
+-- Chèn vào bảng recipes
+INSERT INTO recipes (name, description, prep_time, cook_time, servings)
+VALUES 
+('Canh bầu nấu tôm', 'Món canh thanh nhẹ, với trái bầu ngọt và tôm tươi, là món phụ bổ dưỡng.', '10 phút', '10 phút', '4 người'),
+('Bầu xào tỏi', 'Món xào đơn giản, với trái bầu giòn và tỏi thơm, là món phụ dễ làm.', '10 phút', '5 phút', '4 người'),
+('Bầu nhồi thịt', 'Món bầu nhồi thịt hấp, thơm ngon, là món chính hấp dẫn.', '20 phút', '20 phút', '4 người'),
+('Bầu luộc', 'Món luộc đơn giản, với trái bầu giòn, dùng kèm nước chấm, là món phụ lành mạnh.', '5 phút', '5 phút', '4 người');
+
+-- Chèn vào bảng recipe_vegetables
+INSERT INTO recipe_vegetables (recipe_id, vegetable_id)
+VALUES 
+(181, 46),
+(182, 46),
+(183, 46),
+(184, 46);
+
+-- Chèn vào bảng recipe_items
+INSERT INTO recipe_items (recipe_id, item_name, quantity, notes, order_index)
+VALUES 
+-- Canh bầu nấu tôm
+(181, 'Trái bầu', '300g', 'Gọt vỏ, thái miếng', 1),
+(181, 'Tôm tươi', '200g', 'Bóc vỏ, rút chỉ đen', 2),
+(181, 'Nước mắm', '1 muỗng canh', 'Chọn loại ngon', 3),
+(181, 'Hành lá', '2 nhánh (10g)', 'Thái nhỏ', 4),
+(181, 'Nước', '1 lít', 'Nước lọc', 5),
+-- Bầu xào tỏi
+(182, 'Trái bầu', '300g', 'Gọt vỏ, thái lát', 1),
+(182, 'Tỏi', '3 tép (12g)', 'Băm nhỏ', 2),
+(182, 'Dầu ăn', '2 muỗng canh', 'Dùng để xào', 3),
+(182, 'Nước mắm', '1 muỗng canh', 'Tăng hương vị', 4),
+(182, 'Muối', '1/4 muỗng cà phê', 'Điều chỉnh theo khẩu vị', 5),
+-- Bầu nhồi thịt
+(183, 'Trái bầu', '500g', 'Gọt vỏ, cắt khúc 5cm, khoét ruột', 1),
+(183, 'Thịt heo xay', '200g', 'Chọn thịt nạc vai', 2),
+(183, 'Nước mắm', '1 muỗng canh', 'Ướp thịt', 3),
+(183, 'Hành tím', '2 củ (10g)', 'Băm nhỏ', 4),
+(183, 'Muối', '1/4 muỗng cà phê', 'Ướp thịt', 5),
+(183, 'Tiêu', '1/4 muỗng cà phê', 'Ướp thịt', 6),
+-- Bầu luộc
+(184, 'Trái bầu', '300g', 'Gọt vỏ, thái miếng', 1),
+(184, 'Nước', '2 lít', 'Nước lọc để luộc', 2),
+(184, 'Muối', '1/2 muỗng cà phê', 'Cho vào nước luộc', 3),
+(184, 'Nước mắm', '2 muỗng canh', 'Dùng làm nước chấm', 4);
+
+-- Chèn vào bảng recipe_steps
+INSERT INTO recipe_steps (recipe_id, step_number, instruction_text)
+VALUES 
+-- Canh bầu nấu tôm
+(181, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ trái bầu, rửa sạch, thái miếng vừa ăn. Tôm tươi bóc vỏ, rút chỉ đen, rửa sạch với nước muối loãng để khử tanh. Hành lá rửa sạch, thái nhỏ.'),
+(181, 2, 'Xào tôm: Đun nóng 1 muỗng canh dầu ăn trong nồi, cho tôm vào xào trên lửa vừa 1-2 phút đến khi tôm chuyển màu hồng. Vớt tôm ra bát để giữ độ giòn.'),
+(181, 3, 'Nấu canh: Đổ 1 lít nước lọc vào nồi, đun sôi. Cho bầu và tôm vào, nấu trên lửa vừa 5-7 phút để bầu mềm và tôm tiết vị ngọt. Nêm 1 muỗng canh nước mắm, khuấy nhẹ, nếm thử để điều chỉnh vị.'),
+(181, 4, 'Hoàn thiện món canh: Rắc hành lá thái nhỏ vào nồi, đun thêm 30 giây để hành chín sơ. Tắt bếp, múc canh ra bát, dùng nóng với cơm trắng để thưởng thức vị ngọt thanh của bầu và tôm.'),
+-- Bầu xào tỏi
+(182, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ trái bầu, rửa sạch, thái lát mỏng. Tỏi bóc vỏ, băm nhuyễn để phi thơm. Chọn bầu non để món xào giòn và ngọt.'),
+(182, 2, 'Phi tỏi: Đun nóng 2 muỗng canh dầu ăn trong chảo, cho tỏi băm vào phi trên lửa vừa 20-30 giây đến khi tỏi vàng nhẹ và dậy mùi thơm. Tránh để tỏi cháy vì sẽ tạo vị đắng.'),
+(182, 3, 'Xào bầu: Cho bầu vào chảo, tăng lửa lớn, xào nhanh 3-4 phút để bầu mềm nhưng vẫn giữ độ giòn. Nêm 1 muỗng canh nước mắm và 1/4 muỗng cà phê muối, đảo đều.'),
+(182, 4, 'Hoàn thiện món xào: Kiểm tra độ chín của bầu, đảm bảo vẫn giòn và không quá mềm. Tắt bếp, dọn ra đĩa, dùng nóng với cơm trắng để thưởng thức vị giòn ngọt của bầu và thơm nồng của tỏi.'),
+-- Bầu nhồi thịt
+(183, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ trái bầu, rửa sạch, cắt khúc 5cm, dùng muỗng khoét ruột để nhồi thịt. Thịt heo xay ướp với 1 muỗng canh nước mắm, 1/4 muỗng cà phê muối, 1/4 muỗng cà phê tiêu, và hành tím băm trong 15 phút.'),
+(183, 2, 'Nhồi thịt: Nhồi hỗn hợp thịt heo xay vào các khúc bầu, nén chặt để thịt không rơi ra. Xếp các khúc bầu nhồi thịt vào xửng hấp hoặc nồi hấp.'),
+(183, 3, 'Hấp bầu: Đun sôi nước trong nồi hấp, đặt xửng bầu vào, hấp trên lửa vừa 15-20 phút đến khi bầu mềm và thịt chín. Dùng tăm kiểm tra thịt chín bằng cách đâm xuyên, không có nước đỏ chảy ra.'),
+(183, 4, 'Hoàn thiện món: Dọn bầu nhồi thịt ra đĩa, trang trí thêm hành lá hoặc tiêu. Dùng nóng với cơm trắng và nước mắm ớt để thưởng thức vị ngọt mềm của bầu và đậm đà của thịt.'),
+-- Bầu luộc
+(184, 1, 'Chuẩn bị nguyên liệu: Gọt vỏ trái bầu, rửa sạch, thái miếng vừa ăn. Chuẩn bị nồi nước luộc và bát nước mắm nguyên chất để chấm. Chọn bầu non để luộc sẽ giòn và ngọt.'),
+(184, 2, 'Luộc bầu: Đun sôi 2 lít nước, thêm 1/2 muỗng cà phê muối để bầu giữ màu xanh. Cho bầu vào luộc trên lửa vừa 5-7 phút đến khi bầu mềm nhưng vẫn giòn. Dùng đũa kiểm tra độ chín.'),
+(184, 3, 'Vớt bầu: Vớt bầu ra, ngâm ngay vào nước đá 1 phút để giữ độ giòn và màu xanh đẹp. Để ráo nước, xếp bầu ra đĩa, trình bày đẹp mắt.'),
+(184, 4, 'Hoàn thiện món luộc: Pha nước chấm với 2 muỗng canh nước mắm, thêm tỏi băm, ớt, hoặc chanh tùy sở thích. Dọn bầu luộc ra bàn, dùng nóng với nước chấm để thưởng thức vị giòn ngọt tự nhiên.');
