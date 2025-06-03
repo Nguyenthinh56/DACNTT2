@@ -1,5 +1,6 @@
-from flask import Blueprint, jsonify, current_app
+from flask import Blueprint, jsonify, current_app, request
 from models.vegetable import Vegetable
+from sqlalchemy import func
 
 vegetables_bp = Blueprint('vegetables', __name__)
 
@@ -39,3 +40,41 @@ def get_vegetable_by_class_index(class_index):
         current_app.logger.error("Lỗi khi lấy rau củ theo class_index: " + str(e))
         return jsonify({"error": str(e)}), 500
 
+
+@vegetables_bp.route('/search', methods=['POST']) # Lấy thông tin rau củ theo keyword
+def search_vegetables():
+    # Lấy từ khóa tìm kiếm từ tham số 'keyword'
+    keyword = request.json.get('keyword', '')
+    
+    if not keyword:
+        return jsonify({"error": "Bạn chưa cung cấp từ khóa tìm kiếm"}), 400
+
+    search_pattern = f"%{keyword}%"
+
+    results = Vegetable.query.filter(Vegetable.vietnamese_name.ilike(search_pattern)).all()
+    
+    # Chuyển kết quả thành một danh sách các dictionary
+    suggestions = [
+        {
+            "id": vegetable.id,
+            "vietnamese_name": vegetable.vietnamese_name,
+            "image_url": vegetable.image_url
+        }
+        for vegetable in results
+    ]
+    
+    return jsonify(suggestions), 200
+
+
+@vegetables_bp.route('/random', methods=['GET']) # Lấy ngẫu nhiên danh sách 4 ảnh rau củ
+def get_random_vegetables():
+    random_veg = Vegetable.query.with_entities(
+        Vegetable.id, 
+        Vegetable.image_url,
+        Vegetable.vietnamese_name
+    ).order_by(func.random()).limit(4).all()
+    
+    # Chuyển đổi kết quả (list of tuple) thành list of dictionary
+    result = [{"id": vegetable.id, "image_url": vegetable.image_url, "vietnamese_name": vegetable.vietnamese_name} for vegetable in random_veg]
+
+    return jsonify(result), 200

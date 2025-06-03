@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request, current_app
 from models.recipe import Recipe
+from sqlalchemy import func
 
 recipes_bp = Blueprint('recipes', __name__)
 
@@ -41,3 +42,15 @@ def get_recipes_by_vegetable(vegetable_id):
         current_app.logger.error("Lỗi khi lấy công thức theo rau: " + str(e))
         return jsonify({"error": str(e)}), 500
 
+@recipes_bp.route('/random', methods=['GET']) # Lấy ngẫu nhiên danh sách 4 ảnh món ăn
+def get_random_recipes():
+    random_rec = Recipe.query.with_entities(
+        Recipe.id, 
+        Recipe.image_url,
+        Recipe.name
+    ).order_by(func.random()).limit(4).all()
+    
+    # Chuyển đổi kết quả (list of tuple) thành list of dictionary
+    result = [{"id": recipe.id, "image_url": recipe.image_url, "name": recipe.name} for recipe in random_rec]
+
+    return jsonify(result), 200

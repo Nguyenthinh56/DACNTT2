@@ -38,5 +38,5 @@ class Vegetable(db.Model): # Lớp đại diện cho bảng vegetables
             "nutritional_points": [point.to_dict() for point in self.nutritional_points],
             "preserve_points": [point.to_dict() for point in self.preserve_points],
             "select_points": [point.to_dict() for point in self.select_points],
-            "recipes": [{"id": recipe.id, "name": recipe.name} for recipe in self.recipes] if hasattr(self, "recipes") else []
+            "recipes": [{"id": recipe.id, "name": recipe.name, "image_url":recipe.image_url} for recipe in self.recipes] if hasattr(self, "recipes") else []
         }

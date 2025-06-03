@@ -3,7 +3,7 @@ import os
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-from tensorflow.keras.applications.efficientnet import preprocess_input
+from keras.applications.efficientnet import preprocess_input
 
 # Cấu hình kích thước ảnh giống như khi huấn luyện (EfficientNet thường dùng 224x224 cho EfficientNetB0)
 IMG_SIZE = (224, 224)
