@@ -24,7 +24,7 @@ def load_model(model_path=None): # Tải mô hình từ file
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"Không tìm thấy file mô hình tại: {model_path}")
         print("Đang tải mô hình từ", model_path)
-        model = tf.keras.models.load_model(model_path)
+        model = tf.keras.models.load_model(model_path, compile=False) # Tải mô hình mà không cần biên dịch lại
     return model
 
 def process_user_image(image_data, target_size=IMG_SIZE): # Hàm này xử lý ảnh đầu vào để đưa vào mô hình
