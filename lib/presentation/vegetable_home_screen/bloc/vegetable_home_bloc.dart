@@ -1,76 +1,81 @@
 import 'package:flutter/material.dart';
-import '../../../core/app_export.dart'; // Import app_export (chứa các import chung)
-// Import các tệp liên quan đến Bloc này
-import '../models/featured_vegetable_model.dart'; // Model cho rau củ nổi bật
-import '../models/meal_suggestion_model.dart'; // Model cho gợi ý món ăn
-import '../models/vegetable_home_model.dart'; // Model chính của màn hình Home
-
+import '../../../core/app_export.dart';
+import '../../../core/utils/vegetable_db_api_service.dart';
+import '../../models/meal_suggestion_model.dart';
+import '../../models/vegetable_db_model.dart';
+import '../../models/vegetable_details_model.dart';
+import '../../models/vegetable_home_model.dart';
 part 'vegetable_home_event.dart';
 part 'vegetable_home_state.dart';
 
-
 /// A bloc that manages the state of a VegetableHome according to the event that is dispatched to it.
-// Lớp VegetableHomeBloc quản lý trạng thái của màn hình Home dựa trên các sự kiện nhận được.
 class VegetableHomeBloc extends Bloc<VegetableHomeEvent, VegetableHomeState> {
-  // Constructor của Bloc. Nhận trạng thái ban đầu.
+  // Tạo một instance của VegetableDbApiService
+  final VegetableDbApiService _apiService = VegetableDbApiService();
+
   VegetableHomeBloc(VegetableHomeState initialState) : super(initialState) {
-    debugPrint('VegetableHomeBloc created'); // Debug print khi Bloc được tạo
-    // Đăng ký các handler cho từng loại sự kiện.
-    on<VegetableHomeInitialEvent>(_onInitialize); // Xử lý sự kiện khởi tạo
-    on<SearchTextChangedEvent>(_onSearchTextChanged); // Xử lý sự kiện khi văn bản tìm kiếm thay đổi
-    on<BottomTabChangedEvent>(_onBottomTabChanged); // Xử lý sự kiện khi tab dưới cùng thay đổi
+    debugPrint('VegetableHomeBloc created');
+    on<VegetableHomeInitialEvent>(_onInitialize);
+    on<SearchTextChangedEvent>(_onSearchTextChanged);
+    on<BottomTabChangedEvent>(_onBottomTabChanged);
+    on<VegetableSelectedEvent>(_onVegetableSelected);
+    on<MealSelectedEvent>(_onMealSelected);
   }
 
   // Handler cho sự kiện khởi tạo (VegetableHomeInitialEvent).
-  // Được gọi khi Bloc được tạo lần đầu.
   _onInitialize(
       VegetableHomeInitialEvent event,
       Emitter<VegetableHomeState> emit,
-      ) {
-    debugPrint('VegetableHomeInitialEvent received'); // Debug print khi sự kiện Initial được nhận
-    // Khởi tạo dữ liệu mẫu cho gợi ý món ăn.
-    final List<MealSuggestionModel> mealSuggestions = [
-      MealSuggestionModel(image: ImageConstant.imgImage1, title: 'Salad'),
-      MealSuggestionModel(
-        image: ImageConstant.imgImage2,
-        title: 'Vegetable Mix',
-      ),
-      // TODO: Thêm các gợi ý món ăn khác nếu có
-    ];
+      ) async {
+    debugPrint('VegetableHomeInitialEvent received');
 
-    // Khởi tạo dữ liệu mẫu cho rau củ nổi bật.
-    final List<FeaturedVegetableModel> featuredVegetables = [
-      FeaturedVegetableModel(image: ImageConstant.imgImage3, name: 'Cabbage'),
-      FeaturedVegetableModel(image: ImageConstant.imgImage4, name: 'Tomatoes'),
-      FeaturedVegetableModel(image: ImageConstant.imgImage5, name: 'Eggplant'),
-      // TODO: Thêm các loại rau củ nổi bật khác nếu có
-    ];
+    List<MealSuggestionModel> fetchedMealSuggestions = [];
+    List<VegetableBasicInfo> fetchedVegetableBasicInfo = [];
+    TextEditingController searchController = TextEditingController(); // Khởi tạo một lần
 
-    // Khởi tạo TextEditingController cho thanh tìm kiếm.
-    TextEditingController searchController = TextEditingController();
+    try {
+      // #1: Fetch danh sách món ăn ngẫu nhiên
+      fetchedMealSuggestions = await _apiService.fetchRandomMeals();
+      debugPrint('Fetched ${fetchedMealSuggestions.length} random meals.');
 
-    // Phát ra trạng thái mới với dữ liệu đã khởi tạo.
-    emit(
-      state.copyWith(
+      // #2: Gọi API để lấy danh sách thông tin cơ bản của rau củ ngẫu nhiên (nổi bật)
+      fetchedVegetableBasicInfo = await _apiService.fetchRandomVegetables(); // Đảm bảo bạn có phương thức này trong ApiService
+      debugPrint('Fetched ${fetchedVegetableBasicInfo.length} basic vegetable info from API.');
+
+      // Cập nhật state MỘT LẦN DUY NHẤT sau khi tất cả dữ liệu đã được fetch thành công
+      emit(state.copyWith(
+        mealSuggestions: fetchedMealSuggestions,
+        vegetableBasicInfoList: fetchedVegetableBasicInfo,
+        searchController: searchController, // Gán controller đã khởi tạo
+        searchText: '',
+        vegetableHomeModel: state.vegetableHomeModel?.copyWith(), // Cập nhật model nếu cần
+      ));
+      debugPrint('VegetableHomeBloc state emitted after successful initialization with all data.');
+
+    } catch (e, stackTrace) {
+      debugPrint('Error during VegetableHomeBloc initialization: $e');
+      debugPrint('Stack trace: $stackTrace');
+      // Xử lý lỗi: Cập nhật state với danh sách rỗng hoặc dữ liệu placeholder nếu muốn
+      // Hoặc bạn có thể thêm một trường `errorMessage` vào state để hiển thị trên UI
+      emit(state.copyWith(
+        mealSuggestions: [], // Trả về rỗng nếu lỗi
+        vegetableBasicInfoList: [], // Trả về rỗng nếu lỗi
         searchController: searchController,
-        mealSuggestions: mealSuggestions,
-        featuredVegetables: featuredVegetables,
-        // selectedTabIndex: 0, // Đặt tab ban đầu là Home (index 0) nếu cần
-      ),
-    );
-    debugPrint('VegetableHomeBloc state emitted after initialization'); // Debug print sau khi emit trạng thái
+        searchText: '',
+      ));
+    }
   }
 
-  // Handler cho sự kiện khi văn bản tìm kiếm thay đổi (SearchTextChangedEvent).
+  // Handler cho sự kiện khi text tìm kiếm thay đổi (SearchTextChangedEvent).
   _onSearchTextChanged(
       SearchTextChangedEvent event,
       Emitter<VegetableHomeState> emit,
       ) {
-    debugPrint('SearchTextChangedEvent received: ${event.searchText}'); // Debug print khi sự kiện SearchText được nhận
-    // Cập nhật trạng thái với văn bản tìm kiếm mới.
+    debugPrint('SearchTextChangedEvent received: ${event.searchText}');
     emit(state.copyWith(searchText: event.searchText));
-    debugPrint('VegetableHomeBloc state emitted after search text change'); // Debug print sau khi emit trạng thái
-    // TODO: Thêm logic lọc dữ liệu hiển thị dựa trên searchText nếu cần.
+    debugPrint('VegetableHomeBloc state emitted after search text change');
+    // Logic lọc sẽ được thực hiện trong BlocBuilder của VegetableHomeScreen
+    // hoặc chuyển sang màn hình tìm kiếm riêng (VegetableSearchScreen)
   }
 
   // Handler cho sự kiện khi tab dưới cùng thay đổi (BottomTabChangedEvent).
@@ -78,31 +83,61 @@ class VegetableHomeBloc extends Bloc<VegetableHomeEvent, VegetableHomeState> {
       BottomTabChangedEvent event,
       Emitter<VegetableHomeState> emit,
       ) {
-    debugPrint('BottomTabChangedEvent received: index ${event.tabIndex}'); // Debug print khi sự kiện BottomTab được nhận
-    // Cập nhật trạng thái với index của tab được chọn.
-    emit(state.copyWith(selectedTabIndex: event.tabIndex));
-    debugPrint('VegetableHomeBloc state emitted after tab change'); // Debug print sau khi emit trạng thái
+    debugPrint('BottomTabChangedEvent received: index ${event.tabIndex}');
 
-    // --- Logic điều hướng tại đây ---
-    // Kiểm tra nếu tab được chọn là tab Scan (index 1).
-    if (event.tabIndex == 1) {
-      debugPrint('Navigating to CameraCaptureScreen'); // Debug print trước khi điều hướng
-      // Sử dụng NavigatorService để điều hướng đến màn hình chụp ảnh/chọn ảnh mới.
-      NavigatorService.pushNamed(AppRoutes.cameraCaptureScreen);
-    }
-    // Kiểm tra nếu tab được chọn là tab Profile (index 2).
-    else if (event.tabIndex == 2) {
-      debugPrint('Navigating to PersonalInformationScreen'); // Debug print trước khi điều hướng
-      // Sử dụng NavigatorService để điều hướng đến màn hình Thông tin cá nhân.
-      NavigatorService.pushNamed(AppRoutes.personalInformationScreen);
-    }
-    // Kiểm tra nếu tab được chọn là tab History (index 3).
-    else if (event.tabIndex == 3) {
-      debugPrint('Navigating to HistoryScreen'); // Debug print trước khi điều hướng
-      NavigatorService.pushNamed(AppRoutes.historyScreen);
-    }
-    // TODO: Thêm logic điều hướng cho các index khác nếu cần.
+    // Chỉ cập nhật selectedTabIndex trong state.
+    emit(state.copyWith(selectedTabIndex: event.tabIndex));
+    debugPrint('VegetableHomeBloc state emitted after tab change');
   }
 
-// TODO: Thêm các handler khác cho các sự kiện khác nếu cần.
+  // Handler mới cho sự kiện khi một loại rau củ được chọn
+  _onVegetableSelected(
+      VegetableSelectedEvent event,
+      Emitter<VegetableHomeState> emit,
+      ) async {
+    debugPrint('VegetableSelectedEvent received for classIndex: ${event.classIndex}');
+    try {
+      // Gọi API để lấy thông tin chi tiết của rau củ dựa trên classIndex
+      final VegetableDetails detailedInfo = await _apiService.fetchVegetableDetailedInfo(event.classIndex); // <-- Gọi API chi tiết
+
+      debugPrint('Fetched detailed info for vegetable ID: ${detailedInfo.id}');
+
+      // Điều hướng đến màn hình thông tin chi tiết rau củ
+      NavigatorService.pushNamed(
+        AppRoutes.vegetableInfoScreen,
+        arguments: {
+          'classIndex': detailedInfo.id, // Truyền ID của rau củ
+          'tabIndex': state.selectedTabIndex, // Truyền index tab hiện tại
+        },
+      );
+      debugPrint('Navigated to VegetableInfoScreen');
+
+    } catch (e) {
+      debugPrint('Error fetching vegetable details: $e');
+      // TODO: Xử lý lỗi (ví dụ: hiển thị thông báo lỗi cho người dùng)
+    }
+  }
+
+  // Handler cho sự kiện khi một món ăn được chọn (từ trang chủ hoặc món liên quan)
+  _onMealSelected(
+      MealSelectedEvent event,
+      Emitter<VegetableHomeState> emit,
+      ) async {
+    debugPrint('MealSelectedEvent received for mealId: ${event.mealId}');
+    try {
+      NavigatorService.pushNamed(
+        AppRoutes.mealInfoScreen,
+        arguments: {
+          'mealId': event.mealId, // Truyền ID món ăn
+          'tabIndex': state.selectedTabIndex,
+          'relatedMeals': state.mealSuggestions, // Truyền lại danh sách gợi ý hiện có
+        },
+      );
+      debugPrint('Navigated to MealInfoScreen with mealId: ${event.mealId}');
+    } catch (e) {
+      debugPrint('Error navigating to meal details: $e');
+      // TODO: Xử lý lỗi (ví dụ: hiển thị SnackBar)
+    }
+  }
 }
+

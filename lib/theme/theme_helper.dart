@@ -50,22 +50,32 @@ class ColorSchemes {
 
 class LightCodeColors {
   // App Colors
-  Color get black => Color(0xFF1E1E1E);
-  Color get white => Color(0xFFFFFFFF);
-  Color get gray400 => Color(0xFF9CA3AF);
+  Color get black => const Color(0xFF1E1E1E); // Giữ nguyên, màu đen chung
+  Color get white => const Color(0xFFFFFFFF); // Giữ nguyên, màu trắng chung
+  Color get gray400 => const Color(0xFF9CA3AF); // Giữ nguyên
+  Color get whiteA700 => const Color(0xFFFFFFFF);
 
-  // Additional Colors
+  // Màu sắc chính và phụ theo phong cách Dienmayxanh
+  // Bạn có thể tham khảo màu từ Figma của bạn hoặc sử dụng các giá trị HEX thông dụng
+  // Tôi sẽ sử dụng các màu xám để phù hợp hơn với giao diện sạch sẽ.
+  Color get gray900 => const Color(0xFF212121); // Màu xám rất đậm (gần đen) cho văn bản chính
+  Color get gray700 => const Color(0xFF424242); // Màu xám đậm hơn cho tiêu đề phụ hoặc icon
+  Color get gray600 => const Color(0xFF616161); // Màu xám trung bình cho mô tả hoặc ghi chú
+  Color get gray300 => const Color(0xFFE0E0E0); // Màu xám nhạt cho đường kẻ phân cách hoặc nền nhẹ
+  Color get gray100 => const Color(0xFFF5F5F5); // Màu xám rất nhạt cho nền của các phần
+
+  // Màu Primary Container (đã dùng cho số bước) - Có thể chọn màu xanh lá cây hoặc màu bạn muốn làm điểm nhấn
+  Color get primaryContainer => const Color(0XFF4CAF50); // Màu xanh lá cây tương tự trong Figma của bạn (nếu có)
+  Color get onPrimaryContainer => Colors.white; // Màu chữ trên primaryContainer
+
+  // Các màu tùy chỉnh khác (giữ lại nếu bạn vẫn dùng ở nơi khác)
   Color get blackCustom => Colors.black;
   Color get whiteCustom => Colors.white;
   Color get greyCustom => Colors.grey;
   Color get transparentCustom => Colors.transparent;
   Color get greenCustom => Colors.green;
-  Color get colorFF4CF2 => Color(0xFF4CF2D0);
-  Color get colorFFF3F4 => Color(0xFFF3F4F9);
-  Color get colorFF8685 => Color(0xFF86859E);
-  Color get colorFFFFF9 => Color(0xFFFFF9EA);
-
-  // Color Shades - Each shade has its own dedicated constant
-  Color get grey200 => Colors.grey.shade200;
-  Color get grey100 => Colors.grey.shade100;
+  Color get color14D9A3FF => const Color(0xFF14D9A3);
+  Color get colorFFF3F4 => const Color(0xFFF3F4F9);
+  Color get colorFF8685 => const Color(0xFF86859E);
+  Color get colorFFFFF9 => const Color(0xFFFFFFF9); // Màu trắng ngà
 }

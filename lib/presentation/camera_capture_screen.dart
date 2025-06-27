@@ -5,12 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:image/image.dart' as img;
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'vegetable_classifier_screen.dart';
+import '../../core/app_export.dart';
 
 class CameraCaptureScreen extends StatefulWidget {
-  const CameraCaptureScreen({super.key});
+  // Thêm tham số onImageProcessed để truyền callback
+  final Function(Uint8List)? onImageProcessed;
+
+  const CameraCaptureScreen({super.key, this.onImageProcessed});
 
   static Widget builder(BuildContext context) {
+    // Khi được gọi từ AppRoutes, onImageProcessed sẽ là null
     return const CameraCaptureScreen();
   }
 
@@ -36,14 +40,22 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
   // Hàm khởi tạo camera
   Future<void> _initCamera() async {
     try {
-      // Lấy danh sách camera có sẵn
       _cameras = await availableCameras();
       if (_cameras != null && _cameras!.isNotEmpty) {
-        // Chọn camera đầu tiên và đặt độ phân giải medium
-        _cameraController = CameraController(_cameras![0], ResolutionPreset.medium);
-        // Khởi tạo controller
+        // Chọn camera sau nếu có, nếu không thì chọn camera đầu tiên
+        CameraDescription? backCamera;
+        for (final camera in _cameras!) {
+          if (camera.lensDirection == CameraLensDirection.back) {
+            backCamera = camera;
+            break;
+          }
+        }
+        final cameraToUse = backCamera ?? _cameras!.first;
+        debugPrint(
+            'Sử dụng camera: ${cameraToUse.lensDirection == CameraLensDirection.back ? "Sau" : "Trước"}');
+        _cameraController =
+            CameraController(cameraToUse, ResolutionPreset.medium);
         await _cameraController!.initialize();
-        // Cập nhật UI sau khi khởi tạo thành công
         if (mounted) {
           setState(() {});
         }
@@ -51,7 +63,8 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
         debugPrint('Không tìm thấy camera nào.');
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Không tìm thấy camera nào khả dụng.')),
+            const SnackBar(
+                content: Text('Không tìm thấy camera nào khả dụng.')),
           );
         }
       }
@@ -65,14 +78,36 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
     }
   }
 
+  // Hàm chuyển đổi camera
+  Future<void> _switchCamera() async {
+    if (_cameras == null || _cameras!.isEmpty || _cameraController == null) return;
+
+    final currentIndex = _cameras!.indexWhere(
+          (camera) => camera == _cameraController!.description,
+    );
+    if (currentIndex < 0) return;
+
+    final newIndex = (currentIndex + 1) % _cameras!.length;
+    final newCamera = _cameras![newIndex];
+
+    try {
+      await _cameraController!.dispose();
+      _cameraController = CameraController(newCamera, ResolutionPreset.medium);
+      await _cameraController!.initialize();
+      setState(() {});
+    } catch (e) {
+      debugPrint('Lỗi chuyển camera: $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Lỗi chuyển camera: ${e.toString()}')),
+      );
+    }
+  }
+
   // Hàm chọn ảnh từ thư viện
   Future<void> _pickImage() async {
-    // Tránh xử lý nếu đang trong quá trình chọn/chụp ảnh
     if (_isPickingOrTaking) return;
-
     setState(() => _isPickingOrTaking = true);
 
-    // Yêu cầu quyền truy cập thư viện ảnh
     if (!await _requestPermission(Permission.photos)) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -84,34 +119,27 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
     }
 
     final ImagePicker picker = ImagePicker();
-    // Chọn ảnh từ gallery
-    final XFile? pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    final XFile? pickedFile =
+    await picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
-      // Xử lý ảnh đã chọn
       await _processImage(pickedFile);
     } else {
-      // Đặt lại cờ nếu không chọn ảnh nào
       setState(() => _isPickingOrTaking = false);
     }
   }
 
   // Hàm chụp ảnh từ CameraPreview
   Future<void> _captureFromPreview() async {
-    // Kiểm tra controller camera đã sẵn sàng chưa
     if (_cameraController == null || !_cameraController!.value.isInitialized) {
       debugPrint('Camera controller chưa sẵn sàng.');
       return;
     }
-    // Tránh xử lý nếu đang trong quá trình chọn/chụp ảnh
     if (_isPickingOrTaking) return;
-
     setState(() => _isPickingOrTaking = true);
 
     try {
-      // Chụp ảnh
       final file = await _cameraController!.takePicture();
       final xfile = XFile(file.path);
-      // Xử lý ảnh vừa chụp
       await _processImage(xfile);
     } catch (e) {
       debugPrint('Lỗi khi chụp ảnh: $e');
@@ -121,18 +149,14 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
         );
       }
     } finally {
-      // Đặt lại cờ sau khi hoàn thành (dù thành công hay thất bại)
       setState(() => _isPickingOrTaking = false);
     }
   }
 
-  // Hàm xử lý ảnh (đọc, chuyển đổi sang Uint8List) - Đã bỏ resize
+  // Hàm xử lý ảnh (đọc, chuyển sang Uint8List)
   Future<void> _processImage(XFile imageFile) async {
     try {
-      // Đọc dữ liệu byte từ file ảnh
       final bytes = await File(imageFile.path).readAsBytes();
-
-      // Kiểm tra xem bytes có rỗng không
       if (bytes.isEmpty) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -152,10 +176,7 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
         return;
       }
 
-      // Sử dụng trực tiếp bytes gốc để truyền đi, không resize
       final originalBytes = Uint8List.fromList(bytes);
-
-
       if (originalBytes.isEmpty) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -165,15 +186,17 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
         return;
       }
 
-      // Điều hướng đến màn hình phân loại rau củ với dữ liệu ảnh gốc
-      // Sử dụng pushReplacement để thay thế màn hình chụp ảnh bằng màn hình phân loại
+      // Điều hướng sau khi xử lý ảnh
       if (mounted) {
-        Navigator.pushReplacement( // <-- Đã thay đổi từ push sang pushReplacement
-          context,
-          MaterialPageRoute(
-            builder: (context) => VegetableClassifierScreen(imageBytes: originalBytes), // Truyền bytes gốc
-          ),
-        );
+        if (widget.onImageProcessed != null) {
+          widget.onImageProcessed!(originalBytes);
+          Navigator.pop(context, originalBytes);
+        } else {
+          NavigatorService.pushReplacementNamed(
+            AppRoutes.vegetableClassifierScreen,
+            arguments: originalBytes,
+          );
+        }
       }
     } catch (e) {
       debugPrint('Lỗi xử lý ảnh: $e');
@@ -182,9 +205,10 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
           SnackBar(content: Text('Lỗi xử lý ảnh: ${e.toString()}')),
         );
       }
+    } finally {
+      setState(() => _isPickingOrTaking = false);
     }
   }
-
 
   // Hàm yêu cầu quyền
   Future<bool> _requestPermission(Permission permission) async {
@@ -197,26 +221,34 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
 
   @override
   void dispose() {
-    // Giải phóng controller camera khi widget bị hủy
-    _cameraController?.dispose();
+    if (_cameraController != null) {
+      _cameraController!.pausePreview();
+      _cameraController!.dispose();
+      _cameraController = null;
+    }
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // Hiển thị loading nếu camera chưa sẵn sàng
     if (_cameraController == null || !_cameraController!.value.isInitialized) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return const Scaffold(
+          body: Center(child: CircularProgressIndicator()));
     }
+
+    // Lấy chiều rộng màn hình để căn giữa nút chụp ảnh
+    final double screenWidth = MediaQuery.of(context).size.width;
+    // Kích thước mặc định của FloatingActionButton
+    const double fabSize = 56.0;
 
     return Scaffold(
       body: Stack(
         children: [
-          // Đảm bảo CameraPreview chiếm toàn bộ màn hình
+          // Hiển thị CameraPreview chiếm toàn bộ màn hình
           Positioned.fill(
             child: CameraPreview(_cameraController!),
           ),
-          // Nút quay lại (Back)
+          // Nút quay lại (Back) ở góc trên bên trái
           Positioned(
             top: 40,
             left: 16,
@@ -225,32 +257,34 @@ class _CameraCaptureScreenState extends State<CameraCaptureScreen> {
               onPressed: () => Navigator.pop(context),
             ),
           ),
-          // Container chứa cả hai nút ở dưới cùng
+          // Nút xoay camera (Switch Camera) ở góc dưới bên trái - không có nền
           Positioned(
-            bottom: 40, // Khoảng cách từ đáy
-            left: 0,
-            right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center, // Căn giữa các nút theo chiều ngang
-              children: [
-                // Nút chụp ảnh
-                FloatingActionButton(
-                  onPressed: _isPickingOrTaking ? null : _captureFromPreview, // Vô hiệu hóa khi đang xử lý
-                  backgroundColor: Colors.white,
-                  child: _isPickingOrTaking
-                      ? const CircularProgressIndicator(color: Colors.black) // Hiển thị loading khi đang xử lý
-                      : const Icon(Icons.camera_alt, color: Colors.black),
-                ),
-                SizedBox(width: 40), // Khoảng cách giữa hai nút
-                // Nút chọn ảnh từ thư viện
-                FloatingActionButton( // Sử dụng FloatingActionButton cho cả hai nút để nhất quán
-                  onPressed: _isPickingOrTaking ? null : _pickImage, // Vô hiệu hóa khi đang xử lý
-                  backgroundColor: Colors.white,
-                  child: _isPickingOrTaking
-                      ? const CircularProgressIndicator(color: Colors.black) // Hiển thị loading khi đang xử lý
-                      : const Icon(Icons.photo_library, color: Colors.black), // Đổi màu icon thành đen cho phù hợp với nền trắng
-                ),
-              ],
+            bottom: 40,
+            left: 16,
+            child: IconButton(
+              icon: const Icon(Icons.switch_camera, color: Colors.white, size: 40),
+              onPressed: _switchCamera,
+            ),
+          ),
+          // Nút chụp ảnh (Capture) ở giữa phía dưới với nền xanh lá và icon màu trắng
+          Positioned(
+            bottom: 40,
+            left: (screenWidth - fabSize) / 2,
+            child: FloatingActionButton(
+              onPressed: _isPickingOrTaking ? null : _captureFromPreview,
+              backgroundColor: Colors.white,
+              child: _isPickingOrTaking
+                  ? const CircularProgressIndicator(color: Colors.green)
+                  : const Icon(Icons.camera_alt, color: Colors.green),
+            ),
+          ),
+          // Nút chọn ảnh từ thư viện (Pick Image) ở góc dưới bên phải - không có nền
+          Positioned(
+            bottom: 40,
+            right: 16,
+            child: IconButton(
+              icon: const Icon(Icons.photo_library, color: Colors.white, size: 40),
+              onPressed: _pickImage,
             ),
           ),
         ],

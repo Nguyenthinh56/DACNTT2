@@ -1,31 +1,36 @@
+// android/app/build.gradle
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+
 }
 
 android {
-    namespace = "com.kanggsapplication.app"  // Đảm bảo namespace này đúng với tên của ứng dụng bạn
+    namespace = "com.kanggsapplication.app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = "17"
     }
 
     defaultConfig {
-        applicationId = "com.kanggsapplication.app"  // Đảm bảo applicationId khớp với namespace
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-        multiDexEnabled true  // Bật multidex nếu cần
+        applicationId "com.kanggsapplication.app"
+        minSdk 23
+        targetSdk flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -41,5 +46,9 @@ flutter {
 }
 
 dependencies {
-    implementation "androidx.multidex:multidex:2.0.1"  // Thêm multidex nếu ứng dụng của bạn cần
+    implementation "androidx.multidex:multidex:2.0.1"
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:33.14.0')
+    implementation 'com.google.firebase:firebase-auth'
+    // When using the BoM, don't specify versions in Firebase dependencies
 }

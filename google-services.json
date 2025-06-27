@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "206905733698",
+    "project_id": "vegetableapp-5b545",
+    "storage_bucket": "vegetableapp-5b545.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206905733698:android:9a00e53f58ac16fe8bf3db",
+        "android_client_info": {
+          "package_name": "com.kanggsapplication.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206905733698-lh05jl330jpsmcctptnougu4dj548nci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kanggsapplication.app",
+            "certificate_hash": "078643c4f15a6f850985d84b0450bb4130d478b8"
+          }
+        },
+        {
+          "client_id": "206905733698-740auloofe7oh0cg6sif0p6vhfpk2rdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjZmrVaFPwITBNGEkYvnNCAcg0bfikR0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206905733698-740auloofe7oh0cg6sif0p6vhfpk2rdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

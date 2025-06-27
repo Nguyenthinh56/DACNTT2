@@ -72,4 +72,23 @@ class NavigatorService {
       arguments: arguments,
     );
   }
+
+  // Điều hướng đến màn hình mới và thay thế màn hình hiện tại.
+  static Future<dynamic> pushReplacementNamed(
+      String routeName, {
+        dynamic arguments,
+      }) async {
+    return navigatorKey.currentState?.pushReplacementNamed(
+      routeName,
+      arguments: arguments,
+    );
+  }
+
+  // Quay lại màn hình trước đó cho đến khi một điều kiện được thỏa mãn.
+  static void popUntil(RoutePredicate predicate) {
+    return navigatorKey.currentState?.popUntil(predicate);
+  }
 }
+
+
+

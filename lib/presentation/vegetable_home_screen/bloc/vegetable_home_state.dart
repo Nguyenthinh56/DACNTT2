@@ -4,7 +4,7 @@ part of 'vegetable_home_bloc.dart';
 class VegetableHomeState extends Equatable {
   final VegetableHomeModel? vegetableHomeModel;
   final List<MealSuggestionModel>? mealSuggestions;
-  final List<FeaturedVegetableModel>? featuredVegetables;
+  final List<VegetableBasicInfo>? vegetableBasicInfoList;
   final TextEditingController? searchController;
   final String? searchText;
   final int selectedTabIndex;
@@ -12,7 +12,7 @@ class VegetableHomeState extends Equatable {
   const VegetableHomeState({
     this.vegetableHomeModel,
     this.mealSuggestions,
-    this.featuredVegetables,
+    this.vegetableBasicInfoList,
     this.searchController,
     this.searchText,
     this.selectedTabIndex = 0,
@@ -22,7 +22,7 @@ class VegetableHomeState extends Equatable {
   List<Object?> get props => [
     vegetableHomeModel,
     mealSuggestions,
-    featuredVegetables,
+    vegetableBasicInfoList,
     searchController,
     searchText,
     selectedTabIndex,
@@ -31,7 +31,7 @@ class VegetableHomeState extends Equatable {
   VegetableHomeState copyWith({
     VegetableHomeModel? vegetableHomeModel,
     List<MealSuggestionModel>? mealSuggestions,
-    List<FeaturedVegetableModel>? featuredVegetables,
+    List<VegetableBasicInfo>? vegetableBasicInfoList,
     TextEditingController? searchController,
     String? searchText,
     int? selectedTabIndex,
@@ -39,7 +39,7 @@ class VegetableHomeState extends Equatable {
     return VegetableHomeState(
       vegetableHomeModel: vegetableHomeModel ?? this.vegetableHomeModel,
       mealSuggestions: mealSuggestions ?? this.mealSuggestions,
-      featuredVegetables: featuredVegetables ?? this.featuredVegetables,
+      vegetableBasicInfoList: vegetableBasicInfoList ?? this.vegetableBasicInfoList,
       searchController: searchController ?? this.searchController,
       searchText: searchText ?? this.searchText,
       selectedTabIndex: selectedTabIndex ?? this.selectedTabIndex,

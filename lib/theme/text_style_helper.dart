@@ -1,86 +1,124 @@
 import 'package:flutter/material.dart';
-import '../core/app_export.dart';
+import '../core/app_export.dart'; // Đảm bảo rằng appTheme được import qua đây
 
 // Lớp TextStyleHelper giúp quản lý tập trung các định nghĩa kiểu văn bản (text styles)
 // được sử dụng trong ứng dụng.
 class TextStyleHelper {
-  // Biến instance tĩnh để triển khai Singleton pattern.
-  // Đảm bảo chỉ có một instance của TextStyleHelper trong toàn bộ ứng dụng.
   static TextStyleHelper? _instance;
 
-  // Private constructor để ngăn tạo instance từ bên ngoài.
   TextStyleHelper._();
 
-  // Getter tĩnh để truy cập instance duy nhất của TextStyleHelper.
   static TextStyleHelper get instance {
-    _instance ??= TextStyleHelper._(); // Tạo instance nếu chưa có.
-    return _instance!; // Trả về instance.
+    _instance ??= TextStyleHelper._();
+    return _instance!;
   }
 
   // Headline Styles
-  // Medium-large text styles for section headers
-
   TextStyle get headline29Medium => TextStyle(
-    fontSize: 29.fSize, // Kích thước font 29, sử dụng extension .fSize
-    fontWeight: FontWeight.w500, // Độ đậm Medium (w500)
-    color: appTheme.whiteCustom, // Màu chữ trắng tùy chỉnh từ appTheme
+    fontSize: 29.fSize,
+    fontWeight: FontWeight.w500,
+    color: appTheme.whiteCustom,
   );
 
-  // Title Styles
-  // Medium text styles for titles and subtitles
+  // Title Styles (Cập nhật và thêm mới để phù hợp với Meal Info Screen)
+  // Tiêu đề rất lớn và đậm cho tên món ăn
+  TextStyle get title28Bold => TextStyle(
+    fontSize: 28.fSize,
+    fontWeight: FontWeight.bold,
+    color: appTheme.gray900, // Màu chữ rất đậm
+  );
+
+  // Tiêu đề chính của các phần (Nguyên liệu, Cách làm)
+  TextStyle get title24Bold => TextStyle(
+    fontSize: 24.fSize,
+    fontWeight: FontWeight.bold,
+    color: appTheme.gray900, // Màu chữ rất đậm
+  );
+
+  // Tiêu đề phụ (ví dụ: trên AppBar, hoặc tiêu đề bước)
+  TextStyle get title18Bold => TextStyle(
+    fontSize: 18.fSize,
+    fontWeight: FontWeight.bold,
+    color: appTheme.gray900, // Màu chữ rất đậm
+  );
 
   TextStyle get title20RegularRoboto => TextStyle(
-    fontSize: 20.fSize, // Kích thước font 20
-    fontWeight: FontWeight.w400, // Độ đậm Regular (w400)
-    fontFamily: 'Roboto', // Font chữ Roboto
-    color: Color(0xFF000000), // Màu chữ đen
+    fontSize: 20.fSize,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Roboto',
+    color: const Color(0xFF000000),
   );
 
   TextStyle get title20Medium => TextStyle(
-    fontSize: 20.fSize, // Kích thước font 20
-    fontWeight: FontWeight.w500, // Độ đậm Medium (w500)
-    color: appTheme.blackCustom, // Màu chữ đen tùy chỉnh từ appTheme
+    fontSize: 20.fSize,
+    fontWeight: FontWeight.w500,
+    color: appTheme.gray900, // Sử dụng màu xám rất đậm
   );
 
-  // --- Thêm định nghĩa cho style title28Bold (đã dùng trong app_navigation_screen.dart) ---
-  TextStyle get title28Bold {
-    return TextStyle(
-      fontSize: 28.fSize, // Kích thước font 28
-      fontWeight: FontWeight.bold, // Độ đậm Bold
-      // Màu chữ mặc định có thể là đen hoặc tùy chỉnh theo thiết kế
-      color: Colors.black87, // Sử dụng màu đen hoặc điều chỉnh theo thiết kế Figma
-      // Nếu bạn sử dụng font tùy chỉnh cho style này, hãy thêm fontFamily ở đây
-      // fontFamily: 'YourCustomFont',
-    );
-  }
-
-  // --- Thêm định nghĩa cho style title20BoldGreen (đã dùng trong app_navigation_screen.dart) ---
-  TextStyle get title20BoldGreen {
-    return TextStyle(
-      fontSize: 20.fSize, // Kích thước font 20
-      fontWeight: FontWeight.bold, // Độ đậm Bold
-      // Màu chữ xanh lá cây (màu đã dùng trong app_navigation_screen.dart)
-      color: Color(0XFF4CAF50), // Màu xanh lá cây
-      // fontFamily: 'YourCustomFont',
-    );
-  }
-
+  TextStyle get title20BoldGreen => TextStyle(
+    fontSize: 20.fSize,
+    fontWeight: FontWeight.bold,
+    color: const Color(0XFF4CAF50),
+  );
 
   // Body Styles
   // Standard text styles for body content
+  TextStyle get body16Regular => TextStyle(
+    fontSize: 16.fSize,
+    fontWeight: FontWeight.w400,
+    color: appTheme.gray700, // Màu xám đậm vừa cho nội dung thông thường
+  );
+
+  // Dùng cho giá trị trong thông tin thời gian/khẩu phần và số lượng nguyên liệu
+  TextStyle get body16Bold => TextStyle(
+    fontSize: 16.fSize,
+    fontWeight: FontWeight.bold,
+    color: appTheme.gray900, // Màu chữ rất đậm
+  );
 
   TextStyle get body15Medium => TextStyle(
-    fontSize: 15.fSize, // Kích thước font 15
-    fontWeight: FontWeight.w500, // Độ đậm Medium (w500)
-    color: appTheme.whiteCustom, // Màu chữ trắng tùy chỉnh
+    fontSize: 15.fSize,
+    fontWeight: FontWeight.w500,
+    color: appTheme.whiteCustom,
   );
 
   TextStyle get body14Medium => TextStyle(
-    fontSize: 14.fSize, // Kích thước font 14
-    fontWeight: FontWeight.w500, // Độ đậm Medium (w500)
-    color: appTheme.blackCustom, // Màu chữ đen tùy chỉnh
+    fontSize: 14.fSize,
+    fontWeight: FontWeight.w500,
+    color: appTheme.whiteCustom,
   );
 
-  TextStyle get body14 =>
-      TextStyle(fontSize: 14.fSize, color: appTheme.colorFF8685); // Kích thước font 14, màu tùy chỉnh
+  TextStyle get body14Regular => TextStyle(
+    fontSize: 14.fSize,
+    fontWeight: FontWeight.w400,
+    color: appTheme.gray600, // Màu xám trung bình cho các ghi chú nhỏ
+  );
+
+  TextStyle get body12Regular => TextStyle(
+    fontSize: 12.fSize,
+    fontWeight: FontWeight.w400,
+    color: appTheme.gray600, // Màu xám trung bình cho các ghi chú nhỏ hơn
+  );
+
+  // Subtitle Styles
+  // Small text styles for subheadings or secondary information
+  TextStyle get subtitle12Regular => TextStyle(
+    fontSize: 12.fSize,
+    fontWeight: FontWeight.w400,
+    color: const Color(0xFF000000),
+  );
+
+  TextStyle get subtitle12Medium => TextStyle(
+    fontSize: 12.fSize,
+    fontWeight: FontWeight.w500,
+    color: const Color(0xFF000000),
+  );
+
+  // Label Styles
+  // Smallest text styles for labels or captions
+  TextStyle get label10Regular => TextStyle(
+    fontSize: 10.fSize,
+    fontWeight: FontWeight.w400,
+    color: const Color(0xFF000000),
+  );
 }
