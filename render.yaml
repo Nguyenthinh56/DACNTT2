@@ -2,8 +2,6 @@ services:
   - type: web
     name: vegetable_identification
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.0
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app --timeout 90 --bind 0.0.0.0:$PORT"
