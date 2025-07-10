@@ -75,7 +75,6 @@ source_code/
 ├─ devtools_options.yaml
 ├─ pubspec.lock
 ├─ pubspec.yaml                         
-├─ README.md                            # Tài liệu Markdown
 └─ readme.txt                           # Tài liệu plain-text
 
 -----------------------

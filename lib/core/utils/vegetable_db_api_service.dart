@@ -11,7 +11,7 @@ import '/presentation/models/vegetable_db_model.dart';
 
 // Lớp dịch vụ để gọi các API liên quan đến database rau củ backend
 class VegetableDbApiService {
-  static const String _baseUrl = 'https://dacntt2-production.up.railway.app/api';
+  static const String _baseUrl = 'https://dacntt2-production-537f.up.railway.app/api';
   // ENDPOINT LẤY TẤT CẢ VỀ GIÁ TRỊ GỐC CỦA RAU CỦ '/vegetables/'
   static const String _allVegetablesEndpoint = '/vegetables/'; // <-- Endpoint lấy tất cả rau củ
 
