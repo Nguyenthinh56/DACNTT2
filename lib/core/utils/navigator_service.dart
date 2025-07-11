@@ -26,9 +26,8 @@ class NavigatorService {
             body: Center(child: Text('Không tìm thấy tuyến đường: $routeName')),
           );
         },
-        // Hiệu ứng chuyển trang (ví dụ: trượt từ dưới lên).
+        // Hiệu ứng chuyển trang
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-          // Sử dụng SlideTransition để tạo hiệu ứng trượt.
           return SlideTransition(
             position: Tween<Offset>(
               begin: const Offset(0.0, 1.0), // Bắt đầu từ dưới (x=0.0, y=1.0)
@@ -36,8 +35,6 @@ class NavigatorService {
             ).animate(animation), // Áp dụng animation để điều khiển vị trí
             child: child, // Widget của màn hình mới
           );
-          // Nếu muốn hiệu ứng trượt từ phải sang, dùng:
-          // begin: const Offset(1.0, 0.0), end: Offset.zero
         },
         transitionDuration: const Duration(milliseconds: 300), // Thời gian hiệu ứng
       ),
