@@ -8,7 +8,6 @@ import '../../models/vegetable_home_model.dart';
 part 'vegetable_home_event.dart';
 part 'vegetable_home_state.dart';
 
-/// A bloc that manages the state of a VegetableHome according to the event that is dispatched to it.
 class VegetableHomeBloc extends Bloc<VegetableHomeEvent, VegetableHomeState> {
   // Tạo một instance của VegetableDbApiService
   final VegetableDbApiService _apiService = VegetableDbApiService();
@@ -75,7 +74,6 @@ class VegetableHomeBloc extends Bloc<VegetableHomeEvent, VegetableHomeState> {
     emit(state.copyWith(searchText: event.searchText));
     debugPrint('VegetableHomeBloc state emitted after search text change');
     // Logic lọc sẽ được thực hiện trong BlocBuilder của VegetableHomeScreen
-    // hoặc chuyển sang màn hình tìm kiếm riêng (VegetableSearchScreen)
   }
 
   // Handler cho sự kiện khi tab dưới cùng thay đổi (BottomTabChangedEvent).
